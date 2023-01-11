@@ -11,6 +11,15 @@ import { SearchComponent } from './components/header/search/search.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { ContentComponent } from './layout/content/content.component';
+import { FullComponent } from './layout/full/full.component';
+import { AccountComponent } from './components/header/account/account.component';
+import { NavService } from './service/nav.service';
+import { TapToTopComponent } from './components/tap-to-top/tap-to-top.component';
+import { FeatherIconComponent } from './components/feather-icon/feather-icon.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AngularSvgIconModule } from 'angular-svg-icon';
 
 
 
@@ -26,10 +35,31 @@ import { LoaderComponent } from './components/loader/loader.component';
     SearchComponent,
     FooterComponent,
     SidebarComponent,
-    LoaderComponent
+    LoaderComponent,
+    ContentComponent,
+    FullComponent,
+    AccountComponent,
+    TapToTopComponent,
+    FeatherIconComponent
   ],
   imports: [
-    CommonModule
-  ]
+    CommonModule,
+    RouterModule,
+    FormsModule,
+    ReactiveFormsModule,
+    AngularSvgIconModule.forRoot(),
+   
+  ],
+  exports:[ HeaderComponent,
+    LanguageComponent,
+    ModeComponent,
+    BookmarkComponent,
+    NotificationComponent,
+    MessageBoxComponent,
+    MaximiseComponent,
+    SearchComponent,
+    FooterComponent,
+    SidebarComponent,
+    LoaderComponent]
 })
 export class SharedModule { }
