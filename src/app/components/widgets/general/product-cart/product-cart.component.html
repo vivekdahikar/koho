@@ -1,0 +1,43 @@
+<div class="card user-status">
+  <div class="card-header pb-0">
+    <h3>Product cart</h3>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li>
+          <div><i class="icon-settings"></i></div>
+        </li>
+        <li><i class="view-html fa fa-code"></i></li>
+        <li><i class="icofont icofont-maximize full-card"></i></li>
+        <li><i class="icofont icofont-minus minimize-card"></i></li>
+        <li><i class="icofont icofont-refresh reload-card"></i></li>
+        <li><i class="icofont icofont-error close-card"> </i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive mb-0">
+      <table class="table table-bordernone">
+        <thead>
+          <tr>
+            <th scope="col">Details</th>
+            <th scope="col">Qty.</th>
+            <th scope="col">Price</th>
+            <th class="text-end" scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of productCart">
+            <td>{{ data.details }}</td>
+            <td class="digits">{{ data.qty }}</td>
+            <td class="digits font-primary">{{ data.price }}</td>
+            <td class="text-end">
+              <span class="badge badge-light-{{ data.statusBgColor }}">
+                {{ data.status }}</span
+              >
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

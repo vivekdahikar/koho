@@ -20,8 +20,7 @@ import { FeatherIconComponent } from './components/feather-icon/feather-icon.com
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularSvgIconModule } from 'angular-svg-icon';
-
-
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +39,8 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     FullComponent,
     AccountComponent,
     TapToTopComponent,
-    FeatherIconComponent
+    FeatherIconComponent,
+    BreadcrumbComponent,
   ],
   imports: [
     CommonModule,
@@ -48,9 +48,9 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     FormsModule,
     ReactiveFormsModule,
     AngularSvgIconModule.forRoot(),
-   
   ],
-  exports:[ HeaderComponent,
+  exports: [
+    HeaderComponent,
     LanguageComponent,
     ModeComponent,
     BookmarkComponent,
@@ -60,6 +60,13 @@ import { AngularSvgIconModule } from 'angular-svg-icon';
     SearchComponent,
     FooterComponent,
     SidebarComponent,
-    LoaderComponent]
+    LoaderComponent,
+    ContentComponent,
+    FullComponent,
+    AccountComponent,
+    TapToTopComponent,
+    FeatherIconComponent,
+    BreadcrumbComponent,
+  ],
 })
-export class SharedModule { }
+export class SharedModule {}

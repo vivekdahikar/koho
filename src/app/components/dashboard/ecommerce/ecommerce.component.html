@@ -1,1 +1,47 @@
-<p>ecommerce works!</p>
+<app-breadcrumb
+  [title]="'Ecommerce Dashboard'"
+  [items]="['Dashboard']"
+  [active_item]="'eccomerce'"
+></app-breadcrumb>
+<div class="container-fluid ecommerce-page">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <app-orders-paid [data]="salechart"></app-orders-paid>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <app-orders-paid [data]="income"></app-orders-paid>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <app-orders-paid [data]="orderchart"></app-orders-paid>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <app-orders-paid [data]="visitorchart"></app-orders-paid>
+    </div>
+    <div class="col-xxl-5 col-xl-4 col-sm-6 box-col-40">
+      <div class="card recent-order">
+        <app-recent-orders></app-recent-orders>
+      </div>
+    </div>
+    <div class="col-xl-4 col-sm-6 box-col-30">
+      <app-top-products></app-top-products>
+    </div>
+    <div class="col-xxl-3 col-xl-4 col-sm-6 box-col-30">
+      <app-sales-by-countries></app-sales-by-countries>
+    </div>
+    <div class="col-xxl-5 col-xl-4 col-sm-6 box-col-30">
+      <app-best-sellers></app-best-sellers>
+    </div>
+    <div class="col-xxl-4 col-xl-5 col-md-7 box-col-40">
+      <app-products></app-products>
+      <div class="row">
+        <div class="col-xl-12">
+          <app-review></app-review>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-3 col-md-5 box-col-30">
+      <app-discount></app-discount>
+    </div>
+  </div>
+</div>
+<!-- Container-fluid Ends-->

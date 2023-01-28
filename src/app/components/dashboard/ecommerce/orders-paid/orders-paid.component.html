@@ -1,1 +1,32 @@
-<p>orders-paid works!</p>
+<div class="card sale-chart">
+  <div class="card-body">
+    <div class="d-flex">
+      <div class="flex-shrink-0">
+        <div class="sale-detail">
+          <div class="icon"><i data-feather="file-text"></i></div>
+          <div class="sale-content">
+            <h3>{{ data.tittle }}</h3>
+            <p>{{ data.sale }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="small-chart-view sales-chart" id="sales-chart">
+        <apx-chart
+          [series]="data.series"
+          [chart]="data.chart"
+          [stroke]="data.stroke"
+          [annotations]="data.annotations"
+          [colors]="data.colors"
+          [yaxis]="data.yaxis"
+          [xaxis]="data.xaxis"
+          [legend]="data.legend"
+          [tooltip]="data.tooltip"
+          [dataLabels]="data.dataLabels"
+          [grid]="data.grid"
+          [responsive]="data.responsive"
+        >
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

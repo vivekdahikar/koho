@@ -1,12 +1,34 @@
-<div class="page-wrapper compact-wrapper" id="pageWrapper">
-  <div class="page-header">
+<div
+  class="page-wrapper compact-wrapper"
+  [ngClass]="layout.config.settings.sidebar"
+  id="pageWrapper"
+>
+  <div
+    class="page-header"
+    (scroll)="scrollHandler()"
+    [ngStyle]="{ display: show ? 'block' : 'none' }"
+    [class.close_icon]="navServices.collapseSidebar"
+  >
     <app-header></app-header>
   </div>
-  <div class="page-body-wrapper">
-    <app-sidebar></app-sidebar>
-<div class="page-body">
-      <!-- <router-outlet></router-outlet> -->
+  <div class="page-body-wrapper" [class.scorlled]="Scorlled && show == false">
+    <div
+      class="sidebar-wrapper"
+      [attr.sidebar-layout]="layout.config.settings.sidebar_type"
+      [class.close_icon]="navServices.collapseSidebar"
+    >
+      <app-sidebar></app-sidebar>
     </div>
-<app-footer></app-footer>
+    <div class="page-body" [@routeAnimations]="prepareRoute(outlet)">
+      <router-outlet #outlet="outlet"></router-outlet>
+    </div>
+    <footer
+      class="footer"
+      [class.footer-dark]="footerDark"
+      [class.footer-light]="footerLight"
+      [class.footer-fix]="footerFix"
+    >
+      <app-footer></app-footer>
+    </footer>
   </div>
 </div>

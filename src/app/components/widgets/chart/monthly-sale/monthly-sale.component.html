@@ -1,0 +1,47 @@
+<div class="small-chart-widget chart-widgets-small">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h3>Monthly Sales</h3>
+      <div class="card-header-right">
+        <ul class="list-unstyled card-option">
+          <li>
+            <div><i class="icon-settings"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code"></i></li>
+          <li><i class="icofont icofont-maximize full-card"></i></li>
+          <li><i class="icofont icofont-minus minimize-card"></i></li>
+          <li><i class="icofont icofont-refresh reload-card"></i></li>
+          <li><i class="icofont icofont-error close-card"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="chart-container">
+        <div class="row">
+          <div class="col-12">
+            <div id="chart-widget8">
+              <apx-chart
+                [series]="widget8.series"
+                [chart]="widget8.chart"
+                [stroke]="widget8.stroke"
+                [annotations]="widget8.annotations"
+                [colors]="widget8.colors"
+                [yaxis]="widget8.yaxis"
+                [xaxis]="widget8.xaxis"
+                [legend]="widget8.legend"
+                [tooltip]="widget8.tooltip"
+                [dataLabels]="widget8.dataLabels"
+                [grid]="widget8.grid"
+                [labels]="widget8.labels"
+                [responsive]="widget8.responsive"
+                [plotOptions]="widget8.plotOption"
+                [states]="widget8.states"
+              >
+              </apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

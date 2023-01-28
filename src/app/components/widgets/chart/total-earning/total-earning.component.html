@@ -1,0 +1,66 @@
+<div class="card o-hidden">
+  <div class="card-header pb-0">
+    <h3>Total Earning</h3>
+  </div>
+  <div class="bar-chart-widget">
+    <div class="top-content bg-primary"></div>
+    <div class="bottom-content card-body">
+      <div class="row">
+        <div class="col-52">
+          <div id="chart-widget5">
+            <apx-chart
+              [series]="widget5.series"
+              [chart]="widget5.chart"
+              [stroke]="widget5.stroke"
+              [annotations]="widget5.annotations"
+              [colors]="widget5.colors"
+              [yaxis]="widget5.yaxis"
+              [xaxis]="widget5.xaxis"
+              [legend]="widget5.legend"
+              [tooltip]="widget5.tooltip"
+              [dataLabels]="widget5.dataLabels"
+              [grid]="widget5.grid"
+              [labels]="widget5.labels"
+              [responsive]="widget5.responsive"
+              [plotOptions]="widget5.plotOption"
+              [states]="widget5.states"
+            >
+            </apx-chart>
+          </div>
+        </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-4 b-r-light">
+          <div>
+            <span class="font-primary"
+              >52%<i class="icon-angle-up f-52 ms-5"></i></span
+            ><span class="text-muted block-bottom">Year</span>
+            <h2 class="num m-0">
+              <span class="counter color-bottom">3659</span>M
+            </h2>
+          </div>
+        </div>
+        <div class="col-4 b-r-light">
+          <div>
+            <span class="font-primary"
+              >55%<i class="icon-angle-up f-52 ms-5"></i></span
+            ><span class="text-muted block-bottom">Month</span>
+            <h2 class="num m-0">
+              <span class="counter color-bottom">698</span>M
+            </h2>
+          </div>
+        </div>
+        <div class="col-4">
+          <div>
+            <span class="font-primary"
+              >34%<i class="icon-angle-up f-52 ms-5"></i></span
+            ><span class="text-muted block-bottom">Today</span>
+            <h2 class="num m-0">
+              <span class="counter color-bottom">9365</span>M
+            </h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

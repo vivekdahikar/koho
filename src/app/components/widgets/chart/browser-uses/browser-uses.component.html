@@ -1,0 +1,41 @@
+<div class="donut-chart-widget">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h3>Browser Uses</h3>
+      <div class="card-header-right">
+        <ul class="list-unstyled card-option">
+          <li>
+            <div><i class="icon-settings"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code"></i></li>
+          <li><i class="icofont icofont-maximize full-card"></i></li>
+          <li><i class="icofont icofont-minus minimize-card"></i></li>
+          <li><i class="icofont icofont-refresh reload-card"></i></li>
+          <li><i class="icofont icofont-error close-card"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body">
+      <div id="chart-widget13">
+        <apx-chart
+          [series]="widget10.series"
+          [chart]="widget10.chart"
+          [stroke]="widget10.stroke"
+          [annotations]="widget10.annotations"
+          [colors]="widget10.colors"
+          [yaxis]="widget10.yaxis"
+          [xaxis]="widget10.xaxis"
+          [legend]="widget10.legend"
+          [tooltip]="widget10.tooltip"
+          [dataLabels]="widget10.dataLabels"
+          [grid]="widget10.grid"
+          [labels]="widget10.labels"
+          [responsive]="widget10.responsive"
+          [plotOptions]="widget10.plotOption"
+          [states]="widget10.states"
+        >
+        </apx-chart>
+      </div>
+    </div>
+  </div>
+</div>

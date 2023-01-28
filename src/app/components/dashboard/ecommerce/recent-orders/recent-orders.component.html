@@ -1,1 +1,32 @@
-<p>recent-orders works!</p>
+<div class="card-header pb-0">
+  <h3>Recent Orders</h3>
+  <apx-chart
+    [series]="recentchart.series"
+    [chart]="recentchart.chart"
+    [stroke]="recentchart.stroke"
+    [annotations]="recentchart.annotations"
+    [colors]="recentchart.colors"
+    [yaxis]="recentchart.yaxis"
+    [xaxis]="recentchart.xaxis"
+    [legend]="recentchart.legend"
+    [tooltip]="recentchart.tooltip"
+    [dataLabels]="recentchart.dataLabels"
+    [grid]="recentchart.grid"
+    [responsive]="recentchart.responsive"
+    [plotOptions]="recentchart.plotOption"
+    [states]="recentchart.states"
+  >
+  </apx-chart>
+  <div class="card-header-right">
+    <ul class="list-unstyled card-option">
+      <li>
+        <div><i class="icon-settings"></i></div>
+      </li>
+      <li><i class="view-html fa fa-code"></i></li>
+      <li><i class="icofont icofont-maximize full-card"></i></li>
+      <li><i class="icofont icofont-minus minimize-card"></i></li>
+      <li><i class="icofont icofont-refresh reload-card"></i></li>
+      <li><i class="icofont icofont-error close-card"> </i></li>
+    </ul>
+  </div>
+</div>

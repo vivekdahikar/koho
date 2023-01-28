@@ -7,100 +7,107 @@ import { Menu, NavService } from '../../service/nav.service';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.scss']
+  styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent {
   public menuItems: Menu[] = [];
-  public myBtnIdClicked: boolean = false
+  public myBtnIdClicked: boolean = false;
   public margin: any = 0;
   public width: any = window.innerWidth;
   public leftArrowNone: boolean = true;
   public rightArrowNone: boolean = false;
- 
 
-  constructor(private navService: NavService, private router:Router,private layout: LayoutService) {
-    this.navService.items.subscribe(menuItems => {
+  constructor(
+    private navService: NavService,
+    private router: Router,
+    private layout: LayoutService
+  ) {
+    this.navService.items.subscribe((menuItems) => {
       this.menuItems = menuItems;
+      console.log(menuItems);
       this.router.events.subscribe((event) => {
-        if(event instanceof NavigationEnd){
-          menuItems.filter(items => {
-            if(items.path === event.url){
+        if (event instanceof NavigationEnd) {
+          menuItems.filter((items) => {
+            if (items.path === event.url) {
               this.setNavActive(items);
             }
-            if(!items.children){
+            if (!items.children) {
               return false;
             }
-                       
-            items.children.filter(subItems => {
-              if(subItems.path === event.url){
+
+            items.children.filter((subItems) => {
+              if (subItems.path === event.url) {
                 this.setNavActive(subItems);
               }
-              if(!subItems.children){
+              if (!subItems.children) {
                 return false;
               }
-              subItems.children.filter(subSubItems => {
-                if(subSubItems.path === event.url){
+              subItems.children.filter((subSubItems) => {
+                if (subSubItems.path === event.url) {
                   this.setNavActive(subSubItems);
                 }
               });
-              return
+              return;
             });
-            return
+            return;
           });
         }
       });
     });
-   }
+  }
 
-   close(){
-    if(this.width < 992){
-      document.querySelector('.sidebar-wrapper')?.classList.add('close_icon')
+  close() {
+    if (this.width < 992) {
+      document.querySelector('.sidebar-wrapper')?.classList.add('close_icon');
     }
   }
   //  Active Nav
-   setNavActive(item: Menu){
-    this.menuItems.filter(menuItem => {
-      if(menuItem !== item){
+  setNavActive(item: Menu) {
+    this.menuItems.filter((menuItem) => {
+      if (menuItem !== item) {
         menuItem.active = false;
       }
-      if(menuItem.children && menuItem.children.includes(item)){
-        menuItem.active = true
+      if (menuItem.children && menuItem.children.includes(item)) {
+        menuItem.active = true;
       }
-      if(menuItem.children){
-        menuItem.children.filter(submenuItems => {
-          if( submenuItems.children && submenuItems.children.includes(item)){
+      if (menuItem.children) {
+        menuItem.children.filter((submenuItems) => {
+          if (submenuItems.children && submenuItems.children.includes(item)) {
             menuItem.active = true;
-            submenuItems.active = true
+            submenuItems.active = true;
           }
         });
       }
     });
-    
-   }
+  }
 
-   toggletNavActive(item: Menu) { 
+  toggletNavActive(item: Menu) {
     if (!item.active) {
-      this.menuItems.forEach(a => {
+      this.menuItems.forEach((a) => {
         if (this.menuItems.includes(item)) {
           a.active = false;
         }
-        if (!a.children) { return false; }
-        a.children.forEach(b => {
+        if (!a.children) {
+          return false;
+        }
+        a.children.forEach((b) => {
           if (a.children?.includes(item)) {
             b.active = false;
           }
         });
-        return
+        return;
       });
     }
     item.active = !item.active;
   }
-  
-  sidebarToggle( ) {
+
+  sidebarToggle() {
+    console.log('SIDEBAR');
+
     this.navService.collapseSidebar = !this.navService.collapseSidebar;
   }
 
-  scrollToLeft(){
+  scrollToLeft() {
     if (this.margin >= -this.width) {
       this.margin = 0;
       this.leftArrowNone = true;
@@ -119,13 +126,12 @@ export class SidebarComponent {
         this.margin = -3250;
       }
       this.leftArrowNone = false;
-       this.leftArrowNone = false;
-      } else {
-       this.leftArrowNone = false;
+      this.leftArrowNone = false;
+    } else {
+      this.leftArrowNone = false;
       this.margin += -this.width;
-      }
     }
-  
-  ngOnInit(): void {
   }
+
+  ngOnInit(): void {}
 }

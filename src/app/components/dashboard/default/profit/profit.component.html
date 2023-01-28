@@ -1,1 +1,39 @@
-<p>profit works!</p>
+<div class="card investment-chart">
+  <div class="card-body">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="investment-group">
+          <span class="invest-lable">+13.6%</span>
+          <div id="invest-chart">
+            <apx-chart
+              [series]="profit.series"
+              [chart]="profit.chart"
+              [stroke]="profit.stroke"
+              [annotations]="profit.annotations"
+              [colors]="profit.colors"
+              [yaxis]="profit.yaxis"
+              [xaxis]="profit.xaxis"
+              [legend]="profit.legend"
+              [tooltip]="profit.tooltip"
+              [dataLabels]="profit.dataLabels"
+              [grid]="profit.grid"
+              [responsive]="profit.responsive"
+              [fill]="profit.fill"
+            >
+            </apx-chart>
+          </div>
+          <div class="chart-detail">
+            <h5>Total Investment</h5>
+            <h2>$7454.25</h2>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <app-gain-chart></app-gain-chart>
+      </div>
+      <div class="col-sm-4">
+        <app-profit-chart></app-profit-chart>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="card">
+  <div class="card-header pb-0">
+    <div class="row">
+      <div class="col-9">
+        <h3>Skill Status</h3>
+      </div>
+      <div class="col-3 text-end">
+        <i class="text-muted" data-feather="trending-up"></i>
+      </div>
+    </div>
+    <apx-chart
+      [series]="widget6.series"
+      [chart]="widget6.chart"
+      [stroke]="widget6.stroke"
+      [annotations]="widget6.annotations"
+      [colors]="widget6.colors"
+      [yaxis]="widget6.yaxis"
+      [xaxis]="widget6.xaxis"
+      [legend]="widget6.legend"
+      [tooltip]="widget6.tooltip"
+      [dataLabels]="widget6.dataLabels"
+      [grid]="widget6.grid"
+      [labels]="widget6.labels"
+      [responsive]="widget6.responsive"
+      [plotOptions]="widget6.plotOption"
+      [states]="widget6.states"
+    >
+    </apx-chart>
+  </div>
+  <div class="card-body">
+    <div class="chart-container">
+      <div id="circlechart"></div>
+    </div>
+  </div>
+</div>

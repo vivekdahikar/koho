@@ -1,1 +1,70 @@
-<p>per-day-chart works!</p>
+<div class="beyo-line row">
+  <div class="beyoline-header col-xl-12">
+    <div id="beyo-line">
+      <apx-chart
+        [series]="daydata.series"
+        [chart]="daydata.chart"
+        [stroke]="daydata.stroke"
+        [annotations]="daydata.annotations"
+        [colors]="daydata.colors"
+        [yaxis]="daydata.yaxis"
+        [xaxis]="daydata.xaxis"
+        [legend]="daydata.legend"
+        [tooltip]="daydata.tooltip"
+        [plotOptions]="daydata.plotOptions"
+        [dataLabels]="daydata.dataLabels"
+        [states]="daydata.states"
+        [fill]="daydata.fill"
+        [grid]="daydata.grid"
+        [responsive]="daydata.responsive"
+      >
+      </apx-chart>
+    </div>
+  </div>
+  <div class="beyo-detail col-xl-12">
+    <h3>
+      Beyond the Lines
+      <span class="badge badge-primary">6 hours ago</span>
+    </h3>
+    <p>One Of the world,s brightest, young surf Srars, Kanoa lgarashi.</p>
+    <div class="date-history">
+      <ul>
+        <li>
+          <img
+            class="img-fluid"
+            src="assets/images/dashboard/beyo-line/1.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="img-fluid"
+            src="assets/images/dashboard/beyo-line/2.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="img-fluid"
+            src="assets/images/dashboard/beyo-line/3.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <img
+            class="img-fluid"
+            src="assets/images/dashboard/beyo-line/4.png"
+            alt=""
+          />
+        </li>
+        <li>
+          <h2>+ 350</h2>
+        </li>
+      </ul>
+      <div class="date-lable">
+        <h3>10</h3>
+        <p>june</p>
+      </div>
+    </div>
+  </div>
+</div>

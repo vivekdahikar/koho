@@ -1,0 +1,44 @@
+<div class="card o-hidden">
+  <div class="card-header pb-0">
+    <h3>Marketing Expenses</h3>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li>
+          <div><i class="icon-settings"></i></div>
+        </li>
+        <li><i class="view-html fa fa-code"></i></li>
+        <li><i class="icofont icofont-maximize full-card"></i></li>
+        <li><i class="icofont icofont-minus minimize-card"></i></li>
+        <li><i class="icofont icofont-refresh reload-card"></i></li>
+        <li><i class="icofont icofont-error close-card"></i></li>
+      </ul>
+    </div>
+    <apx-chart
+      [series]="widget4.series"
+      [chart]="widget4.chart"
+      [stroke]="widget4.stroke"
+      [annotations]="widget4.annotations"
+      [colors]="widget4.colors"
+      [yaxis]="widget4.yaxis"
+      [xaxis]="widget4.xaxis"
+      [legend]="widget4.legend"
+      [tooltip]="widget4.tooltip"
+      [dataLabels]="widget4.dataLabels"
+      [grid]="widget4.grid"
+      [labels]="widget4.labels"
+      [responsive]="widget4.responsive"
+      [plotOptions]="widget4.plotOption"
+      [states]="widget4.states"
+    >
+    </apx-chart>
+  </div>
+  <div class="bar-chart-widget">
+    <div class="bottom-content card-body">
+      <div class="row">
+        <div class="col-14">
+          <div id="chart-widget4"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

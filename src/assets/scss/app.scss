@@ -1,21 +1,24 @@
 //bootstrap
 @import "/node_modules/bootstrap/scss/bootstrap";
+@import "/node_modules/ngx-bar-rating/themes/br-horizontal-theme";
+@import "/node_modules/ngx-bar-rating/themes/br-vertical-theme";
+@import "/node_modules/ngx-bar-rating/themes/br-default-theme";
+@import "/node_modules/ngx-bar-rating/themes/br-stars-theme";
+@import "/node_modules/ngx-bar-rating/themes/br-movie-theme";
+@import "/node_modules/ngx-bar-rating/themes/br-square-theme";
 
-
-
-
-
-
-
-
-
-
-
-
+/* Scrollbar */
 
 //assets imports
 @import "./style";
 @import "./themes/update";
 
+//calender
+/* angular-cli file: src/styles.css */
+@import "/node_modules/angular-calendar/css/angular-calendar.css";
+
+//owl
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 //toaster
 @import "ngx-toastr/toastr";

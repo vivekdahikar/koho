@@ -1,1 +1,40 @@
-<p>sales-by-countries works!</p>
+<div class="card country-sales-view">
+  <div class="card-header">
+    <h3>Sales By Countries</h3>
+    <apx-chart
+      [series]="countrychart.series"
+      [chart]="countrychart.chart"
+      [stroke]="countrychart.stroke"
+      [annotations]="countrychart.annotations"
+      [colors]="countrychart.colors"
+      [yaxis]="countrychart.yaxis"
+      [xaxis]="countrychart.xaxis"
+      [legend]="countrychart.legend"
+      [tooltip]="countrychart.tooltip"
+      [dataLabels]="countrychart.dataLabels"
+      [grid]="countrychart.grid"
+      [labels]="countrychart.labels"
+      [responsive]="countrychart.responsive"
+      [plotOptions]="countrychart.plotOption"
+      [states]="countrychart.states"
+    >
+    </apx-chart>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li>
+          <div><i class="icon-settings"></i></div>
+        </li>
+        <li><i class="view-html fa fa-code"></i></li>
+        <li><i class="icofont icofont-maximize full-card"></i></li>
+        <li><i class="icofont icofont-minus minimize-card"></i></li>
+        <li><i class="icofont icofont-refresh reload-card"></i></li>
+        <li><i class="icofont icofont-error close-card"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-body p-0">
+    <div class="medium-chart">
+      <div class="country-sales-chart" id="country-sales-chart"></div>
+    </div>
+  </div>
+</div>

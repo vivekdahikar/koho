@@ -13,10 +13,7 @@ import { SocialMediaComponent } from './default/social-media/social-media.compon
 import { UpgradeComponent } from './default/upgrade/upgrade.component';
 import { ProfitComponent } from './default/profit/profit.component';
 import { PerDayChartComponent } from './default/per-day-chart/per-day-chart.component';
-import { TotalSalesComponent } from './ecommerce/total-sales/total-sales.component';
-import { TotalIncomeComponent } from './ecommerce/total-income/total-income.component';
 import { OrdersPaidComponent } from './ecommerce/orders-paid/orders-paid.component';
-import { TotalVisitorComponent } from './ecommerce/total-visitor/total-visitor.component';
 import { RecentOrdersComponent } from './ecommerce/recent-orders/recent-orders.component';
 import { TopProductsComponent } from './ecommerce/top-products/top-products.component';
 import { SalesByCountriesComponent } from './ecommerce/sales-by-countries/sales-by-countries.component';
@@ -24,6 +21,12 @@ import { BestSellersComponent } from './ecommerce/best-sellers/best-sellers.comp
 import { DiscountComponent } from './ecommerce/discount/discount.component';
 import { ProductsComponent } from './ecommerce/products/products.component';
 import { ReviewComponent } from './ecommerce/review/review.component';
+import { SharedModule } from 'src/app/shared/shared.module';
+import { TotalValueComponent } from './default/total-value/total-value.component';
+import { NgApexchartsModule } from 'ng-apexcharts';
+import { GainChartComponent } from './default/gain-chart/gain-chart.component';
+import { ProfitChartComponent } from './default/profit-chart/profit-chart.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -38,10 +41,8 @@ import { ReviewComponent } from './ecommerce/review/review.component';
     UpgradeComponent,
     ProfitComponent,
     PerDayChartComponent,
-    TotalSalesComponent,
-    TotalIncomeComponent,
+
     OrdersPaidComponent,
-    TotalVisitorComponent,
     RecentOrdersComponent,
     TopProductsComponent,
     SalesByCountriesComponent,
@@ -49,7 +50,40 @@ import { ReviewComponent } from './ecommerce/review/review.component';
     DiscountComponent,
     ProductsComponent,
     ReviewComponent,
+    TotalValueComponent,
+    GainChartComponent,
+    ProfitChartComponent,
   ],
-  imports: [CommonModule, DashboardRoutingModule],
+  imports: [
+    CommonModule,
+    DashboardRoutingModule,
+    NgApexchartsModule,
+    SharedModule,
+    CarouselModule,
+  ],
+  exports: [
+    DefaultComponent,
+    EcommerceComponent,
+    WelcomeComponent,
+    YearlyChartComponent,
+    ActivityComponent,
+    TransactionComponent,
+    ValueComponent,
+    SocialMediaComponent,
+    UpgradeComponent,
+    ProfitComponent,
+    PerDayChartComponent,
+
+    OrdersPaidComponent,
+
+    RecentOrdersComponent,
+    TopProductsComponent,
+    SalesByCountriesComponent,
+    BestSellersComponent,
+    DiscountComponent,
+    ProductsComponent,
+    ReviewComponent,
+    TotalValueComponent,
+  ],
 })
 export class DashboardModule {}

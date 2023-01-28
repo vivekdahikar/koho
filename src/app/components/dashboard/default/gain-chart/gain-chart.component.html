@@ -1,0 +1,24 @@
+<div class="investment-group">
+  <span class="invest-lable">+15.4%</span>
+  <div class="gain-chart" id="gain-chart">
+    <apx-chart
+      [series]="gain.series"
+      [chart]="gain.chart"
+      [stroke]="gain.stroke"
+      [annotations]="gain.annotations"
+      [colors]="gain.colors"
+      [yaxis]="gain.yaxis"
+      [xaxis]="gain.xaxis"
+      [legend]="gain.legend"
+      [tooltip]="gain.tooltip"
+      [dataLabels]="gain.dataLabels"
+      [grid]="gain.grid"
+      [responsive]="gain.responsive"
+    >
+    </apx-chart>
+  </div>
+  <div class="chart-detail">
+    <h5>Total Gain</h5>
+    <h2>$7454.25</h2>
+  </div>
+</div>

@@ -1,1 +1,25 @@
-<p>yearly-chart works!</p>
+<div class="card yearly-view">
+  <div class="card-header pb-0">
+    <h3>Yearly Overview<span class="badge badge-primary">50/100</span></h3>
+    <h5 class="mb-0">Monday</h5>
+  </div>
+  <div class="card-body p-0">
+    <div class="yearly-view" id="yearly-view">
+      <apx-chart
+        [series]="yearlychart.series"
+        [chart]="yearlychart.chart"
+        [stroke]="yearlychart.stroke"
+        [annotations]="yearlychart.annotations"
+        [colors]="yearlychart.colors"
+        [yaxis]="yearlychart.yaxis"
+        [xaxis]="yearlychart.xaxis"
+        [legend]="yearlychart.legend"
+        [tooltip]="yearlychart.tooltip"
+        [dataLabels]="yearlychart.dataLabels"
+        [grid]="yearlychart.grid"
+        [responsive]="yearlychart.responsive"
+      >
+      </apx-chart>
+    </div>
+  </div>
+</div>

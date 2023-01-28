@@ -1,0 +1,45 @@
+<div class="widget-joins card widget-arrow">
+  <div class="card-header pb-0">
+    <h3>Sale details</h3>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li>
+          <div><i class="icon-settings"></i></div>
+        </li>
+        <li><i class="view-html fa fa-code"></i></li>
+        <li><i class="icofont icofont-maximize full-card"></i></li>
+        <li><i class="icofont icofont-minus minimize-card"></i></li>
+        <li><i class="icofont icofont-refresh reload-card"></i></li>
+        <li><i class="icofont icofont-error close-card"></i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="row gy-4">
+      <div class="col-sm-6" *ngFor="let sale of saleDetails">
+        <div class="widget-card">
+          <div class="d-flex align-self-center">
+            <div
+              class="widget-icon"
+              [ngClass]="
+                sale.icon == 'up' ? 'bg-light-success' : 'bg-light-danger'
+              "
+            >
+              <i
+                class="icofont icofont-arrow-{{ sale.icon }}"
+                [ngClass]="sale.icon == 'up' ? 'font-success' : 'font-danger'"
+              ></i>
+            </div>
+            <div class="flex-grow-1">
+              <h6>{{ sale.title }}</h6>
+              <h5>
+                $<span class="counter">{{ sale.price }}</span
+                ><span class="font-primary">{{ sale.sub }}</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

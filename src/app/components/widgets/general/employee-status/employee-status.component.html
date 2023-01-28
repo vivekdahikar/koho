@@ -1,0 +1,97 @@
+<div class="card employee-status">
+  <div class="card-header pb-0">
+    <h3>Employee status</h3>
+    <div class="card-header-right">
+      <ul class="list-unstyled card-option">
+        <li>
+          <div><i class="icon-settings"></i></div>
+        </li>
+        <li><i class="view-html fa fa-code"></i></li>
+        <li><i class="icofont icofont-maximize full-card"></i></li>
+        <li><i class="icofont icofont-minus minimize-card"></i></li>
+        <li><i class="icofont icofont-refresh reload-card"></i></li>
+        <li><i class="icofont icofont-error close-card"> </i></li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table class="table table-bordernone">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Designation</th>
+            <th scope="col">Skill Level</th>
+            <th scope="col">Experience</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let data of employeeStatusData">
+            <td>
+              <div class="d-flex">
+                <img src="{{ data.employeeProfileImg }}" alt="" />
+                <div class="flex-grow-1">
+                  <a href="user-profile.html">
+                    <h5>
+                      {{ data.name }}
+                      <span class="text-muted">{{ data.sub }}</span>
+                    </h5></a
+                  >
+                </div>
+              </div>
+            </td>
+            <td>{{ data.designation }}</td>
+            <td>
+              <div class="progress-showcase">
+                <div class="progress" style="height: 8px">
+                  <div
+                    class="progress-bar bg-{{ data.levelColor }}"
+                    role="progressbar"
+                    [ngStyle]="{ width: data.skillLevel }"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </td>
+            <td>{{ data.experience }}</td>
+          </tr>
+
+          <td>
+            <div class="d-flex">
+              <img
+                class="img-radius align-top m-r-15 rounded-circle"
+                src="../assets/images/user/5.jpg"
+                alt=""
+              />
+              <div class="flex-grow-1">
+                <a href="user-profile.html">
+                  <h5>
+                    Mohsib lara<span class="text-muted">(99+ Online)</span>
+                  </h5></a
+                >
+              </div>
+            </div>
+          </td>
+          <td>Tester</td>
+          <td>
+            <div class="progress-showcase">
+              <div class="progress" style="height: 8px">
+                <div
+                  class="progress-bar bg-primary"
+                  role="progressbar"
+                  style="width: 60%"
+                  aria-valuenow="50"
+                  aria-valuemin="0"
+                  aria-valuemax="100"
+                ></div>
+              </div>
+            </div>
+          </td>
+          <td>5 Month</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

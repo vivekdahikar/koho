@@ -1,1 +1,46 @@
-<p>default works!</p>
+<app-breadcrumb
+  [title]="'Default'"
+  [items]="['Dashboard']"
+  [active_item]="'Default'"
+></app-breadcrumb>
+<!-- Container-fluid starts-->
+<div class="container-fluid default-page">
+  <div class="row">
+    <div class="col-xl-5 col-lg-5">
+      <app-welcome></app-welcome>
+    </div>
+
+    <div class="col-xl-4 col-md-6 col-lg-3">
+      <app-yearly-chart></app-yearly-chart>
+    </div>
+    <div class="col-xl-3 col-md-6 col-lg-4">
+      <app-activity></app-activity>
+    </div>
+    <div class="col-xl-5 col-lg-5">
+      <app-transaction></app-transaction>
+    </div>
+    <div class="col-xl-3 col-lg-3">
+      <div class="row">
+        <div class="col-xl-12 col-sm-6 col-lg-12">
+          <app-value></app-value>
+        </div>
+        <div class="col-xl-12 col-sm-6 col-lg-12">
+          <app-total-value></app-total-value>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-4 col-lg-4">
+      <app-per-day-chart></app-per-day-chart>
+    </div>
+    <div class="col-xl-5 des-xl-100 box-col-100 col-lg-12">
+      <app-profit></app-profit>
+    </div>
+    <div class="col-xl-3 col-md-6 box-col-50 des-xl-50">
+      <app-social-media></app-social-media>
+    </div>
+    <div class="col-xl-4 col-md-6 box-col-50 des-xl-50">
+      <app-upgrade></app-upgrade>
+    </div>
+  </div>
+</div>
+<!-- Container-fluid Ends-->

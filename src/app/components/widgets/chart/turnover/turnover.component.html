@@ -1,0 +1,44 @@
+<div class="small-chart-widget chart-widgets-small">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h3>Turnover</h3>
+      <div class="card-header-right">
+        <ul class="list-unstyled card-option">
+          <li></li>
+          <li><i class="icofont icofont-maximize full-card"></i></li>
+          <li><i class="icofont icofont-minus minimize-card"></i></li>
+          <li><i class="icofont icofont-refresh reload-card"></i></li>
+          <li><i class="icofont icofont-error close-card"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="chart-container">
+        <div class="row">
+          <div class="col-12">
+            <div id="chart-widget7">
+              <apx-chart
+                [series]="widget13.series"
+                [chart]="widget13.chart"
+                [stroke]="widget13.stroke"
+                [annotations]="widget13.annotations"
+                [colors]="widget13.colors"
+                [yaxis]="widget13.yaxis"
+                [xaxis]="widget13.xaxis"
+                [legend]="widget13.legend"
+                [tooltip]="widget13.tooltip"
+                [dataLabels]="widget13.dataLabels"
+                [grid]="widget13.grid"
+                [labels]="widget13.labels"
+                [responsive]="widget13.responsive"
+                [plotOptions]="widget13.plotOption"
+                [states]="widget13.states"
+              >
+              </apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

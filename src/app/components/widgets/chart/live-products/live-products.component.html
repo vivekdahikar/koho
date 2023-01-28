@@ -1,0 +1,47 @@
+<div class="small-chart-widget chart-widgets-small">
+  <div class="card">
+    <div class="card-header pb-0">
+      <h3>Live Products</h3>
+      <div class="card-header-right">
+        <ul class="list-unstyled card-option">
+          <li>
+            <div><i class="icon-settings"></i></div>
+          </li>
+          <li><i class="view-html fa fa-code"></i></li>
+          <li><i class="icofont icofont-maximize full-card"></i></li>
+          <li><i class="icofont icofont-minus minimize-card"></i></li>
+          <li><i class="icofont icofont-refresh reload-card"></i></li>
+          <li><i class="icofont icofont-error close-card"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="chart-container">
+        <div class="row">
+          <div class="col-12">
+            <div id="chart-widget6">
+              <apx-chart
+                [series]="widget7.series"
+                [chart]="widget7.chart"
+                [stroke]="widget7.stroke"
+                [annotations]="widget7.annotations"
+                [colors]="widget7.colors"
+                [yaxis]="widget7.yaxis"
+                [xaxis]="widget7.xaxis"
+                [legend]="widget7.legend"
+                [tooltip]="widget7.tooltip"
+                [dataLabels]="widget7.dataLabels"
+                [grid]="widget7.grid"
+                [labels]="widget7.labels"
+                [responsive]="widget7.responsive"
+                [plotOptions]="widget7.plotOption"
+                [states]="widget7.states"
+              >
+              </apx-chart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
