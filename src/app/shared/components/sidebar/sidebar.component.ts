@@ -102,8 +102,6 @@ export class SidebarComponent {
   }
 
   sidebarToggle() {
-    console.log('SIDEBAR');
-
     this.navService.collapseSidebar = !this.navService.collapseSidebar;
   }
 

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, DecimalPipe } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { LanguageComponent } from './components/header/language/language.component';
 import { ModeComponent } from './components/header/mode/mode.component';
@@ -21,6 +21,12 @@ import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngularSvgIconModule } from 'angular-svg-icon';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { CustomizerComponent } from './components/customizer/customizer.component';
+import { ColorComponent } from './components/customizer/color/color.component';
+import { LayoutSettingComponent } from './components/customizer/layout-setting/layout-setting.component';
+import { ProductboxService } from './service/product/productbox.service';
+import { ProductBoxFilterService } from './service/product/product-box-filter.service';
+import { productService } from './service/product/product.service';
 
 @NgModule({
   declarations: [
@@ -41,11 +47,15 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     TapToTopComponent,
     FeatherIconComponent,
     BreadcrumbComponent,
+    CustomizerComponent,
+    ColorComponent,
+    LayoutSettingComponent,
   ],
   imports: [
     CommonModule,
     RouterModule,
     FormsModule,
+
     ReactiveFormsModule,
     AngularSvgIconModule.forRoot(),
   ],
@@ -67,6 +77,13 @@ import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.componen
     TapToTopComponent,
     FeatherIconComponent,
     BreadcrumbComponent,
+  ],
+  providers: [
+    DecimalPipe,
+    NavService,
+    ProductboxService,
+    productService,
+    ProductBoxFilterService,
   ],
 })
 export class SharedModule {}

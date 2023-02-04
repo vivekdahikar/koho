@@ -14,376 +14,111 @@
         </div>
         <div class="card-body">
           <div class="table-responsive product-table">
-            <table class="display" id="basic-1">
-              <thead>
-                <tr>
-                  <th>Image</th>
-                  <th>Details</th>
-                  <th>Amount</th>
-                  <th>Stock</th>
-                  <th>Start date</th>
-                  <th>Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-1.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Green Jacket</h4></a
-                    ><span
-                      >Vida Loca - Green Denim Fit Men's Casual Shirt.
-                    </span>
-                  </td>
-                  <td>$10</td>
-                  <td class="font-success">In Stock</td>
-                  <td>20/08/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
+            <form>
+              <div class="mb-3 row">
+                <label
+                  for="table-complete-search"
+                  class="col-xs-3 col-sm-auto col-form-label"
+                  >Full text search:</label
+                >
+                <div class="col-xs-3 col-sm-auto">
+                  <input
+                    id="table-complete-search"
+                    type="text"
+                    class="form-control"
+                    name="searchTerm"
+                    [(ngModel)]="service.searchTerm"
+                  />
+                </div>
+                <span
+                  class="col col-form-label"
+                  *ngIf="service.loading$ | async"
+                  >Loading...</span
+                >
+              </div>
+
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Image</th>
+                    <th scope="col" sortable="details" (sort)="onSort($event)">
+                      Details
+                    </th>
+                    <th scope="col" sortable="amount" (sort)="onSort($event)">
+                      Amount
+                    </th>
+                    <th scope="col" sortable="stock" (sort)="onSort($event)">
+                      Stock
+                    </th>
+                    <th
+                      scope="col"
+                      sortable="startData"
+                      (sort)="onSort($event)"
                     >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-2.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Sky Blue Shirt</h4></a>
-                    <p>
-                      Wild West - Sky Blue Cotton Blend Regular Fit Men's Formal
-                      Shirt.
-                    </p>
-                  </td>
-                  <td>$12</td>
-                  <td class="font-primary">Low Stock</td>
-                  <td>12/04/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-3.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>White Tshirt</h4></a>
-                    <p>
-                      aask - White Tshirt Blend Women's Fit & Flare t-shirt.
-                    </p>
-                  </td>
-                  <td>$15</td>
-                  <td class="font-danger">out of stock</td>
-                  <td>04/08/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-4.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Black Top</h4></a>
-                    <p>R L F - black Cotton Blend Women's A-Line Skirt.</p>
-                  </td>
-                  <td>$16</td>
-                  <td class="font-primary">Low Stock</td>
-                  <td>25/04/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-5.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Bluegreen Shirt</h4></a>
-                    <p>
-                      The Dry State - Blue Denim Regular Fit Men's Denim Jacket.
-                    </p>
-                  </td>
-                  <td>$29</td>
-                  <td class="font-success">In Stock</td>
-                  <td>29/06/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-6.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Greyblack Shirt</h4></a>
-                    <p>Vida Loca - Blue Denim Fit Men's Casual Shirt.</p>
-                  </td>
-                  <td>$54</td>
-                  <td class="font-primary">Low Stock</td>
-                  <td>05/28/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-1.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Blue Shirt</h4></a>
-                    <p>Vida Loca - Blue Denim Fit Men's Casual Shirt.</p>
-                  </td>
-                  <td>$86</td>
-                  <td class="font-danger">out of stock</td>
-                  <td>06/21/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-2.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Light Shirt</h4></a>
-                    <p>Vida Loca - light Denim Fit Men's Casual Shirt.</p>
-                  </td>
-                  <td>$10</td>
-                  <td class="font-danger">out of stock</td>
-                  <td>09/23/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-3.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Greyblack Shirt</h4></a>
-                    <p>
-                      The Dry State - Greyblack Denim Regular Fit Men's Denim
-                      Jacket.
-                    </p>
-                  </td>
-                  <td>$18</td>
-                  <td class="font-success">In Stock</td>
-                  <td>10/25/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    <a href="product-page.html"
-                      ><img
-                        src="../assets/images/ecommerce/product-table-4.png"
-                        alt=""
-                    /></a>
-                  </td>
-                  <td>
-                    <a href="product-page.html"> <h4>Black Top</h4></a>
-                    <p>aask - Black Polyester Blend Women's Fit & Flare top.</p>
-                  </td>
-                  <td>$10</td>
-                  <td class="font-danger">out of stock</td>
-                  <td>04/25/2022</td>
-                  <td>
-                    <button
-                      class="btn btn-danger btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Delete
-                    </button>
-                    <button
-                      class="btn btn-primary btn-xs"
-                      type="button"
-                      data-original-title="btn btn-danger btn-xs"
-                      title=""
-                    >
-                      Edit
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                      start date
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let product of products$ | async">
+                    <th scope="row">{{ product.id }}</th>
+                    <td>
+                      <img
+                        [src]="product.productImg"
+                        class="me-2"
+                        style="width: 20px"
+                      />
+                      <ngb-highlight
+                        [result]="product.details"
+                        [term]="service.searchTerm"
+                      ></ngb-highlight>
+                    </td>
+                    <td>
+                      <ngb-highlight
+                        [result]="product.amount | number"
+                        [term]="service.searchTerm"
+                      ></ngb-highlight>
+                    </td>
+                    <td>
+                      <ngb-highlight
+                        [result]="product.stock"
+                        [term]="service.searchTerm"
+                      ></ngb-highlight>
+                    </td>
+                    <td>
+                      <ngb-highlight
+                        [result]="product.startData"
+                        [term]="service.searchTerm"
+                      ></ngb-highlight>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="d-flex justify-content-between p-2">
+                <ngb-pagination
+                  [collectionSize]="(total$ | async)!"
+                  [(page)]="service.page"
+                  [pageSize]="service.pageSize"
+                >
+                </ngb-pagination>
+
+                <select
+                  class="form-select"
+                  style="width: auto"
+                  name="pageSize"
+                  [(ngModel)]="service.pageSize"
+                >
+                  <option [ngValue]="2">2 items per page</option>
+                  <option [ngValue]="4">4 items per page</option>
+                  <option [ngValue]="6">6 items per page</option>
+                </select>
+              </div>
+            </form>
           </div>
         </div>
       </div>
+      <!-- Individual column searching (text inputs) Ends-->
     </div>
-    <!-- Individual column searching (text inputs) Ends-->
   </div>
 </div>

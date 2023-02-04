@@ -57,4 +57,9 @@ export const content: Routes = [
         (m) => m.EmailModule
       ),
   },
+  {
+    path: 'chat',
+    loadChildren: () =>
+      import('../../../components/chat/chat.module').then((m) => m.ChatModule),
+  },
 ];

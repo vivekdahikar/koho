@@ -1,15 +1,24 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {
+  AsyncPipe,
+  CommonModule,
+  DecimalPipe,
+  NgFor,
+  NgIf,
+} from '@angular/common';
 
 import { ECommerceRoutingModule } from './e-commerce-routing.module';
 import { ProductComponent } from './product/product.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { FilterComponent } from './product/filter/filter.component';
 import { ProductOxComponent } from './product/product-ox/product-ox.component';
-import { NgbActiveModal, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbActiveModal,
+  NgbModule,
+  NgbPaginationModule,
+  NgbTypeaheadModule,
+} from '@ng-bootstrap/ng-bootstrap';
 import { QuickViewComponent } from './product/quick-view/quick-view.component';
-import { ProductService } from 'src/app/shared/service/product/product.service';
-import { ProductListService } from 'src/app/shared/service/product/product-list.servicr';
 import { OrderHistoryService } from 'src/app/shared/service/product/order-history.service';
 import { NgxDropzoneModule } from 'ngx-dropzone';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -38,6 +47,9 @@ import { CheckoutComponent } from './checkout/checkout.component';
 import { BillingDetailsComponent } from './checkout/billing-details/billing-details.component';
 import { PlaceOrderComponent } from './checkout/place-order/place-order.component';
 import { PricingComponent } from './pricing/pricing.component';
+import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive';
+import { productService } from 'src/app/shared/service/product/product.service';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -49,7 +61,6 @@ import { PricingComponent } from './pricing/pricing.component';
     DetailsComponent,
     BrandComponent,
     DescriptionTabComponent,
-    ProductListComponent,
     AddProductComponent,
     SizeImageComponent,
     DescriptionCategoryComponent,
@@ -67,18 +78,23 @@ import { PricingComponent } from './pricing/pricing.component';
     BillingDetailsComponent,
     PlaceOrderComponent,
     PricingComponent,
+    ProductListComponent,
   ],
-  providers: [
-    NgbActiveModal,
-    ProductService,
-    ProductListService,
-    OrderHistoryService,
-  ],
+  providers: [NgbActiveModal, productService, OrderHistoryService],
   imports: [
     CommonModule,
     ECommerceRoutingModule,
     SharedModule,
     NgbModule,
+    NgbTypeaheadModule,
+    NgFor,
+    DecimalPipe,
+    FormsModule,
+    AsyncPipe,
+    NgbTypeaheadModule,
+    NgbdSortableHeader,
+    NgbPaginationModule,
+    NgIf,
     NgxPrintModule,
     NgxSliderModule,
     FormsModule,

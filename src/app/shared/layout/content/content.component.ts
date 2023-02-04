@@ -10,6 +10,7 @@ import { fader, slider } from '../../data/animation/route-animation';
 
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.scss'],
+  animations: [slider],
 })
 export class ContentComponent {
   footerDark: any;

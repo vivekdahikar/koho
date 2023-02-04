@@ -1,7 +1,7 @@
 import { Directive, EventEmitter, Input, Output } from '@angular/core';
-import { productList } from '../../shared/data/interface/product';
+import { product } from '../data/interface/product';
 
-export type SortColumn = keyof productList | '';
+export type SortColumn = keyof product | '';
 export type SortDirection = 'asc' | 'desc' | '';
 const rotate: { [key: string]: SortDirection } = {
   asc: 'desc',
@@ -13,16 +13,17 @@ export interface SortEvent {
   column: SortColumn;
   direction: SortDirection;
 }
+
 @Directive({
   selector: 'th[sortable]',
+  standalone: true,
   host: {
     '[class.asc]': 'direction === "asc"',
     '[class.desc]': 'direction === "desc"',
     '(click)': 'rotate()',
   },
 })
-export class ProductListDirective {
-  constructor() {}
+export class NgbdSortableHeader {
   @Input() sortable: SortColumn = '';
   @Input() direction: SortDirection = '';
   @Output() sort = new EventEmitter<SortEvent>();

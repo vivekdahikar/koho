@@ -1,4 +1,25 @@
 <div class="header-wrapper row m-0">
+  <form class="form-inline search-full col" action="#" method="get">
+    <div class="form-group w-100">
+      <div class="Typeahead Typeahead--twitterUsers">
+        <div class="u-posRelative">
+          <input
+            class="demo-input Typeahead-input form-control-plaintext w-100"
+            type="text"
+            placeholder="Search Koho .."
+            name="q"
+            title=""
+            autofocus
+          />
+          <div class="spinner-border Typeahead-spinner" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <i class="close-search" data-feather="x"></i>
+        </div>
+        <div class="Typeahead-menu"></div>
+      </div>
+    </div>
+  </form>
   <div class="header-logo-wrapper col-auto p-0">
     <div class="logo-wrapper">
       <a href="index.html"
@@ -12,13 +33,12 @@
       /></a>
     </div>
     <div class="toggle-sidebar" (click)="sidebarToggle()">
-      <i
-        class="status_toggle middle sidebar-toggle"
-        data-feather="align-center"
-      ></i>
+      <div class="status_toggle sidebar-toggle d-flex">
+        <svg-icon src="assets/svgIcon/menu.svg"></svg-icon>
+      </div>
     </div>
   </div>
-  <div class="left-header col horizontal-wrapper ps-0">
+  <div class="left-header col horizontal-wrapper ps-0" (click)="searchToggle()">
     <app-search></app-search>
   </div>
   <div class="nav-right col-6 pull-right right-header p-0">
@@ -27,7 +47,7 @@
         <app-language></app-language>
       </li>
       <li>
-        <div class="mode"><app-mode></app-mode></div>
+        <div class="mode" (click)="layoutToggle()"><app-mode></app-mode></div>
       </li>
       <li class="onhover-dropdown">
         <app-bookmark></app-bookmark>

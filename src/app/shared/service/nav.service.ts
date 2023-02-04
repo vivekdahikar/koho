@@ -175,8 +175,6 @@ export class NavService {
       title: 'Kanban board',
       icon: 'board',
       type: 'link',
-
-      active: false,
     },
     {
       path: '/file-manager',
@@ -184,6 +182,7 @@ export class NavService {
       icon: 'file',
 
       type: 'link',
+      bookmark: true,
     },
     {
       title: 'Email',

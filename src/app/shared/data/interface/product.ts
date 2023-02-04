@@ -1,8 +1,8 @@
-export interface productList {
+export interface product {
   id: number;
   productImg: string;
-  productName: string;
-  productSubName: string;
+
+  details: string;
   amount: number;
   stock: string;
   startData: string;
