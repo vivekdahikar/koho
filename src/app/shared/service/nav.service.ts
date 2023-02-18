@@ -386,12 +386,6 @@ export class NavService {
           title: 'Basic Init',
           type: 'link',
         },
-        {
-          path: '/tables/ex-data-table',
-          title: 'Ex. Data Table',
-          type: 'link',
-        },
-        { path: '/tables/Js-grid-table', title: 'Js Grid Table', type: 'link' },
       ],
     },
     {

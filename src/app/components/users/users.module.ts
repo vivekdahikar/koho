@@ -16,6 +16,9 @@ import { FollowersComponent } from './users-profile/left-content/followers/follo
 import { FollowingComponent } from './users-profile/left-content/following/following.component';
 import { FriendsComponent } from './users-profile/left-content/friends/friends.component';
 import { LatestPhotosComponent } from './users-profile/left-content/latest-photos/latest-photos.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EditProfileComponent } from './users-edit/edit-profile/edit-profile.component';
+import { MyProfileComponent } from './users-edit/my-profile/my-profile.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +35,18 @@ import { LatestPhotosComponent } from './users-profile/left-content/latest-photo
     FollowingComponent,
     FriendsComponent,
     LatestPhotosComponent,
+    EditProfileComponent,
+    MyProfileComponent,
   ],
-  imports: [CommonModule, UsersRoutingModule, SharedModule],
+  exports: [
+    UserProfileComponent,
+    FollowersComponent,
+    LatestPhotosComponent,
+    FollowingComponent,
+    FriendsComponent,
+    LeftContentComponent,
+    RightContentComponent,
+  ],
+  imports: [CommonModule, UsersRoutingModule, SharedModule, NgbModule],
 })
 export class UsersModule {}

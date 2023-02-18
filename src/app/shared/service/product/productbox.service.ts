@@ -13,11 +13,7 @@ export class ProductboxService {
   constructor(private http: HttpClient) {}
 
   products(): Observable<any> {
-    return this.http.get('assets/data/product.json').pipe(
-      map((res: any) => {
-        return res;
-      })
-    );
+    return this.http.get('assets/data/product.json');
   }
 
   public getProduct(id: number): Observable<Products> {

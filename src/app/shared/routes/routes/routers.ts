@@ -9,6 +9,13 @@ export const content: Routes = [
       ),
   },
   {
+    path: 'calender',
+    loadChildren: () =>
+      import('../../../components/calender/calender.module').then(
+        (m) => m.CalenderModule
+      ),
+  },
+  {
     path: 'widgest',
     loadChildren: () =>
       import('../../../components/widgets/widgets.module').then(
@@ -61,5 +68,64 @@ export const content: Routes = [
     path: 'chat',
     loadChildren: () =>
       import('../../../components/chat/chat.module').then((m) => m.ChatModule),
+  },
+  {
+    path: 'users',
+    loadChildren: () =>
+      import('../../../components/users/users.module').then(
+        (m) => m.UsersModule
+      ),
+  },
+  {
+    path: 'bookmark',
+    loadChildren: () =>
+      import('../../../components/bookmark/bookmark.module').then(
+        (m) => m.BookmarkModule
+      ),
+  },
+  {
+    path: 'contacts',
+    loadChildren: () =>
+      import('../../../components/contacts/contacts.module').then(
+        (m) => m.ContactsModule
+      ),
+  },
+  {
+    path: 'task',
+    loadChildren: () =>
+      import('../../../components/task/task.module').then((m) => m.TaskModule),
+  },
+  {
+    path: 'social-app',
+    loadChildren: () =>
+      import('../../../components/social-app/social-app.module').then(
+        (m) => m.SocialAppModule
+      ),
+  },
+  {
+    path: 'to-do',
+    loadChildren: () =>
+      import('../../../components/to-do/to-do.module').then(
+        (m) => m.ToDoModule
+      ),
+  },
+  {
+    path: 'search-website',
+    loadChildren: () =>
+      import('../../../components/search-website/search-website.module').then(
+        (m) => m.SearchWebsiteModule
+      ),
+  },
+  {
+    path: 'forms',
+    loadChildren: () =>
+      import('../../../components/forms/form.module').then((m) => m.FormModule),
+  },
+  {
+    path: 'tables',
+    loadChildren: () =>
+      import('../../../components/tables/tables.module').then(
+        (m) => m.TablesModule
+      ),
   },
 ];

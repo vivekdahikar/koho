@@ -1,20 +1,21 @@
 <div class="card">
   <div class="card-header">
-    <h3 class="p-0">
+    <h5 class="p-0">
       <button
         class="btn btn-link ps-0"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseicon4"
         aria-expanded="true"
         aria-controls="collapseicon4"
+        (click)="isProfile = !isProfile"
+        [attr.aria-expanded]="!isProfile"
       >
         Latest Photos
       </button>
-    </h3>
+    </h5>
   </div>
   <div
     class="collapse show"
     id="collapseicon4"
+    [ngbCollapse]="isProfile"
     data-parent="#accordion"
     aria-labelledby="collapseicon4"
   >
@@ -25,7 +26,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-1.png"
+              src="assets/images/social-app/post-1.png"
             />
           </div>
         </li>
@@ -34,7 +35,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-2.png"
+              src="assets/images/social-app/post-2.png"
             />
           </div>
         </li>
@@ -43,7 +44,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-3.png"
+              src="assets/images/social-app/post-3.png"
             />
           </div>
         </li>
@@ -52,7 +53,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-4.png"
+              src="assets/images/social-app/post-4.png"
             />
           </div>
         </li>
@@ -61,7 +62,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-5.png"
+              src="assets/images/social-app/post-5.png"
             />
           </div>
         </li>
@@ -70,7 +71,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-6.png"
+              src="assets/images/social-app/post-6.png"
             />
           </div>
         </li>
@@ -79,7 +80,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-7.png"
+              src="assets/images/social-app/post-7.png"
             />
           </div>
         </li>
@@ -88,7 +89,7 @@
             <img
               class="img-fluid"
               alt=""
-              src="../assets/images/social-app/post-8.png"
+              src="assets/images/social-app/post-8.png"
             />
           </div>
         </li>
