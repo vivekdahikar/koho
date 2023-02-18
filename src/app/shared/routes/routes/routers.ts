@@ -8,13 +8,7 @@ export const content: Routes = [
         (m) => m.DashboardModule
       ),
   },
-  {
-    path: 'calender',
-    loadChildren: () =>
-      import('../../../components/calender/calender.module').then(
-        (m) => m.CalenderModule
-      ),
-  },
+
   {
     path: 'widgest',
     loadChildren: () =>
@@ -96,6 +90,13 @@ export const content: Routes = [
       import('../../../components/task/task.module').then((m) => m.TaskModule),
   },
   {
+    path: 'calender',
+    loadChildren: () =>
+      import('../../../components/calender/calender.module').then(
+        (m) => m.CalenderModule
+      ),
+  },
+  {
     path: 'social-app',
     loadChildren: () =>
       import('../../../components/social-app/social-app.module').then(
@@ -126,6 +127,138 @@ export const content: Routes = [
     loadChildren: () =>
       import('../../../components/tables/tables.module').then(
         (m) => m.TablesModule
+      ),
+  },
+  {
+    path: 'ui-kits',
+    loadChildren: () =>
+      import('../../../components/ui-kits/ui-kits.module').then(
+        (m) => m.UiKitsModule
+      ),
+  },
+  {
+    path: 'bonus-ui',
+    loadChildren: () =>
+      import('../../../components/bonus-ui/bonus-ui.module').then(
+        (m) => m.BonusUiModule
+      ),
+  },
+  {
+    path: 'builders',
+    loadChildren: () =>
+      import('../../../components/builders/builders.module').then(
+        (m) => m.BuildersModule
+      ),
+  },
+  {
+    path: 'animation',
+    loadChildren: () =>
+      import('../../../components/animation/animation.module').then(
+        (m) => m.AnimationModule
+      ),
+  },
+  {
+    path: 'icon',
+    loadChildren: () =>
+      import('../../../components/icon/icon.module').then((m) => m.IconModule),
+  },
+  {
+    path: 'buttons',
+    loadChildren: () =>
+      import('../../../components/buttons/buttons.module').then(
+        (m) => m.ButtonsModule
+      ),
+  },
+  {
+    path: 'charts',
+    loadChildren: () =>
+      import('../../../components/charts/charts.module').then(
+        (m) => m.ChartsModule
+      ),
+  },
+  {
+    path: 'landing-page',
+    loadChildren: () =>
+      import('../../../components/landing-page/landing-page.module').then(
+        (m) => m.LandingPageModule
+      ),
+  },
+  {
+    path: 'sample-page',
+    loadChildren: () =>
+      import('../../../components/sample-page/sample-page.module').then(
+        (m) => m.SamplePageModule
+      ),
+  },
+  {
+    path: 'internationalization',
+    loadChildren: () =>
+      import(
+        '../../../components/internationalization/internationalization.module'
+      ).then((m) => m.InternationalizationModule),
+  },
+  {
+    path: 'starter kit',
+    loadChildren: () =>
+      import('../../../components/starter-kit/starter-kit.module').then(
+        (m) => m.StarterKitModule
+      ),
+  },
+  {
+    path: 'gallery',
+    loadChildren: () =>
+      import('../../../components/all-gallery/all-gallery.module').then(
+        (m) => m.AllGalleryModule
+      ),
+  },
+  {
+    path: 'blog',
+    loadChildren: () =>
+      import('../../../components/blog/blog.module').then((m) => m.BlogModule),
+  },
+  {
+    path: 'faq',
+    loadChildren: () =>
+      import('../../../components/faq/faq.module').then((m) => m.FaqModule),
+  },
+  {
+    path: 'job-search',
+    loadChildren: () =>
+      import('../../../components/job-search/job-search.module').then(
+        (m) => m.JobSearchModule
+      ),
+  },
+  {
+    path: 'learning',
+    loadChildren: () =>
+      import('../../../components/learning/learning.module').then(
+        (m) => m.LearningModule
+      ),
+  },
+  {
+    path: 'maps',
+    loadChildren: () =>
+      import('../../../components/maps/maps.module').then((m) => m.MapsModule),
+  },
+  {
+    path: 'editors',
+    loadChildren: () =>
+      import('../../../components/editors/editors.module').then(
+        (m) => m.EditorsModule
+      ),
+  },
+  {
+    path: 'knowledgebases',
+    loadChildren: () =>
+      import('../../../components/knowledgebases/knowledgebases.module').then(
+        (m) => m.KnowledgebasesModule
+      ),
+  },
+  {
+    path: 'support-ticket',
+    loadChildren: () =>
+      import('../../../components/support-ticket/support-ticket.module').then(
+        (m) => m.SupportTicketModule
       ),
   },
 ];

@@ -5,7 +5,6 @@ import { ContactsRoutingModule } from './contacts-routing.module';
 import { ContactsFilterComponent } from './contacts-filter/contacts-filter.component';
 import { NewContactComponent } from './new-contact/new-contact.component';
 import { PersonalComponent } from './personal/personal.component';
-import { EditFormComponent } from './personal/edit-form/edit-form.component';
 import { PrintModelComponent } from './print-model/print-model.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { GeneralComponent } from './personal/edit-form/general/general.component';
@@ -19,7 +18,6 @@ import { ContactsComponent } from './contacts.component';
     ContactsFilterComponent,
     NewContactComponent,
     PersonalComponent,
-    EditFormComponent,
     PrintModelComponent,
     GeneralComponent,
     PersonalContenComponent,

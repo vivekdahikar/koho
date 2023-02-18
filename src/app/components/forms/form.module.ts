@@ -39,7 +39,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ArchwizardModule } from 'angular-archwizard';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { ClipboardModule } from 'ngx-clipboard';
 import { DatepickerModule } from 'ng2-datepicker';
 import { FormLayoutComponent } from './form-layout/form-layout.component';
@@ -69,6 +68,10 @@ import { BasicColorComponent } from './form-widgets/switch/basic-color/basic-col
 import { ColorVarientComponent } from './form-widgets/select2/color-varient/color-varient.component';
 import { FullColorVarientComponent } from './form-widgets/select2/full-color-varient/full-color-varient.component';
 import { DateRangePickerComponent } from './form-widgets/date-rangepicker/date-range-picker/date-range-picker.component';
+import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
+import { InputInitiallyEmptyComponent } from './form-widgets/date-rangepicker/input-initially-empty/input-initially-empty.component';
+import { InlineFormComponent } from './form-layout/default-forms/inline-form/inline-form.component';
+import { MegaFormComponent } from './form-layout/default-forms/mega-form/mega-form.component';
 
 @NgModule({
   declarations: [
@@ -95,6 +98,11 @@ import { DateRangePickerComponent } from './form-widgets/date-rangepicker/date-r
     CustomRadioComponent,
     CustomCheckboxComponent,
     AnimatedRadioButtonsComponent,
+    InlineFormComponent,
+    MegaFormComponent,
+    HorizontalFormLayoutComponent,
+    DefaultFormLayoutComponent,
+
     AnimatedCheckboxButtonsComponent,
     SolidInputStyleComponent,
     RaiseInputStyleComponent,
@@ -131,6 +139,7 @@ import { DateRangePickerComponent } from './form-widgets/date-rangepicker/date-r
     ColorVarientComponent,
     FullColorVarientComponent,
     DateRangePickerComponent,
+    InputInitiallyEmptyComponent,
   ],
   imports: [
     FormsRoutingModule,
@@ -141,9 +150,9 @@ import { DateRangePickerComponent } from './form-widgets/date-rangepicker/date-r
     ArchwizardModule,
     ReactiveFormsModule,
     NgSelectModule,
-    NgxMatTimepickerModule,
-    // OwlDateTimeModule,
-    //OwlNativeDateTimeModule,
+
+    OwlDateTimeModule,
+    OwlNativeDateTimeModule,
     DatepickerModule,
     ClipboardModule,
   ],

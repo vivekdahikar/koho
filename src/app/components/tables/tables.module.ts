@@ -23,6 +23,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContextualClassesComponent } from './bootstrap-tables/basic-tables/contextual-classes/contextual-classes.component';
+import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { ContextualClassesComponent } from './bootstrap-tables/basic-tables/cont
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
+    NgbdSortableHeader,
   ],
   exports: [BasicTablesComponent],
 })

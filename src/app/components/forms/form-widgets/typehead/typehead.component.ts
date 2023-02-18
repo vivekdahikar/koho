@@ -286,6 +286,7 @@ export class WikipediaService {
   selector: 'app-typehead',
   templateUrl: './typehead.component.html',
   styleUrls: ['./typehead.component.scss'],
+  providers: [WikipediaService],
 })
 export class TypeheadComponent {
   public model: any;

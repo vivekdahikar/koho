@@ -23,6 +23,9 @@
 //toaster
 @import "ngx-toastr/toastr";
 
+// select
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
 @import "node_modules/sweetalert2/src/sweetalert2.scss";
 //archwizard
 @import "/node_modules/angular-archwizard/styles/archwizard.css";
@@ -32,3 +35,5 @@
 
 // calendar
 @import "/node_modules/angular-calendar/css/angular-calendar.css";
+/* Leaflet Map */
+@import "~leaflet/dist/leaflet.css";

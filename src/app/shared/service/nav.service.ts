@@ -170,16 +170,12 @@ export class NavService {
         { path: '/e-commerce/pricing', title: 'Pricing', type: 'link' },
       ],
     },
-    {
-      path: '/kanban-board',
-      title: 'Kanban board',
-      icon: 'board',
-      type: 'link',
-    },
+
     {
       path: '/file-manager',
       title: 'File Manager',
       icon: 'file',
+      active: true,
 
       type: 'link',
       bookmark: true,
@@ -397,7 +393,6 @@ export class NavService {
       type: 'sub',
       active: false,
       children: [
-        { path: '/ui-kits/state-color', title: 'State color', type: 'link' },
         { path: '/ui-kits/typography', title: 'Typography', type: 'link' },
         { path: '/ui-kits/avatars', title: 'avatars', type: 'link' },
         {
@@ -469,63 +464,40 @@ export class NavService {
         { path: '/bonus-ui/timeline1', title: 'Time Line', type: 'link' },
       ],
     },
-    {
-      title: 'Builder',
-      icon: 'builder',
-      type: 'sub',
-      active: false,
-      children: [
-        {
-          path: '/builder/form-builder-1',
-          title: 'form-builder-1',
-          type: 'link',
-        },
-        {
-          path: '/builder/form-builder-2',
-          title: 'form-builder-2',
-          type: 'link',
-        },
-        { path: '/builder/page-builder', title: 'page-builder', type: 'link' },
-        {
-          path: '/builder/button-builder',
-          title: 'button-builder',
-          type: 'link',
-        },
-      ],
-    },
-    {
-      title: 'Animation',
-      icon: 'animation',
-      type: 'sub',
-      active: false,
-      children: [
-        {
-          path: '/animation/animate',
-          title: 'animate',
-          type: 'link',
-        },
-        {
-          path: '/animation/scroll-reveal',
-          title: 'Scroll Reveal',
-          type: 'link',
-        },
-        {
-          path: '/animation/aos-animation',
-          title: 'AOS animation',
-          type: 'link',
-        },
-        {
-          path: '/animation/tilt-animation',
-          title: 'Tilt Animation',
-          type: 'link',
-        },
-        {
-          path: '/animation/wow-animation',
-          title: 'Wow Animation',
-          type: 'link',
-        },
-      ],
-    },
+
+    // {
+    //   title: 'Animation',
+    //   icon: 'animation',
+    //   type: 'sub',
+    //   active: false,
+    //   children: [
+    //     {
+    //       path: '/animation/animate',
+    //       title: 'animate',
+    //       type: 'link',
+    //     },
+    //     {
+    //       path: '/animation/scroll-reveal',
+    //       title: 'Scroll Reveal',
+    //       type: 'link',
+    //     },
+    //     {
+    //       path: '/animation/aos-animation',
+    //       title: 'AOS animation',
+    //       type: 'link',
+    //     },
+    //     {
+    //       path: '/animation/tilt-animation',
+    //       title: 'Tilt Animation',
+    //       type: 'link',
+    //     },
+    //     {
+    //       path: '/animation/wow-animation',
+    //       title: 'Wow Animation',
+    //       type: 'link',
+    //     },
+    //   ],
+    // },
     {
       title: 'Icons',
       icon: 'icons',
@@ -575,12 +547,7 @@ export class NavService {
     {
       headTitle1: 'Pages',
     },
-    {
-      path: '/landing-page',
-      title: 'landing Page',
-      icon: 'landing page',
-      type: 'sub',
-    },
+
     {
       path: '/sample-page',
       title: 'Sample Page',
@@ -592,46 +559,6 @@ export class NavService {
       title: 'Internationalization',
       icon: 'internationalization',
       type: 'sub',
-    },
-    {
-      path: '/starter-kit',
-      title: 'Starter Kit',
-      icon: 'starter kit',
-      type: 'sub',
-    },
-    {
-      title: 'Others',
-      icon: 'other',
-      type: 'sub',
-      children: [
-        {
-          title: 'Error Pages',
-          type: 'sub',
-          active: false,
-          children: [
-            {
-              path: '/error-page/error-page1',
-              title: 'Error page 1',
-              type: 'link',
-            },
-            {
-              path: '/error-page/error-page2',
-              title: 'Error page 2',
-              type: 'link',
-            },
-            {
-              path: '/error-page/error-page3',
-              title: 'Error page 3',
-              type: 'link',
-            },
-            {
-              path: '/error-page/error-page4',
-              title: 'Error page 4',
-              type: 'link',
-            },
-          ],
-        },
-      ],
     },
 
     {
@@ -683,7 +610,7 @@ export class NavService {
         { path: '/blog/add-post', title: 'Add Post', type: 'link' },
       ],
     },
-    { path: '/faq', title: 'Faq', icon: 'faq', type: 'link' },
+    { path: '/faq', title: 'Faq', icon: 'faq', type: 'sub ' },
     {
       path: '/job-search',
       title: 'Job Search',

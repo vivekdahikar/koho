@@ -12,7 +12,7 @@ import {
 } from 'rxjs';
 import { TABLEDATA } from '../../data/table/tableData';
 import { Table } from '../../data/interface/table';
-import { SortColumn, SortDirection } from '../../directive/sortable.directive';
+import { SortColumn, SortDirection } from '../../directive/sortablee.directive';
 
 interface SearchResult {
   basicTable: Table[];
@@ -46,10 +46,8 @@ function sort(
 }
 
 function matches(table: Table, term: string, pipe: PipeTransform) {
-  return (
-    table.name.toLowerCase().includes(term.toLowerCase()) ||
-    pipe.transform(table.invoice).includes(term)
-  );
+  return table.name.toLowerCase().includes(term.toLowerCase());
+  // pipe.transform(table.invoice).includes(term)
 }
 @Injectable({
   providedIn: 'root',

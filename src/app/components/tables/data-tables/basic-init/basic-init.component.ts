@@ -3,7 +3,7 @@ import { Observable } from 'rxjs';
 import {
   NgbdSortableHeader,
   SortEvent,
-} from 'src/app/shared/directive/sortable.directive';
+} from 'src/app/shared/directive/sortablee.directive';
 import { Table } from '../../../../shared/data/interface/table';
 import { TablesService } from '../../../../shared/service/tables/tables.service';
 import { DecimalPipe } from '@angular/common';
@@ -12,12 +12,14 @@ import { DecimalPipe } from '@angular/common';
   selector: 'app-basic-init',
   templateUrl: './basic-init.component.html',
   styleUrls: ['./basic-init.component.scss'],
+  providers: [TablesService, DecimalPipe],
 })
 export class BasicInitComponent {
   basicTable$: Observable<Table[]>;
   total$: Observable<number>;
 
-  @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
+  @ViewChildren(NgbdSortableHeader)
+  headers!: QueryList<NgbdSortableHeader>;
 
   constructor(public service: TablesService) {
     this.basicTable$ = service.basicTable$;

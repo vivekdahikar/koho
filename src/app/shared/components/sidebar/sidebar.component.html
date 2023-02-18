@@ -8,9 +8,9 @@
       src="../assets/images/logo/logo-dark.png"
       alt=""
   /></a>
-  <div class="back-btn">
+  <!-- <div class="back-btn">
     <i class="fa fa-angle-left"></i>
-  </div>
+  </div> -->
   <div class="toggle-sidebar" (click)="sidebarToggle()">
     <i class="status_toggle middle sidebar-toggle" data-feather="align-left">
     </i>
@@ -59,7 +59,8 @@
         <a
           class="sidebar-link sidebar-title link-nav"
           [class.link-nav]="!menuItem.children"
-          href="javascript:void(0)"
+          [routerLink]="!menuItem.type ? null : [menuItem.path]"
+          routerLinkActive="active"
           [ngClass]="{ active: menuItem.active }"
           (click)="toggletNavActive(menuItem)"
         >
@@ -77,7 +78,47 @@
             >{{ menuItem.badgeValue }}</span
           >
         </a>
+        <!-- Link -->
 
+        <!-- External Link -->
+        <a
+          href="{{ !menuItem.type ? null : menuItem.path }}"
+          class="sidebar-link sidebar-title"
+          [class.link-nav]="!menuItem.children"
+          [ngClass]="{ active: menuItem.active }"
+          *ngIf="menuItem.type === 'extLink'"
+        >
+          <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
+          <span>{{ menuItem.title }}</span>
+          <div class="according-menu">
+            <i
+              class="fa fa-angle-{{
+                menuItem.active ? 'down' : 'right'
+              }} pull-right"
+              *ngIf="menuItem.children"
+            ></i>
+          </div>
+        </a>
+        <!-- External Tab Link -->
+        <a
+          href="{{ !menuItem.type ? null : menuItem.path }}"
+          target="_blank"
+          class="sidebar-link sidebar-title"
+          [class.link-nav]="!menuItem.children"
+          [ngClass]="{ active: menuItem.active }"
+          *ngIf="menuItem.type === 'extTabLink'"
+        >
+          <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
+          <span>{{ menuItem.title }}</span>
+          <div class="according-menu">
+            <i
+              class="fa fa-angle-{{
+                menuItem.active ? 'down' : 'right'
+              }} pull-right"
+              *ngIf="menuItem.children"
+            ></i>
+          </div>
+        </a>
         <ul
           class="sidebar-submenu"
           [ngClass]="{ active: menuItem.active }"
