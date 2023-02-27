@@ -27,6 +27,8 @@ import { LayoutSettingComponent } from './components/customizer/layout-setting/l
 import { ProductboxService } from './service/product/productbox.service';
 import { ProductBoxFilterService } from './service/product/product-box-filter.service';
 import { productService } from './service/product/product.service';
+import { TablesService } from './service/tables/tables.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -56,6 +58,7 @@ import { productService } from './service/product/product.service';
     RouterModule,
     FormsModule,
 
+    NgbModule,
     ReactiveFormsModule,
     AngularSvgIconModule.forRoot(),
   ],
@@ -70,6 +73,7 @@ import { productService } from './service/product/product.service';
     SearchComponent,
     FooterComponent,
     SidebarComponent,
+
     LoaderComponent,
     ContentComponent,
     FullComponent,

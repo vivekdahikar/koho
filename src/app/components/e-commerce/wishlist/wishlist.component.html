@@ -3,388 +3,54 @@
   [items]="['E - Commerce']"
   [active_item]="'Wishlist'"
 ></app-breadcrumb>
-
 <div class="container-fluid">
   <div class="row">
     <div class="col-sm-12">
       <div class="card">
         <div class="card-header pb-0">
-          <h3>Wishlist</h3>
+          <h5>Wishlist</h5>
         </div>
         <div class="card-body whishlist-main">
           <div class="row">
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/01.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Women's Jacket</h6></a>
+            <ng-container *ngFor="let item of listData">
+              <div class="col-xl-2 box-col-3 col-md-4 col-sm-6">
+                <div class="prooduct-details-box">
+                  <div class="media">
+                    <a href="e-commerce/product-page"
+                      ><img
+                        class="align-self-center img-fluid"
+                        src="{{ item.img }}"
+                        alt="#"
+                    /></a>
+                    <div class="media-body">
+                      <div class="product-name">
+                        <a href="e-commerce/product-page">
+                          <h6>{{ item.name }}</h6></a
+                        >
+                      </div>
+                      <ngb-rating [rate]="item.rating"></ngb-rating>
+                      <div class="price">
+                        Price<span>: {{ item.price }}$</span>
+                      </div>
+                      <div class="avaiabilty">
+                        <div
+                          [ngClass]="
+                            item.stock == 'In stock'
+                              ? 'text-success'
+                              : 'text-danger'
+                          "
+                        >
+                          {{ item.stock }}
+                        </div>
+                      </div>
+                      <a class="btn btn-primary btn-xs" href="e-commerce/cart"
+                        >Move to Cart</a
+                      >
                     </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 220$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-success">In stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/02.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Denim Jacket</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-half-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 250$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-danger">Out of stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/03.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Wonder Skirt</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 310$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-success">In stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/04.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Roadster</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-half-o"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 140$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-danger">Out of stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/05.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Women T-shirt</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 205$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-danger">Out of stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/06.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Men's Shirt</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 120$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-success">In stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/05.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Women T-shirt</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-half-o"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 280$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-danger">Out of stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/07.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Men's Jacket</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 350$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-success">In stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/08.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Women Trecksuit</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 210$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-danger">Out of stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/01.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Women's Jacket</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 140$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-success">In stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/02.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Denim Jacket</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 290$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-success">In stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xxl-2 col-md-4 col-sm-6 box-col-20 xl-20">
-              <div class="product-details-box">
-                <div class="d-flex">
-                  <a href="product-page.html"
-                    ><img
-                      class="align-self-center img-fluid"
-                      src="../assets/images/ecommerce/03.jpg"
-                      alt="#"
-                  /></a>
-                  <div class="flex-grow-1">
-                    <div class="product-name">
-                      <a href="product-page.html"> <h6>Wonder Skirt</h6></a>
-                    </div>
-                    <ul class="rating">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star-o"></i></li>
-                    </ul>
-                    <div class="price">Price<span>: 300$</span></div>
-                    <div class="avaiabilty">
-                      <div class="text-danger">Out of stock</div>
-                    </div>
-                    <a class="btn btn-primary btn-xs" href="cart.html"
-                      >Move to Cart</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
+            </ng-container>
           </div>
         </div>
       </div>

@@ -1,5 +1,11 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {
+  AsyncPipe,
+  CommonModule,
+  DecimalPipe,
+  NgFor,
+  NgIf,
+} from '@angular/common';
 
 import { TablesRoutingModule } from './tables-routing.module';
 import { BasicInitComponent } from './data-tables/basic-init/basic-init.component';
@@ -19,11 +25,16 @@ import { StripedRowComponent } from './bootstrap-tables/basic-tables/striped-row
 import { StripedRowInverseComponent } from './bootstrap-tables/basic-tables/striped-row-inverse/striped-row-inverse.component';
 import { TextBgUtilitiesComponent } from './bootstrap-tables/basic-tables/text-bg-utilities/text-bg-utilities.component';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbModule,
+  NgbPaginationModule,
+  NgbTypeaheadModule,
+} from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ContextualClassesComponent } from './bootstrap-tables/basic-tables/contextual-classes/contextual-classes.component';
-import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive';
+import { NgbdSortableHeader } from 'src/app/shared/directive/sortablee.directive';
+// import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive';
 
 @NgModule({
   declarations: [
@@ -34,12 +45,12 @@ import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive'
     CaptionComponent,
     CommonBorderTableComponent,
     CommonSizingTableComponent,
-
     CustomWithHoverComponent,
     HeadOptionsComponent,
     HoverableRowsComponent,
     InversePrimaryBgComponent,
     InverseTableComponent,
+    NgbdSortableHeader,
     ResponsiveTablesComponent,
     StripedRowComponent,
     StripedRowInverseComponent,
@@ -54,7 +65,8 @@ import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive'
     ReactiveFormsModule,
     FormsModule,
     HttpClientModule,
-    NgbdSortableHeader,
+
+    DecimalPipe,
   ],
   exports: [BasicTablesComponent],
 })

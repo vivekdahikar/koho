@@ -1,4 +1,10 @@
-import { Component, HostListener, OnInit } from '@angular/core';
+import {
+  Component,
+  HostListener,
+  OnInit,
+  AfterViewInit,
+  ChangeDetectorRef,
+} from '@angular/core';
 import * as feather from 'feather-icons';
 import { ActivatedRoute, Router, RouterOutlet } from '@angular/router';
 import { NavService } from '../../service/nav.service';
@@ -12,7 +18,7 @@ import { fader, slider } from '../../data/animation/route-animation';
   styleUrls: ['./content.component.scss'],
   animations: [slider],
 })
-export class ContentComponent {
+export class ContentComponent implements AfterViewInit {
   footerDark: any;
   footerLight: any;
   footerFix: any;
@@ -24,6 +30,7 @@ export class ContentComponent {
   constructor(
     public navServices: NavService,
     public layout: LayoutService,
+    private changeRef: ChangeDetectorRef,
     public route: ActivatedRoute
   ) {}
 
@@ -40,6 +47,7 @@ export class ContentComponent {
   }
 
   ngAfterViewInit() {
+    this.changeRef.detectChanges();
     setTimeout(() => {
       feather.replace();
     });

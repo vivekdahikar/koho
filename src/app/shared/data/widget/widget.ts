@@ -256,7 +256,7 @@ export let todayvalue: ChartOptions | any = {
       },
     },
   },
-  colors: [secondary_color],
+  colors: [secondary_color, '#f4f6fd'],
   xaxis: {
     show: false,
     axisBorder: {

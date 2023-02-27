@@ -18,8 +18,7 @@ export class BasicInitComponent {
   basicTable$: Observable<Table[]>;
   total$: Observable<number>;
 
-  @ViewChildren(NgbdSortableHeader)
-  headers!: QueryList<NgbdSortableHeader>;
+  @ViewChildren(NgbdSortableHeader) headers!: QueryList<NgbdSortableHeader>;
 
   constructor(public service: TablesService) {
     this.basicTable$ = service.basicTable$;
@@ -35,13 +34,5 @@ export class BasicInitComponent {
     });
     this.service.sortColumn = column;
     this.service.sortDirection = direction;
-  }
-
-  deleteData(id: number) {
-    this.basicTable$.subscribe((data: any) => {
-      data.map((elem: any, i: any) => {
-        elem.id == id && data.splice(i, 1);
-      });
-    });
   }
 }

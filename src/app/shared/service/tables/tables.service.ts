@@ -11,7 +11,7 @@ import {
   delay,
 } from 'rxjs';
 import { TABLEDATA } from '../../data/table/tableData';
-import { Table } from '../../data/interface/table';
+import { Table } from '../../../shared/data/interface/table';
 import { SortColumn, SortDirection } from '../../directive/sortablee.directive';
 
 interface SearchResult {

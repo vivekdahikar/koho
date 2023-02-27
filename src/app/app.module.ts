@@ -7,6 +7,7 @@ import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { NgScrollbarModule } from 'ngx-scrollbar';
 import { ToastrModule } from 'ngx-toastr';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,11 +32,13 @@ export function HttpLoaderFactory(http: HttpClient) {
     AppRoutingModule,
     SharedModule,
     RouterModule,
+    BrowserAnimationsModule,
     FormsModule,
     NgScrollbarModule,
     DashboardModule,
     NgApexchartsModule,
     BarRatingModule,
+
     HttpClientModule,
     NgbModule,
     HammerModule,

@@ -1,28 +1,7 @@
 <div class="header-wrapper row m-0">
-  <form class="form-inline search-full col" action="#" method="get">
-    <div class="form-group w-100">
-      <div class="Typeahead Typeahead--twitterUsers">
-        <div class="u-posRelative">
-          <input
-            class="demo-input Typeahead-input form-control-plaintext w-100"
-            type="text"
-            placeholder="Search Koho .."
-            name="q"
-            title=""
-            autofocus
-          />
-          <div class="spinner-border Typeahead-spinner" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <i class="close-search" data-feather="x"></i>
-        </div>
-        <div class="Typeahead-menu"></div>
-      </div>
-    </div>
-  </form>
   <div class="header-logo-wrapper col-auto p-0">
     <div class="logo-wrapper">
-      <a href="index.html"
+      <a routerLink="/"
         ><img
           class="img-fluid for-light"
           src="assets/images/logo/logo.png"
@@ -47,7 +26,9 @@
         <app-language></app-language>
       </li>
       <li>
-        <div class="mode" (click)="layoutToggle()"><app-mode></app-mode></div>
+        <div class="mode" (click)="layoutToggle()">
+          <app-mode></app-mode>
+        </div>
       </li>
       <li class="onhover-dropdown">
         <app-bookmark></app-bookmark>
@@ -58,7 +39,9 @@
       <li class="onhover-dropdown">
         <app-message-box></app-message-box>
       </li>
-      <li class="maximize"></li>
+      <li class="maximize">
+        <app-maximise></app-maximise>
+      </li>
       <li class="profile-nav onhover-dropdown p-0 me-0">
         <app-account></app-account>
       </li>

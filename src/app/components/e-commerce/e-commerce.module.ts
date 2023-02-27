@@ -50,6 +50,7 @@ import { PricingComponent } from './pricing/pricing.component';
 import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive';
 import { productService } from 'src/app/shared/service/product/product.service';
 import { BrowserModule } from '@angular/platform-browser';
+import { InvoiceDataTableComponent } from './invoice/invoice-data-table/invoice-data-table.component';
 
 @NgModule({
   declarations: [
@@ -79,6 +80,7 @@ import { BrowserModule } from '@angular/platform-browser';
     PlaceOrderComponent,
     PricingComponent,
     ProductListComponent,
+    InvoiceDataTableComponent,
   ],
   providers: [NgbActiveModal, productService, OrderHistoryService],
   imports: [
