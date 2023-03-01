@@ -43,7 +43,7 @@ import { MyProfileComponent } from './users-edit/my-profile/my-profile.component
     FollowersComponent,
     LatestPhotosComponent,
     FollowingComponent,
-    FriendsComponent,
+  //  FriendsComponent,
     LeftContentComponent,
     RightContentComponent,
   ],

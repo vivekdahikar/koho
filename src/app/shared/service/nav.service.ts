@@ -465,39 +465,6 @@ export class NavService {
       ],
     },
 
-    // {
-    //   title: 'Animation',
-    //   icon: 'animation',
-    //   type: 'sub',
-    //   active: false,
-    //   children: [
-    //     {
-    //       path: '/animation/animate',
-    //       title: 'animate',
-    //       type: 'link',
-    //     },
-    //     {
-    //       path: '/animation/scroll-reveal',
-    //       title: 'Scroll Reveal',
-    //       type: 'link',
-    //     },
-    //     {
-    //       path: '/animation/aos-animation',
-    //       title: 'AOS animation',
-    //       type: 'link',
-    //     },
-    //     {
-    //       path: '/animation/tilt-animation',
-    //       title: 'Tilt Animation',
-    //       type: 'link',
-    //     },
-    //     {
-    //       path: '/animation/wow-animation',
-    //       title: 'Wow Animation',
-    //       type: 'link',
-    //     },
-    //   ],
-    // },
     {
       title: 'Icons',
       icon: 'icons',
@@ -536,7 +503,6 @@ export class NavService {
       children: [
         { path: '/charts/apex-chart', title: 'Apex Chart', type: 'link' },
         { path: '/charts/google-chart', title: 'Google Chart', type: 'link' },
-        { path: '/charts/chartjs', title: 'Chartjs Chart', type: 'link' },
         {
           path: '/charts/chartist-chart',
           title: 'Chartist Chart',
@@ -571,11 +537,6 @@ export class NavService {
       active: false,
       type: 'sub',
       children: [
-        {
-          path: '/gallery/gallery-grid',
-          title: 'Gallery Grid',
-          type: 'link',
-        },
         {
           path: '/gallery/gallery-grid-desc',
           title: 'Gallery Grid Desc',
@@ -657,10 +618,7 @@ export class NavService {
       icon: 'maps',
       type: 'sub',
       active: false,
-      children: [
-        { path: '/maps/map-js', title: 'Google Map', type: 'link' },
-        { path: '/maps/leaflet-map', title: 'Leaflet', type: 'link' },
-      ],
+      children: [{ path: '/maps/map-js', title: 'Google Map', type: 'link' }],
     },
     {
       path: '/editors',

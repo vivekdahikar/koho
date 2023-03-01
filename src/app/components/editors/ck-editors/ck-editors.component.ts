@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-//import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import { AngularEditorConfig } from '@kolkov/angular-editor';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-ck-editors',
@@ -8,7 +7,7 @@ import { AngularEditorConfig } from '@kolkov/angular-editor';
   styleUrls: ['./ck-editors.component.scss'],
 })
 export class CkEditorsComponent {
-  //editor = ClassicEditor;
+  editor = ClassicEditor;
   data: any = `<p>Command Module with a cabin for the three astronauts which was the only part which landed back on Earth
   Service Module which supported the Command Module with propulsion, electrical power, oxygen and watersdsd
   Lunar Module for landing on the Moon.</p>`;

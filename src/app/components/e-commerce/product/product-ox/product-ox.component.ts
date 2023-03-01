@@ -57,6 +57,8 @@ export class ProductOxComponent {
   }
 
   openProductDetail(content: any, id: number) {
+    console.log('openProductDetail');
+
     this.modalService.open(content, { centered: true, size: 'lg' });
     this.ProductService.getProduct(id).subscribe((product) => {
       this.productDetail = product && product;

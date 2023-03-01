@@ -72,6 +72,8 @@ import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { InputInitiallyEmptyComponent } from './form-widgets/date-rangepicker/input-initially-empty/input-initially-empty.component';
 import { InlineFormComponent } from './form-layout/default-forms/inline-form/inline-form.component';
 import { MegaFormComponent } from './form-layout/default-forms/mega-form/mega-form.component';
+import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
+import { DefaultFormsComponent } from './form-layout/default-forms/default-forms.component';
 
 @NgModule({
   declarations: [
@@ -113,6 +115,7 @@ import { MegaFormComponent } from './form-layout/default-forms/mega-form/mega-fo
     BasicHtmlInputControlComponent,
     BasicFormControlComponent,
     FormLayoutComponent,
+    DefaultFormsComponent,
     FormWizard1Component,
     FormWizard2Component,
     FormWizard3Component,
@@ -150,6 +153,7 @@ import { MegaFormComponent } from './form-layout/default-forms/mega-form/mega-fo
     ArchwizardModule,
     ReactiveFormsModule,
     NgSelectModule,
+    NgxMatTimepickerModule,
 
     OwlDateTimeModule,
     OwlNativeDateTimeModule,

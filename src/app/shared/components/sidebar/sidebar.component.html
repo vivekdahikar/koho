@@ -66,7 +66,8 @@
 
           <a
             class="sidebar-link sidebar-title"
-            href="javascript:void(0)"
+            [routerLink]="!menuItem.type ? null : [menuItem.path]"
+            routerLinkActive="active"
             [class.link-nav]="!menuItem.children"
             [ngClass]="{ active: menuItem.active }"
             *ngIf="menuItem.type === 'sub'"

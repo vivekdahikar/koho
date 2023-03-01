@@ -205,3 +205,15 @@
 @import "themes/rtl";
 @import "themes/theme-customizer";
 @import "themes/update";
+
+@import "vendors/whether-icon";
+// @import "vendors/font-awesome/variables";
+@import "./vendors/chartist/chartist-settings";
+@import "./vendors/chartist/chartist";
+@import "vendors/flag-icon";
+@import "vendors/icofont";
+@import "vendors/themify";
+@import "vendors/font-awesome.scss";
+@import "../scss/vendors/todo.scss";
+@import "../scss/vendors/scrollable";
+@import "vendors/sticky";

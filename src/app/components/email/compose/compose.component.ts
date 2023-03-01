@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+
 @Component({
   selector: 'app-compose',
   templateUrl: './compose.component.html',
@@ -6,6 +8,8 @@ import { Component } from '@angular/core';
 })
 export class ComposeComponent {
   files: File[] = [];
+
+  // public ClassicEditor = ClassicEditor;
 
   constructor() {}
 

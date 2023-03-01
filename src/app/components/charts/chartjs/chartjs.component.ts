@@ -70,8 +70,8 @@ export class ChartjsComponent {
     event,
     active,
   }: {
-    event?: ChartEvent | undefined;
-    active?: {}[] | undefined;
+    event?: ChartEvent | any;
+    active?: {}[] | any;
   }): void {}
 
   public chartHovered({ event, active }: { event: any; active: any }): void {}

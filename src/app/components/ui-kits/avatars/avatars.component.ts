@@ -8,11 +8,6 @@ import { Component } from '@angular/core';
 export class AvatarsComponent {
   images = [
     {
-      imgSize: '100',
-      img: 'assets/images/avtar/avatar-1  .jpg',
-      shape: 'b-r-8',
-    },
-    {
       imgSize: '90',
       img: 'assets/images/avtar/avatar-1.jpg',
       shape: 'b-r-30',

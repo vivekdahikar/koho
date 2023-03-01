@@ -5,17 +5,14 @@ import { InternationalizationRoutingModule } from './internationalization-routin
 import { InternationalizationComponent } from './internationalization.component';
 import { UseItComponent } from './use-it/use-it.component';
 import { AddLanguageComponent } from './add-language/add-language.component';
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
     InternationalizationComponent,
     UseItComponent,
-    AddLanguageComponent
+    AddLanguageComponent,
   ],
-  imports: [
-    CommonModule,
-    InternationalizationRoutingModule
-  ]
+  imports: [CommonModule, InternationalizationRoutingModule, SharedModule],
 })
-export class InternationalizationModule { }
+export class InternationalizationModule {}

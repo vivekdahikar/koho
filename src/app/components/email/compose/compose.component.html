@@ -1,16 +1,10 @@
-<app-breadcrumb
-  [title]="'Email Compose'"
-  [items]="['Email']"
-  [active_item]="'Email Compose'"
-></app-breadcrumb>
-
 <div class="container-fluid">
   <div class="email-wrap">
     <div class="row">
-      <div class="col-xl-3 col-md-6 xl-30 box-col-30">
+      <div class="col-xl-3 box-col-3 col-md-6 xl-30">
         <app-email-filter></app-email-filter>
       </div>
-      <div class="col-xl-9 col-md-12 xl-70 box-col-70">
+      <div class="col-xl-9 box-col-9 col-md-12 xl-70">
         <div class="email-right-aside">
           <div class="card email-body">
             <div class="email-profile">
@@ -48,33 +42,49 @@
                       </div>
                       <div class="form-group">
                         <label>Message</label>
+                        <!-- <ckeditor [editor]="ClassicEditor"></ckeditor> -->
                       </div>
                       <div class="form-group">
-                        <div
-                          class="dropzone digits text-center"
-                          id="singleFileUpload"
-                          action="/upload.php"
-                        >
-                          <div class="dz-message needsclick">
-                            <i class="icon-cloud-up"></i>
-                            <h4>Drop files here or click to upload.</h4>
-                            <span class="note needsclick"
-                              >(This is just a demo dropzone. Selected files are
-                              <strong>not</strong> actually uploaded.)</span
+                        <div class="dropzone digits text-center">
+                          <ngx-dropzone
+                            (change)="onSelect($event)"
+                            [multiple]="true"
+                          >
+                            <ngx-dropzone-label>
+                              <div>
+                                <div class="dz-message needsclick">
+                                  <i class="icon-cloud-up"></i>
+                                  <h6>Drop files here or click to upload.</h6>
+                                  <span class="dz-message needsclick"
+                                    >(This is just a demo dropzone. Selected
+                                    files are <strong>not</strong> actually
+                                    uploaded.)</span
+                                  >
+                                </div>
+                              </div>
+                            </ngx-dropzone-label>
+                            <ngx-dropzone-preview
+                              *ngFor="let f of files"
+                              [removable]="true"
+                              (removed)="onRemove(f)"
                             >
-                          </div>
+                              <ngx-dropzone-label
+                                >{{ f.name }} ({{ f.type }})</ngx-dropzone-label
+                              >
+                            </ngx-dropzone-preview>
+                          </ngx-dropzone>
                         </div>
                       </div>
                     </form>
                     <div class="action-wrapper">
                       <ul class="actions">
                         <li>
-                          <a class="btn btn-secondary" href="email_read.html"
+                          <a class="btn btn-secondary" href="javascript:void(0)"
                             ><i class="fa fa-paper-plane me-2"></i>send
                           </a>
                         </li>
                         <li>
-                          <a class="btn btn-danger" href="index.html">
+                          <a class="btn btn-danger" href="javascript:void(0)">
                             <i class="fa fa-times me-2"></i>cancel</a
                           >
                         </li>

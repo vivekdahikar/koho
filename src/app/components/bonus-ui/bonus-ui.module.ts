@@ -68,6 +68,8 @@ import { CardWithTabComponent } from './basic-card/card-with-tab/card-with-tab.c
 import { HorizontalCardComponent } from './basic-card/horizontal-card/horizontal-card.component';
 import { ProfileCardsComponent } from './basic-card/profile-cards/profile-cards.component';
 import { CommonProfileCardComponent } from './basic-card/profile-cards/common-profile-card/common-profile-card.component';
+import { FaqModule } from '../faq/faq.module';
+// import { DragulaModule } from 'ng2-dragula';
 
 @NgModule({
   declarations: [
@@ -142,8 +144,8 @@ import { CommonProfileCardComponent } from './basic-card/profile-cards/common-pr
     TreeModule,
     ImageCropperModule,
     FontAwesomeModule,
-    ///DragulaModule.forRoot(),
-    //FaqModule,
+    // DragulaModule.forRoot(),
+    FaqModule,
   ],
   exports: [SweetAlert2Component],
 })

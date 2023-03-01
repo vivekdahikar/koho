@@ -1,21 +1,21 @@
-<div class="email-sidebar">
-  <a class="btn btn-primary email-aside-toggle" (click)="openMenu()"
+<div class="md-sidebar email-sidebar">
+  <a class="btn btn-primary md-sidebar-toggle" href="javascript:void(0)"
     >contact filter
   </a>
-  <div class="email-left-aside" [class.open]="open">
+  <div class="md-sidebar-aside email-left-aside" [class.open]="open">
     <div class="card">
       <div class="card-body">
         <div class="email-app-sidebar left-bookmark">
-          <div class="media">
-            <div class="media-size-email">
+          <div class="d-flex">
+            <div class="d-flex-size-email">
               <img
                 class="me-3 rounded-circle"
-                src="assets/images/user/user.png"
+                src="../assets/images/user/user.png"
                 alt=""
               />
             </div>
-            <div class="media-body">
-              <a href="users/users-profile">
+            <div class="flex-grow-1">
+              <a href="user-profile.html">
                 <h6 class="f-w-700">MARK JENCO</h6></a
               >
               <p>Markjecno@gmail.com</p>
@@ -38,7 +38,11 @@
               >
             </li>
             <li>
-              <button class="btn btn-category" type="button">
+              <button
+                class="btn btn-category"
+                type="button"
+                (click)="openNewContact()"
+              >
                 <span class="title"> + Add Category</span>
               </button>
             </li>

@@ -77,6 +77,7 @@ export type ChartOptions = {
 };
 
 export let yearlychart: ChartOptions | any = {
+  data: [],
   series: [
     {
       type: 'area',
@@ -190,6 +191,7 @@ export let yearlychart: ChartOptions | any = {
 };
 
 export let todayvalue: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Statistics',
@@ -311,6 +313,7 @@ export let todayvalue: ChartOptions | any = {
   ],
 };
 export let daydata: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Net Profit',
@@ -408,6 +411,7 @@ export let daydata: ChartOptions | any = {
 };
 
 export let profit: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Desktops',
@@ -479,6 +483,7 @@ export let profit: ChartOptions | any = {
   },
 };
 export let gain: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Desktops',
@@ -550,6 +555,7 @@ export let gain: ChartOptions | any = {
   },
 };
 export let profitchart: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Desktops',
@@ -621,6 +627,7 @@ export let profitchart: ChartOptions | any = {
   },
 };
 export let salechart: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Statistics',
@@ -722,6 +729,7 @@ export let salechart: ChartOptions | any = {
 };
 
 export let income: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Statistics',
@@ -823,6 +831,7 @@ export let income: ChartOptions | any = {
 };
 
 export let orderchart: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Statistics',
@@ -923,6 +932,7 @@ export let orderchart: ChartOptions | any = {
   sale: '55,900',
 };
 export let visitorchart: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Statistics',
@@ -1024,6 +1034,7 @@ export let visitorchart: ChartOptions | any = {
 };
 
 export let recentchart: ChartOptions | any = {
+  data: [],
   series: [
     {
       type: 'line',
@@ -1153,6 +1164,7 @@ export let recentchart: ChartOptions | any = {
 };
 
 export let countrychart: ChartOptions | any = {
+  data: [],
   chart: {
     height: 335,
     type: 'radar',
@@ -1230,6 +1242,7 @@ export let countrychart: ChartOptions | any = {
   ],
 };
 export let widget1: ChartOptions | any = {
+  data: [],
   chart: {
     toolbar: {
       show: false,
@@ -1309,6 +1322,7 @@ export let widget1: ChartOptions | any = {
   price: '90',
 };
 export let widget2: ChartOptions | any = {
+  data: [],
   chart: {
     toolbar: {
       show: false,
@@ -1388,6 +1402,7 @@ export let widget2: ChartOptions | any = {
   price: '30',
 };
 export let widget3: ChartOptions | any = {
+  data: [],
   chart: {
     toolbar: {
       show: false,
@@ -1468,6 +1483,7 @@ export let widget3: ChartOptions | any = {
   price: '1',
 };
 export let widget4: ChartOptions | any = {
+  data: [],
   series: [
     {
       name: 'Net Profit',
@@ -1562,6 +1578,7 @@ export let widget4: ChartOptions | any = {
   ],
 };
 export let widget5: ChartOptions | any = {
+  data: [],
   series: [70],
   chart: {
     height: 350,
@@ -1613,6 +1630,7 @@ export let widget5: ChartOptions | any = {
   ],
 };
 export let widget6: ChartOptions | any = {
+  data: [],
   chart: {
     type: 'radialBar',
     height: 385,
@@ -1669,6 +1687,7 @@ export let widget6: ChartOptions | any = {
   colors: [primary_color, secondary_color],
 };
 export let widget7: ChartOptions | any = {
+  data: [],
   chart: {
     height: 320,
     type: 'line',
@@ -1740,6 +1759,7 @@ export let widget7: ChartOptions | any = {
   },
 };
 export let widget8: ChartOptions | any = {
+  data: [],
   fill: {
     type: 'gradient',
     gradient: {
@@ -1789,6 +1809,7 @@ export let widget8: ChartOptions | any = {
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
 };
 export let widget9: ChartOptions | any = {
+  data: [],
   chart: {
     toolbar: {
       show: false,
@@ -1825,6 +1846,7 @@ export let widget9: ChartOptions | any = {
   },
 };
 export let widget10: ChartOptions | any = {
+  data: [],
   chart: {
     toolbar: {
       show: false,
@@ -2106,6 +2128,7 @@ export let widget10: ChartOptions | any = {
 };
 
 export let widget11: ChartOptions | any = {
+  data: [],
   chart: {
     height: 350,
     type: 'bar',
@@ -2174,6 +2197,7 @@ export let widget11: ChartOptions | any = {
   },
 };
 export let widget12: ChartOptions | any = {
+  data: [],
   chart: {
     height: 350,
     type: 'line',
@@ -2253,6 +2277,7 @@ export let widget12: ChartOptions | any = {
   },
 };
 export let widget13: ChartOptions | any = {
+  data: [],
   chart: {
     height: 320,
     type: 'area',
@@ -2301,6 +2326,7 @@ export let widget13: ChartOptions | any = {
   },
 };
 export let progress1: ChartOptions | any = {
+  data: [],
   chart: {
     height: 70,
     type: 'bar',
@@ -2362,6 +2388,7 @@ export let progress1: ChartOptions | any = {
   },
 };
 export let progress2: ChartOptions | any = {
+  data: [],
   chart: {
     height: 70,
     type: 'bar',
@@ -2423,6 +2450,7 @@ export let progress2: ChartOptions | any = {
   },
 };
 export let progress3: ChartOptions | any = {
+  data: [],
   chart: {
     height: 70,
     type: 'bar',
@@ -2483,6 +2511,7 @@ export let progress3: ChartOptions | any = {
   },
 };
 export let progress4: ChartOptions | any = {
+  data: [],
   chart: {
     height: 70,
     type: 'bar',
@@ -2544,6 +2573,7 @@ export let progress4: ChartOptions | any = {
 };
 
 export let progress5: ChartOptions | any = {
+  data: [],
   chart: {
     height: 70,
     type: 'bar',
