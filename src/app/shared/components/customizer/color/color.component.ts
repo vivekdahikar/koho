@@ -1,4 +1,5 @@
-import { Component, HostBinding, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, HostBinding, Inject, OnInit } from '@angular/core';
 import { LayoutService } from '../../../service/layout/layout.service';
 
 @Component({
@@ -13,7 +14,10 @@ export class ColorComponent {
   public primary_color: string = '#6362E7';
   public secondary_color: string = '#FFC500';
 
-  constructor(public layout: LayoutService) {}
+  constructor(
+    public layout: LayoutService,
+    @Inject(DOCUMENT) private document: Document
+  ) {}
 
   ngOnInit(): void {}
 
@@ -31,7 +35,6 @@ export class ColorComponent {
   }
 
   customizeMixLayout(val: any) {
-    this.MIXLayout = val;
-    this.layout.config.settings.layout_version = val;
+    this.document.body.classList.toggle('dark-only');
   }
 }

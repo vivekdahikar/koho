@@ -26,7 +26,11 @@
         <app-language></app-language>
       </li>
       <li>
-        <div class="mode" (click)="layoutToggle()">
+        <div
+          class="mode"
+          (click)="layoutToggle()"
+          [ngClass]="dark ? 'dark-only' : ''"
+        >
           <app-mode></app-mode>
         </div>
       </li>

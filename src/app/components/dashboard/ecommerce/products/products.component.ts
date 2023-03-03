@@ -7,18 +7,20 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
   customOptions = {
-    loop: false,
+    loop: true,
     stagePadding: 0,
     center: true,
-    mergeFit: true,
     nav: false,
 
     responsive: {
       0: {
+        items: 1,
+      },
+      400: {
         items: 2,
       },
-      600: {
-        items: 2,
+      760: {
+        items: 1,
       },
       1000: {
         items: 2,

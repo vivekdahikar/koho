@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, Inject } from '@angular/core';
 import { LayoutService } from '../../service/layout/layout.service';
 import { NavService } from '../../service/nav.service';
 
@@ -12,17 +13,18 @@ export class HeaderComponent {
     this.layout.config.settings.layout_version == 'dark-only' ? true : false;
 
   collapseSidebar: boolean = true;
-  constructor(private navServices: NavService, public layout: LayoutService) {}
+  constructor(
+    private navServices: NavService,
+    public layout: LayoutService,
+    @Inject(DOCUMENT) private document: Document
+  ) {}
 
   sidebarToggle() {
     this.navServices.collapseSidebar = !this.navServices.collapseSidebar;
   }
 
   layoutToggle() {
-    this.dark = !this.dark;
-    this.layout.config.settings.layout_version = this.dark
-      ? 'dark-only'
-      : 'light';
+    this.document.body.classList.toggle('dark-only');
   }
 
   searchToggle() {
