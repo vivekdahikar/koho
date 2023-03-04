@@ -5,38 +5,24 @@
         <div class="round-progress knob-block text-center">
           <div class="progress-circle">
             <div style="display: inline; width: 120px; height: 120px">
-              <canvas
-                width="150"
-                height="150"
-                style="width: 120px; height: 120px"
-              ></canvas>
-              <!-- <input
-                class="knob1"
-                data-width="10"
-                data-height="70"
-                data-thickness=".3"
-                data-angleoffset="0"
-                data-linecap="round"
-                data-fgcolor="#534686"
-                data-bgcolor="#C4C4C4"
-                value="62"
-                style="
-                  width: 64px;
-                  height: 40px;
-                  position: absolute;
-                  vertical-align: middle;
-                  margin-top: 40px;
-                  margin-left: -92px;
-                  border: 0px;
-                  background: none;
-                  font: bold 24px Arial;
-                  text-align: center;
-                  color: rgb(83, 70, 134);
-                  padding: 0px;
-                  appearance: none;
-                "
-                fdprocessedid="hhqy7j"
-              /> -->
+              <apx-chart
+                [series]="widget5.series"
+                [chart]="widget5.chart"
+                [stroke]="widget5.stroke"
+                [annotations]="widget5.annotations"
+                [colors]="widget5.colors"
+                [yaxis]="widget5.yaxis"
+                [xaxis]="widget5.xaxis"
+                [legend]="widget5.legend"
+                [tooltip]="widget5.tooltip"
+                [dataLabels]="widget5.dataLabels"
+                [grid]="widget5.grid"
+                [labels]="widget5.labels"
+                [responsive]="widget5.responsive"
+                [plotOptions]="widget5.plotOption"
+                [states]="widget5.states"
+              >
+              </apx-chart>
             </div>
           </div>
         </div>

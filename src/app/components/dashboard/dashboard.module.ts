@@ -27,6 +27,8 @@ import { NgApexchartsModule } from 'ng-apexcharts';
 import { GainChartComponent } from './default/gain-chart/gain-chart.component';
 import { ProfitChartComponent } from './default/profit-chart/profit-chart.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChartistModule } from 'ng-chartist';
 
 @NgModule({
   declarations: [
@@ -60,6 +62,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     NgApexchartsModule,
     SharedModule,
     CarouselModule,
+    NgbModule,
+    ChartistModule,
   ],
   exports: [
     DefaultComponent,

@@ -95,24 +95,10 @@ export class NavService {
       children: [
         { path: '/page-layout/boxed', title: 'boxed', type: 'link' },
         { path: '/page-layout/Rtl', title: 'Rtl', type: 'link' },
-        {
-          path: '/page-layout/Dark-layout',
-          title: 'Dark-layout',
-          type: 'link',
-        },
-        {
-          path: '/page-layout/Hide-Nav-scroll',
-          title: 'Hide-Nav-scroll',
-          type: 'link',
-        },
+
         {
           path: '/page-layout/footer-light',
           title: 'footer-light',
-          type: 'link',
-        },
-        {
-          path: '/page-layout/footer-Dark',
-          title: 'footer-Dark',
           type: 'link',
         },
       ],
@@ -158,11 +144,7 @@ export class NavService {
           title: 'Payment Details',
           type: 'link',
         },
-        {
-          path: '/e-commerce/order-history',
-          title: 'Order History',
-          type: 'link',
-        },
+
         { path: '/e-commerce/invoice', title: 'Invoice', type: 'link' },
         { path: '/e-commerce/cart', title: 'Cart', type: 'link' },
         { path: '/e-commerce/wishlist', title: 'Wishlist', type: 'link' },
@@ -290,11 +272,6 @@ export class NavService {
           type: 'sub',
           active: false,
           children: [
-            {
-              path: '/forms/form-widgets/datepicker',
-              title: 'Datepicker',
-              type: 'link',
-            },
             {
               path: '/forms/form-widgets/timepicker',
               title: 'Timepicker',
@@ -438,7 +415,6 @@ export class NavService {
       active: false,
       children: [
         { path: '/bonus-ui/scrollable', title: 'Scrollable', type: 'link' },
-        { path: '/bonus-ui/tree-view', title: 'Tree view', type: 'link' },
         { path: '/bonus-ui/rating', title: 'Rating', type: 'link' },
         { path: '/bonus-ui/dropzone', title: 'Dropzone', type: 'link' },
         { path: '/bonus-ui/tour', title: 'Tour', type: 'link' },
@@ -447,7 +423,6 @@ export class NavService {
         { path: '/bonus-ui/ribbons', title: 'Ribbons', type: 'link' },
         { path: '/bonus-ui/pagination', title: 'Pagination', type: 'link' },
         { path: '/bonus-ui/breadcrumb', title: 'Breadcrumb', type: 'link' },
-        { path: '/bonus-ui/steps', title: 'Steps', type: 'link' },
         { path: '/bonus-ui/rang-slider', title: 'Rang Slider', type: 'link' },
         {
           path: '/bonus-ui/image-cropper',
@@ -456,11 +431,7 @@ export class NavService {
         },
         { path: '/bonus-ui/sticky', title: 'Sticky', type: 'link' },
         { path: '/bonus-ui/basic-card', title: 'Basic Card', type: 'link' },
-        {
-          path: '/bonus-ui/draggable-card',
-          title: 'Draggable Card',
-          type: 'link',
-        },
+
         { path: '/bonus-ui/timeline1', title: 'Time Line', type: 'link' },
       ],
     },
@@ -509,22 +480,6 @@ export class NavService {
           type: 'link',
         },
       ],
-    },
-    {
-      headTitle1: 'Pages',
-    },
-
-    {
-      path: '/sample-page',
-      title: 'Sample Page',
-      icon: 'sample-page',
-      type: 'sub',
-    },
-    {
-      path: '/internationalization',
-      title: 'Internationalization',
-      icon: 'internationalization',
-      type: 'sub',
     },
 
     {

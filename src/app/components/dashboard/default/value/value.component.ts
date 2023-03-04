@@ -7,5 +7,5 @@ import * as chartData from '../../../../shared/data/widget/widget';
   styleUrls: ['./value.component.scss'],
 })
 export class ValueComponent {
-  // public round = chartData.round;
+  public widget5 = chartData.widget5;
 }

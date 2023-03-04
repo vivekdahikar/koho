@@ -1581,7 +1581,7 @@ export let widget5: ChartOptions | any = {
   data: [],
   series: [70],
   chart: {
-    height: 350,
+    height: 200,
     type: 'radialBar',
   },
   plotOptions: {

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ChatUsers } from 'src/app/shared/model/chat.model';
+import { ChatService } from '../../../shared/service/chat/chat.service';
 
 @Component({
   selector: 'app-video-chat',

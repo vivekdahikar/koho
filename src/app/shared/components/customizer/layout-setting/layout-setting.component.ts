@@ -10,7 +10,7 @@ import { LayoutService } from '../../../service/layout/layout.service';
 })
 export class LayoutSettingComponent {
   public customizer: string = '';
-  public sidebarType: string = 'compact-wrapper';
+  public sidebarType: string = '';
   public screenwidth: any = window.innerWidth;
   public layoutType: string = this.layout.config.settings.layout_type;
   public MIXLayout: string = 'default';
@@ -34,9 +34,13 @@ export class LayoutSettingComponent {
     this.sidebarType = val;
     this.layout.config.settings.sidebar = val;
     if (val == 'horizontal-wrapper') {
-      document.getElementsByTagName('body')[0].setAttribute('had', val);
+      document
+        .getElementsByClassName(' pageWrapper')[0]
+        .setAttribute('had', val);
     } else {
-      document.getElementsByTagName('body')[0].removeAttribute('had');
+      document
+        .getElementsByClassName(' horizontal-wrapper')[0]
+        .removeAttribute('had');
     }
   }
 

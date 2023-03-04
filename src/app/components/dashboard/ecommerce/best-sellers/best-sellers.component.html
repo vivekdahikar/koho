@@ -16,203 +16,41 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <tr *ngFor="let item of BestSellers">
             <td>
               <div class="d-flex">
                 <div class="icon">
                   <img
                     class="img-fluid"
-                    src="../assets/images/dashboard-2/person1.png"
+                    src="{{ item.productImg }}"
                     alt="person1"
                   />
                 </div>
                 <div class="flex-grow-1">
-                  <a href="user-profile.html"> <h5>John Keter</h5></a>
-                  <p>2019</p>
+                  <a href="user-profile.html">
+                    <h5>{{ item.sellerName }}</h5></a
+                  >
+                  <p>{{ item.year }}</p>
                 </div>
               </div>
             </td>
             <td>
-              <h5>06 August</h5>
+              <h5>{{ item.date }}</h5>
             </td>
             <td>
-              <h5>Brande Shoes</h5>
+              <h5>{{ item.productName }}</h5>
             </td>
             <td>
-              <h5>$37,618</h5>
+              <h5>${{ item.total }}</h5>
             </td>
             <td>
               <div class="status-showcase">
-                <p>65%</p>
+                <p>{{ item.status }}</p>
                 <div class="progress progress-bg-success" style="height: 5px">
                   <div
                     class="progress-bar"
                     role="progressbar"
                     style="width: 65%"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex">
-                <div class="icon">
-                  <img
-                    class="img-fluid"
-                    src="../assets/images/dashboard-2/person2.png"
-                    alt="person2"
-                  />
-                </div>
-                <div class="flex-grow-1">
-                  <a href="user-profile.html"> <h5>Harry Venter</h5></a>
-                  <p>2020</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <h5>21 March</h5>
-            </td>
-            <td>
-              <h5>Headphone</h5>
-            </td>
-            <td>
-              <h5>$59,105</h5>
-            </td>
-            <td>
-              <div class="status-showcase">
-                <p>45%</p>
-                <div class="progress progress-bg-warning" style="height: 5px">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 45%"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex">
-                <div class="icon">
-                  <img
-                    class="img-fluid"
-                    src="../assets/images/dashboard-2/person3.png"
-                    alt="person3"
-                  />
-                </div>
-                <div class="flex-grow-1">
-                  <a href="user-profile.html"> <h5>Loadin Deo</h5></a>
-                  <p>2020</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <h5>09 March</h5>
-            </td>
-            <td>
-              <h5>Cell Phone</h5>
-            </td>
-            <td>
-              <h5>$10,155</h5>
-            </td>
-            <td>
-              <div class="status-showcase">
-                <p>85%</p>
-                <div class="progress progress-bg-danger" style="height: 5px">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 85%"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex">
-                <div class="icon">
-                  <img
-                    class="img-fluid"
-                    src="../assets/images/dashboard-2/person4.png"
-                    alt="person4"
-                  />
-                </div>
-                <div class="flex-grow-1">
-                  <a href="user-profile.html"> <h5>Horen Hors</h5></a>
-                  <p>2020</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <h5>14 February</h5>
-            </td>
-            <td>
-              <h5>Fashion</h5>
-            </td>
-            <td>
-              <h5>$90,568</h5>
-            </td>
-            <td>
-              <div class="status-showcase">
-                <p>75%</p>
-                <div class="progress progress-bg-info" style="height: 5px">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 75%"
-                    aria-valuenow="50"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  ></div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <div class="d-flex">
-                <div class="icon">
-                  <img
-                    class="img-fluid"
-                    src="../assets/images/dashboard-2/person5.png"
-                    alt="person5"
-                  />
-                </div>
-                <div class="flex-grow-1">
-                  <a href="user-profile.html"> <h5>Fenter Jessy</h5></a>
-                  <p>2020</p>
-                </div>
-              </div>
-            </td>
-            <td>
-              <h5>21 January</h5>
-            </td>
-            <td>
-              <h5>Bookshop</h5>
-            </td>
-            <td>
-              <h5>$10,652</h5>
-            </td>
-            <td>
-              <div class="status-showcase">
-                <p>45%</p>
-                <div class="progress progress-bg-warning" style="height: 5px">
-                  <div
-                    class="progress-bar"
-                    role="progressbar"
-                    style="width: 45%"
                     aria-valuenow="50"
                     aria-valuemin="0"
                     aria-valuemax="100"

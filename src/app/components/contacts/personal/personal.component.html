@@ -156,7 +156,11 @@
             <a class="ps-0 edit-information f-w-600" href="javascript:void(0)"
               >Edit more information</a
             >
-            <button class="btn btn-secondary update-contact" type="button">
+            <button
+              class="btn btn-secondary update-contact"
+              type="button"
+              (click)="editContact = false"
+            >
               Save
             </button>
             <button
@@ -190,12 +194,12 @@
       <i class="icofont icofont-ui-edit"></i>
       <p>Contact has not been modified yet.</p>
     </div>
-    <div class="media">
+    <div class="d-flex">
       <i class="icofont icofont-star me-3"></i>
-      <div class="media-body mt-0">
+      <div class="flex-grow-1 mt-0">
         <h6 class="mt-0">Contact Created</h6>
         <p class="mb-0">Contact is created via mail</p>
-        <span class="f-12">Sep 10, 2022 4:00</span>
+        <span class="f-12">Sep 10, 2019 4:00</span>
       </div>
     </div>
   </div>

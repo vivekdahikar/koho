@@ -8,26 +8,35 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
   customOptions = {
     loop: true,
-    stagePadding: 0,
-    center: true,
+    margin: 10,
     nav: false,
-
+    dout: false, // responsive: {
+    //   0: {
+    //     items: 1,
+    //   },
+    //   400: {
+    //     items: 2,
+    //   },
+    //   760: {
+    //     items: 2,
+    //   },
+    //   1000: {
+    //     items: 2,
+    //   },
+    // },
     responsive: {
       0: {
-        items: 1,
-      },
-      400: {
         items: 2,
       },
-      760: {
-        items: 1,
+      600: {
+        items: 2,
       },
       1000: {
         items: 2,
       },
     },
   };
-  products = [
+  products: any = [
     {
       name: 'Wellington Shoes',
       class: 'bg-secondary',
