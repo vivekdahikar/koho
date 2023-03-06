@@ -25,9 +25,9 @@
       <tbody>
         <tr *ngFor="let country of countries$ | async">
           <td scope="row">
-            <div class="media">
+            <div class="d-flex">
               <img class="rounded-circle img-30 me-3" [src]="country.img" />
-              <div class="media-body align-self-center">
+              <div class="flex-grow-1 align-self-center">
                 <div>{{ country.name }}</div>
               </div>
             </div>

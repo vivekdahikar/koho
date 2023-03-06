@@ -66,8 +66,7 @@
 
           <a
             class="sidebar-link sidebar-title"
-            [routerLink]="!menuItem.type ? null : [menuItem.path]"
-            routerLinkActive="active"
+            href="javascript:void(0)"
             [class.link-nav]="!menuItem.children"
             [ngClass]="{ active: menuItem.active }"
             *ngIf="menuItem.type === 'sub'"
@@ -118,7 +117,7 @@
           >
             <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
             <span class="lan-3">{{ menuItem.title }}</span>
-            >
+
             <div class="according-menu">
               <i
                 class="fa fa-angle-{{
@@ -138,7 +137,7 @@
           >
             <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
             <span class="lan-3">{{ menuItem.title }}</span>
-            >
+
             <div class="according-menu">
               <i
                 class="fa fa-angle-{{

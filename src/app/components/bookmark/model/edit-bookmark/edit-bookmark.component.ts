@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import * as bookmarkData from '../../../../shared/data/bookmark/bookmark';
 
 @Component({
   selector: 'app-edit-bookmark',
@@ -7,6 +8,8 @@ import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./edit-bookmark.component.scss'],
 })
 export class EditBookmarkComponent {
+  public bookmarks = bookmarkData.bookmarks;
+
   constructor(public activeModal: NgbActiveModal) {}
 
   ngOnInit(): void {}

@@ -20,13 +20,13 @@
       class="card-body social-status filter-cards-view"
       *ngFor="let activity of activityFeed"
     >
-      <div class="media">
+      <div class="d-flex">
         <img
           class="img-50 rounded-circle m-r-15"
           src="{{ activity.profile }}"
           alt=""
         />
-        <div class="media-body">
+        <div class="flex-grow-1">
           <a href="users/users-profile">
             <span class="f-w-600 d-block">{{ activity.name }}</span>
           </a>

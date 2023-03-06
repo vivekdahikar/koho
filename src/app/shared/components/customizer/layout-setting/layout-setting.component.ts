@@ -33,24 +33,23 @@ export class LayoutSettingComponent {
   customizeSidebarType(val: any) {
     this.sidebarType = val;
     this.layout.config.settings.sidebar = val;
-    if (val == 'horizontal-wrapper') {
-      document
-        .getElementsByClassName(' pageWrapper')[0]
-        .setAttribute('had', val);
-    } else {
-      document
-        .getElementsByClassName(' horizontal-wrapper')[0]
-        .removeAttribute('had');
-    }
+    // if (val == 'horizontal-wrapper') {
+    //   document.getElementsByTagName('body')[0].setAttribute('had', val);
+    // } else {
+    //   document.getElementsByTagName('body')[0].removeAttribute('had');
+    // }
   }
 
   customizeLayoutType(val: any) {
     this.layoutType = val;
     this.layout.config.settings.layout_type = val;
     document.getElementsByTagName('html')[0].removeAttribute('dir');
+    document.getElementsByTagName('body')[0].removeAttribute('dir');
+
     document.body?.classList.remove('box-layout');
     if (val == 'rtl' || val == 'ltr') {
       document.getElementsByTagName('html')[0].setAttribute('dir', val);
+      document.getElementsByTagName('body')[0].setAttribute('dir', val);
     } else {
       document.body?.classList.add('box-layout');
     }

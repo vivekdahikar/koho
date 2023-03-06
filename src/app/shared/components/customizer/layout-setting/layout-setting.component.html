@@ -70,7 +70,6 @@
   <li
     data-attr="normal-sidebar"
     [class.d-none]="screenwidth < 991"
-    [ngClass]="{ active: sidebarType == 'horizontal-wrapper' }"
     (click)="customizeSidebarType('horizontal-wrapper')"
   >
     <div class="header bg-light">
@@ -89,7 +88,6 @@
   </li>
   <li
     data-attr="compact-sidebar"
-    [ngClass]="{ active: sidebarType == 'compact-wrapper' }"
     (click)="customizeSidebarType('compact-wrapper')"
   >
     <div class="header bg-light">

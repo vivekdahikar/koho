@@ -147,7 +147,7 @@ export class NavService {
 
         { path: '/e-commerce/invoice', title: 'Invoice', type: 'link' },
         { path: '/e-commerce/cart', title: 'Cart', type: 'link' },
-        { path: '/e-commerce/wishlist', title: 'Wishlist', type: 'link' },
+        //   { path: '/e-commerce/wishlist', title: 'Wishlist', type: 'link' },
         { path: '/e-commerce/checkout', title: 'Checkout', type: 'link' },
         { path: '/e-commerce/pricing', title: 'Pricing', type: 'link' },
       ],
@@ -618,7 +618,7 @@ export class NavService {
       path: '/support-ticket',
       title: 'Support Ticket',
       icon: 'ticket',
-      type: 'sub',
+      type: 'link',
     },
   ];
 

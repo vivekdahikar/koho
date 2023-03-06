@@ -1,13 +1,13 @@
 <div class="card">
   <div class="card-body">
     <div class="new-users-social">
-      <div class="media">
+      <div class="d-flex">
         <img
           class="rounded-circle image-radius m-r-15"
           src="assets/images/user/1.jpg"
           alt=""
         />
-        <div class="media-body">
+        <div class="flex-grow-1">
           <h6 class="mb-0 f-w-700">ELANA</h6>
           <p>January, 12,2022</p>
         </div>
@@ -42,13 +42,13 @@
           <div
             [ngClass]="mass.replyMassage === 'reply' ? 'other-msg' : 'your-msg'"
           >
-            <div class="media">
+            <div class="d-flex">
               <img
                 class="img-50 img-fluid m-r-20 rounded-circle"
                 alt=""
                 src="{{ mass.profile }}"
               />
-              <div class="media-body">
+              <div class="flex-grow-1">
                 <span class="f-w-600"
                   >{{ mass.name }}
                   <span
