@@ -26,7 +26,9 @@ export class HeaderComponent {
   layoutToggle() {
     this.document.body.classList.toggle('dark-only');
   }
-
+  languageToggle() {
+    this.navServices.language = !this.navServices.language;
+  }
   searchToggle() {
     this.navServices.search = true;
   }

@@ -61,7 +61,7 @@
           [ngClass]="{ active: menuItem.active }"
         >
           <div>
-            <h4 class="lan-1">{{ menuItem.headTitle1 }}</h4>
+            <h4 class="lan-1">{{ menuItem.headTitle1 | translate }}</h4>
           </div>
 
           <a
@@ -73,9 +73,9 @@
             (click)="toggletNavActive(menuItem)"
           >
             <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
-            <span class="lan-3">{{ menuItem.title }}</span
+            <span class="lan-3">{{ menuItem.title | translate }}</span
             ><span
-              class="badge badge-{{ menuItem.badgeType }}"
+              class="badge badge-primary"
               *ngIf="menuItem.badgeType && menuItem.badgeValue"
               >{{ menuItem.badgeValue }}</span
             >
@@ -97,7 +97,9 @@
             *ngIf="menuItem.type === 'link'"
           >
             <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
-            <span class="lan-3" (click)="close()">{{ menuItem.title }}</span>
+            <span class="lan-3" (click)="close()">{{
+              menuItem.title | translate
+            }}</span>
 
             <div class="according-menu">
               <i
@@ -116,7 +118,7 @@
             *ngIf="menuItem.type === 'extLink'"
           >
             <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
-            <span class="lan-3">{{ menuItem.title }}</span>
+            <span class="lan-3">{{ menuItem.title | translate }}</span>
 
             <div class="according-menu">
               <i
@@ -136,7 +138,7 @@
             *ngIf="menuItem.type === 'extTabLink'"
           >
             <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
-            <span class="lan-3">{{ menuItem.title }}</span>
+            <span class="lan-3">{{ menuItem.title | translate }}</span>
 
             <div class="according-menu">
               <i
@@ -168,7 +170,7 @@
                 href="javascript:void(0)"
                 *ngIf="childrenItem.type === 'sub'"
                 (click)="toggletNavActive(childrenItem)"
-                >{{ childrenItem.title
+                >{{ childrenItem.title | translate
                 }}<span class="sub-arrow">
                   <i
                     class="fa fa-angle-{{
@@ -183,7 +185,7 @@
                 *ngIf="childrenItem.type === 'link'"
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }"
-                >{{ childrenItem.title
+                >{{ childrenItem.title | translate
                 }}<span class="sub-arrow">
                   <i
                     class="fa fa-angle-down pull-right"
@@ -197,7 +199,7 @@
                 *ngIf="childrenItem.type === 'extLink'"
                 routerLinkActive="active"
                 [routerLinkActiveOptions]="{ exact: true }"
-                >{{ childrenItem.title
+                >{{ childrenItem.title | translate
                 }}<span class="sub-arrow">
                   <i
                     class="fa fa-angle-down pull-right"
@@ -210,7 +212,7 @@
                 href="{{ !childrenItem.type ? null : childrenItem.path }}"
                 target="_blank"
                 *ngIf="childrenItem.type === 'extTabLink'"
-                >{{ childrenItem.title
+                >{{ childrenItem.title | translate
                 }}<span class="sub-arrow">
                   <i
                     class="fa fa-angle-down pull-right"
@@ -239,7 +241,7 @@
                     routerLinkActive="active"
                     [routerLinkActiveOptions]="{ exact: true }"
                     *ngIf="childrenSubItem.type === 'link'"
-                    >{{ childrenSubItem.title }}
+                    >{{ childrenSubItem.title | translate }}
                   </a>
                   <!-- link -->
                   <!--   -->
@@ -251,7 +253,7 @@
                     *ngIf="childrenSubItem.type === 'extLink'"
                     routerLinkActive="active"
                     [routerLinkActiveOptions]="{ exact: true }"
-                    ><span>{{ childrenSubItem.title }}</span></a
+                    ><span>{{ childrenSubItem.title | translate }}</span></a
                   >
 
                   <!-- External Tab Link -->
@@ -262,7 +264,9 @@
                     target="_blank"
                     *ngIf="childrenSubItem.type === 'extTabLink'"
                   >
-                    <span (click)="close()">{{ childrenSubItem.title }}</span>
+                    <span (click)="close()">{{
+                      childrenSubItem.title | translate
+                    }}</span>
                   </a>
                 </li>
               </ul>

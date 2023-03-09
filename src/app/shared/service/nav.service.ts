@@ -4,10 +4,10 @@ import { BehaviorSubject, fromEvent, Subject } from 'rxjs';
 import { takeUntil, debounceTime } from 'rxjs/operators';
 
 export interface Menu {
-  headTitle1?: string;
+  headTitle1?: any;
   headTitle2?: string;
   path?: string;
-  title?: string;
+  title?: any;
   icon?: string;
   type?: string;
   badgeType?: string;
@@ -27,6 +27,9 @@ export class NavService {
 
   // Search Box
   public search: boolean = false;
+
+  // Language
+  public language: boolean = false;
 
   // Collapse Sidebar
   public collapseSidebar: boolean = window.innerWidth < 991 ? true : false;

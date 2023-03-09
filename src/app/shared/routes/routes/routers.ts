@@ -150,13 +150,7 @@ export const content: Routes = [
         (m) => m.BuildersModule
       ),
   },
-  {
-    path: 'animation',
-    loadChildren: () =>
-      import('../../../components/animation/animation.module').then(
-        (m) => m.AnimationModule
-      ),
-  },
+
   {
     path: 'icon',
     loadChildren: () =>

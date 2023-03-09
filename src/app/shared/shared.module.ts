@@ -29,6 +29,8 @@ import { ProductBoxFilterService } from './service/product/product-box-filter.se
 import { productService } from './service/product/product.service';
 import { TablesService } from './service/tables/tables.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TranslateModule } from '@ngx-translate/core';
+import { LayoutService } from './service/layout/layout.service';
 
 @NgModule({
   declarations: [
@@ -57,7 +59,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     CommonModule,
     RouterModule,
     FormsModule,
-
+    TranslateModule.forRoot(),
     NgbModule,
     ReactiveFormsModule,
     AngularSvgIconModule.forRoot(),
@@ -85,6 +87,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   providers: [
     DecimalPipe,
     NavService,
+    LayoutService,
     ProductboxService,
     productService,
     ProductBoxFilterService,
