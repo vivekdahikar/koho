@@ -5,7 +5,6 @@ import { BonusUiRoutingModule } from './bonus-ui-routing.module';
 import { SweetAlert2Component } from './sweet-alert2/sweet-alert2.component';
 import { BasicCardComponent } from './basic-card/basic-card.component';
 import { BreadcrumbUiComponent } from './breadcrumb-ui/breadcrumb-ui.component';
-import { DraggableCardComponent } from './draggable-card/draggable-card.component';
 import { DropzoneComponent } from './dropzone/dropzone.component';
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
 import { OwlCarouselComponent } from './owl-carousel/owl-carousel.component';
@@ -69,6 +68,7 @@ import { HorizontalCardComponent } from './basic-card/horizontal-card/horizontal
 import { ProfileCardsComponent } from './basic-card/profile-cards/profile-cards.component';
 import { CommonProfileCardComponent } from './basic-card/profile-cards/common-profile-card/common-profile-card.component';
 import { FaqModule } from '../faq/faq.module';
+import { DraggableCardComponent } from './draggable-card/draggable-card.component';
 // import { DragulaModule } from 'ng2-dragula';
 
 @NgModule({

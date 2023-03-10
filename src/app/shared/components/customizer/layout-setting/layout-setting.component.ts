@@ -11,8 +11,10 @@ import { LayoutService } from '../../../service/layout/layout.service';
 export class LayoutSettingComponent {
   public customizer: string = '';
   public sidebarType: string = '';
+  public layoutType: any = 'ltr';
+
+  public sidebarSetting: string = 'default-sidebar';
   public screenwidth: any = window.innerWidth;
-  public layoutType: string = this.layout.config.settings.layout_type;
   public MIXLayout: string = 'default';
   @HostBinding('@.disabled')
   public selectedValue: any;
