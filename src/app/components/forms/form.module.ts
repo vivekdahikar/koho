@@ -68,12 +68,15 @@ import { BasicColorComponent } from './form-widgets/switch/basic-color/basic-col
 import { ColorVarientComponent } from './form-widgets/select2/color-varient/color-varient.component';
 import { FullColorVarientComponent } from './form-widgets/select2/full-color-varient/full-color-varient.component';
 import { DateRangePickerComponent } from './form-widgets/date-rangepicker/date-range-picker/date-range-picker.component';
-import { OwlDateTimeModule, OwlNativeDateTimeModule } from 'ng-pick-datetime';
 import { InputInitiallyEmptyComponent } from './form-widgets/date-rangepicker/input-initially-empty/input-initially-empty.component';
 import { InlineFormComponent } from './form-layout/default-forms/inline-form/inline-form.component';
 import { MegaFormComponent } from './form-layout/default-forms/mega-form/mega-form.component';
 import { NgxMatTimepickerModule } from 'ngx-mat-timepicker';
 import { DefaultFormsComponent } from './form-layout/default-forms/default-forms.component';
+import {
+  OwlDateTimeModule,
+  OwlNativeDateTimeModule,
+} from '@danielmoncada/angular-datetime-picker';
 
 @NgModule({
   declarations: [
@@ -154,9 +157,9 @@ import { DefaultFormsComponent } from './form-layout/default-forms/default-forms
     ReactiveFormsModule,
     NgSelectModule,
     NgxMatTimepickerModule,
-
     OwlDateTimeModule,
     OwlNativeDateTimeModule,
+
     DatepickerModule,
     ClipboardModule,
   ],

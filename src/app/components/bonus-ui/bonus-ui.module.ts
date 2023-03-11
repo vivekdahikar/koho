@@ -68,7 +68,6 @@ import { HorizontalCardComponent } from './basic-card/horizontal-card/horizontal
 import { ProfileCardsComponent } from './basic-card/profile-cards/profile-cards.component';
 import { CommonProfileCardComponent } from './basic-card/profile-cards/common-profile-card/common-profile-card.component';
 import { FaqModule } from '../faq/faq.module';
-import { DraggableCardComponent } from './draggable-card/draggable-card.component';
 // import { DragulaModule } from 'ng2-dragula';
 
 @NgModule({
@@ -76,7 +75,7 @@ import { DraggableCardComponent } from './draggable-card/draggable-card.componen
     SweetAlert2Component,
     BasicCardComponent,
     BreadcrumbUiComponent,
-    DraggableCardComponent,
+
     DropzoneComponent,
     ImageCropperComponent,
     OwlCarouselComponent,

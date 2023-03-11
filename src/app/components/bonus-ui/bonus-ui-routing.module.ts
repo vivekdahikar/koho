@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { ImageCropperComponent } from './image-cropper/image-cropper.component';
 import { BasicCardComponent } from './basic-card/basic-card.component';
 import { BreadcrumbUiComponent } from './breadcrumb-ui/breadcrumb-ui.component';
-import { DraggableCardComponent } from './draggable-card/draggable-card.component';
 import { DropzoneComponent } from './dropzone/dropzone.component';
 import { OwlCarouselComponent } from './owl-carousel/owl-carousel.component';
 import { PaginationComponent } from './pagination/pagination.component';
@@ -107,11 +106,6 @@ const routes: Routes = [
       {
         path: 'basic-card',
         component: BasicCardComponent,
-        data: { animation: [routingAnimation] },
-      },
-      {
-        path: 'draggable-card',
-        component: DraggableCardComponent,
         data: { animation: [routingAnimation] },
       },
 
