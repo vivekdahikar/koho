@@ -32,28 +32,28 @@ export const newUser = {
 
 //social-media
 export const Facebook: any = {
-  image: '../assets/images/general-widget/svg-icon/2.svg',
+  image: 'assets/images/general-widget/svg-icon/2.svg',
   title: 'Facebook',
   postCount: '5689',
   likeCount: '6589',
 };
 
 export const Linkedin: any = {
-  image: '../assets/images/general-widget/svg-icon/3.svg',
+  image: 'assets/images/general-widget/svg-icon/3.svg',
   title: 'Twitter',
   postCount: '920',
   likeCount: '4K',
 };
 
 export const Twitter: any = {
-  image: '../assets/images/general-widget/svg-icon/6.svg',
+  image: 'assets/images/general-widget/svg-icon/6.svg',
   title: 'Linkedin',
   postCount: '1234',
   likeCount: '4369',
 };
 
 export const Instagram: any = {
-  image: '../assets/images/general-widget/svg-icon/4.svg',
+  image: 'assets/images/general-widget/svg-icon/4.svg',
   title: 'Instagram',
   postCount: '369',
   likeCount: '3458',

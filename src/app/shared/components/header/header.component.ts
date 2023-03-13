@@ -1,5 +1,5 @@
 import { DOCUMENT } from '@angular/common';
-import { Component, Inject } from '@angular/core';
+import { Component, HostListener, Inject } from '@angular/core';
 import { LayoutService } from '../../service/layout/layout.service';
 import { NavService } from '../../service/nav.service';
 
@@ -31,6 +31,15 @@ export class HeaderComponent {
   }
   searchToggle() {
     this.navServices.search = true;
+  }
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    const element = document.getElementById('sidebar-toggle');
+    if (element && window.innerWidth > 1199) {
+      element.style.display = 'none';
+    } else if (element) {
+      element.style.display = 'block';
+    }
   }
 
   ngOnInit(): void {}

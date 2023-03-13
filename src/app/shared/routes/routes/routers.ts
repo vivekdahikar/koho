@@ -37,13 +37,7 @@ export const content: Routes = [
         (m) => m.FileManagerModule
       ),
   },
-  {
-    path: 'kanban-board',
-    loadChildren: () =>
-      import('../../../components/kanban-board/kanban-board.module').then(
-        (m) => m.KanbanBoardModule
-      ),
-  },
+
   {
     path: 'e-commerce',
     loadChildren: () =>

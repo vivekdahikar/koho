@@ -4,7 +4,7 @@
   "recordsFiltered": 57,
   "data": [
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/1.png' alt=''> Airi",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/1.png' alt=''> Airi",
       "Satou",
       "Accountant",
       "Tokyo",
@@ -13,7 +13,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/2.png' alt=''>Angelica",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/2.png' alt=''>Angelica",
       "Ramos",
       "Chief Executive Officer (CEO)",
       "London",
@@ -22,7 +22,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/3.png' alt=''> Ashton",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/3.png' alt=''> Ashton",
       "Cox",
       "Junior Technical Author",
       "San Francisco",
@@ -31,7 +31,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/4.png' alt=''> Bradley",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/4.png' alt=''> Bradley",
       "Greer",
       "Software Engineer",
       "London",
@@ -40,7 +40,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/1.png' alt=''> Brenden",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/1.png' alt=''> Brenden",
       "Wagner",
       "Software Engineer",
       "San Francisco",
@@ -49,7 +49,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/2.png' alt=''> Brielle",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/2.png' alt=''> Brielle",
       "Williamson",
       "Integration Specialist",
       "New York",
@@ -58,7 +58,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/3.png' alt=''> Bruno",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/3.png' alt=''> Bruno",
       "Nash",
       "Software Engineer",
       "London",
@@ -67,7 +67,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/4.png' alt=''> Caesar",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/4.png' alt=''> Caesar",
       "Vance",
       "Pre-Sales Support",
       "New York",
@@ -76,7 +76,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/1.png' alt=''> Cara",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/1.png' alt=''> Cara",
       "Stevens",
       "Sales Assistant",
       "New York",
@@ -85,7 +85,7 @@
       "<ul class='action'> <li class='edit'> <a href='#' data-bs-original-title='' title=''><i class='icon-pencil-alt'></i></a></li><li class='delete'><a href='#' data-bs-original-title='' title=''><i class='icon-trash'></i></a></li></ul>"
     ],
     [
-      "<img class='img-fluid table-avtar' src='../assets/images/dashboard/beyo-line/2.png' alt=''> Cedric",
+      "<img class='img-fluid table-avtar' src='assets/images/dashboard/beyo-line/2.png' alt=''> Cedric",
       "Kelly",
       "Senior Javascript Developer",
       "Edinburgh",

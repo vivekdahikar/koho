@@ -3,10 +3,10 @@
 =============================**/
 
 @media (max-width: 1800px) {
-  .todo-wrap{
-    .todo-list-body{
-      .task-container{
-        div.d-flex{
+  .todo-wrap {
+    .todo-list-body {
+      .task-container {
+        div.d-flex {
           min-width: 240px;
           justify-content: flex-end;
         }
@@ -207,8 +207,8 @@
       }
     }
   }
-  .activity-media{
-    .d-flex{
+  .activity-media {
+    .d-flex {
       padding: 15px 0;
     }
   }
@@ -335,9 +335,9 @@
       }
     }
   }
-  .page-wrapper{
-    &.compact-wrapper{
-      .page-header{
+  .page-wrapper {
+    &.compact-wrapper {
+      .page-header {
         margin-left: 85px;
         width: calc(100% - 85px);
       }
@@ -353,20 +353,20 @@
   }
 }
 @media (max-width: 1470px) {
-  .color-selector{
-    ul{
+  .color-selector {
+    ul {
       flex-wrap: wrap;
       margin-bottom: -5px;
-      li{
+      li {
         margin-bottom: 5px;
       }
     }
   }
-  .browser-table{
-    table{
-      tr{
-        td{
-          &:nth-child(2){
+  .browser-table {
+    table {
+      tr {
+        td {
+          &:nth-child(2) {
             min-width: 180px;
           }
         }
@@ -394,13 +394,13 @@
       }
     }
   }
-  .basic_table{
-    .table-responsive{
+  .basic_table {
+    .table-responsive {
       .table {
         tbody {
           tr {
-            td{
-              &:nth-child(n+2){
+            td {
+              &:nth-child(n + 2) {
                 min-width: 180px;
               }
             }
@@ -734,14 +734,14 @@
         ul {
           &.sociyal-list {
             li {
-              &:nth-child(n+2) {
+              &:nth-child(n + 2) {
                 margin-left: unset;
               }
             }
           }
         }
       }
-    } 
+    }
   }
 
   // email-app
@@ -834,14 +834,14 @@
       }
     }
   }
-  .basic_table{
-    .table-responsive{
+  .basic_table {
+    .table-responsive {
       .table {
-        &.table-hover{
+        &.table-hover {
           tbody {
             tr {
-              td{ 
-                &:nth-child(n+3){
+              td {
+                &:nth-child(n + 3) {
                   min-width: 250px;
                 }
               }
@@ -1161,7 +1161,7 @@
           .header-logo-wrapper {
             display: flex;
           }
-          .toggle-sidebar {
+          .logo- .toggle-sidebar {
             width: 35px;
             height: 35px;
             border-radius: 50%;
@@ -1191,12 +1191,12 @@
           }
         }
       }
-      .calendar-basic{
-        #external-events{
+      .calendar-basic {
+        #external-events {
           width: 480px;
           margin: 0 auto 30px;
         }
-      } 
+      }
       .page-body-wrapper {
         div.sidebar-wrapper {
           top: 0;
@@ -1299,34 +1299,34 @@
   .left-header .mega-menu-container .mega-box .svg-icon ~ div h6 {
     display: none;
   }
-  .calender-widget{
-    .cal-desc{
-      p{
+  .calender-widget {
+    .cal-desc {
+      p {
         font-size: 15px;
       }
     }
   }
-  .user-status{
-    table{
-      tr{
-        td{
-          &:first-child{
+  .user-status {
+    table {
+      tr {
+        td {
+          &:first-child {
             min-width: 195px;
           }
         }
       }
     }
   }
-  .activity-media{
-    .d-flex{
+  .activity-media {
+    .d-flex {
       padding: 20px 0;
     }
   }
-  .calender-widget{
-    .cal-img{
+  .calender-widget {
+    .cal-img {
       height: 272px;
     }
-  } 
+  }
   .wizard-4 {
     ul {
       &.anchor {
@@ -1404,27 +1404,27 @@
       padding-right: 20px;
       padding: 0;
     }
-    
+
     &.d-block {
       right: 0;
       transition: all 0.3s ease;
       animation: fadeInRight 0.3s ease-in-out;
     }
-    
+
     .mega-box {
       flex-basis: auto;
-      
+
       & + .mega-box {
         border-left: 0px;
         padding-left: 15px;
       }
-      
+
       .link-section {
         .submenu-title {
           display: flex;
           justify-content: space-between;
         }
-        
+
         .according-menu {
           display: inline-block;
         }
@@ -1449,34 +1449,18 @@
       }
     }
   }
-    // defalt dashboard
-    .custom-card {
-      .card-profile {
-        .card-social {
-          li {
-            a {
-              padding: 8px;
-            }
-          }
-        }
-        img {
-          height: 90px;
-        }
-        .card-footer {
-          > div {
-            h3 {
-              font-size: 18px;
-            }
+  // defalt dashboard
+  .custom-card {
+    .card-profile {
+      .card-social {
+        li {
+          a {
+            padding: 8px;
           }
         }
       }
-      .profile-details {
-        h2 {
-          font-size: 20px;
-        }
-        h6 {
-          margin-bottom: 20px;
-        }
+      img {
+        height: 90px;
       }
       .card-footer {
         > div {
@@ -1486,552 +1470,568 @@
         }
       }
     }
-  
-    // ecommerce page
-    .feature-products {
-      span.f-w-600 {
-        padding-top: unset;
-        margin-bottom: 5px;
+    .profile-details {
+      h2 {
+        font-size: 20px;
+      }
+      h6 {
+        margin-bottom: 20px;
       }
     }
-    .product-page-main {
-      .proorder-lg-1 {
-        order: -1;
+    .card-footer {
+      > div {
+        h3 {
+          font-size: 18px;
+        }
       }
     }
-  
-    // blog
-    .blog-single {
-      .comment-box {
-        ul {
-          .comment-social {
-            margin-left: 0;
+  }
+
+  // ecommerce page
+  .feature-products {
+    span.f-w-600 {
+      padding-top: unset;
+      margin-bottom: 5px;
+    }
+  }
+  .product-page-main {
+    .proorder-lg-1 {
+      order: -1;
+    }
+  }
+
+  // blog
+  .blog-single {
+    .comment-box {
+      ul {
+        .comment-social {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .blog-box {
+    &.blog-list {
+      .blog-wrraper {
+        border-bottom-left-radius: unset;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+
+  .lg-mt-col {
+    margin-top: 30px;
+  }
+
+  .xl-none {
+    display: none;
+  }
+
+  .lg-mt {
+    margin-top: 30px;
+  }
+
+  .new-products {
+    .owl-carousel {
+      .product-box {
+        &.row {
+          > div {
+            width: 100%;
           }
         }
       }
     }
-    .blog-box {
-      &.blog-list {
-        .blog-wrraper {
-          border-bottom-left-radius: unset;
-          border-top-right-radius: 10px;
+  }
+  .product-wrapper-grid {
+    &.list-view {
+      .product-box {
+        .product-img {
+          width: 32%;
         }
       }
     }
-  
-    .lg-mt-col {
-      margin-top: 30px;
-    }
-  
-    .xl-none {
-      display: none;
-    }
-  
-    .lg-mt {
-      margin-top: 30px;
-    }
-  
-    .new-products {
-      .owl-carousel {
-        .product-box {
-          &.row {
-            > div {
-              width: 100%;
-            }
-          }
+  }
+  .debit-card {
+    order: 1;
+  }
+
+  .typography {
+    .row {
+      div {
+        & + div {
+          margin-top: 30px;
         }
       }
     }
-    .product-wrapper-grid {
-      &.list-view {
-        .product-box {
-          .product-img {
-            width: 32%;
-          }
-        }
-      }
-    }
-    .debit-card {
-      order: 1;
-    }
-  
-    .typography {
+  }
+
+  .listing {
+    .card-body {
       .row {
-        div {
+        > div {
           & + div {
             margin-top: 30px;
           }
         }
       }
     }
-  
-    .listing {
-      .card-body {
-        .row {
-          > div {
-            & + div {
-              margin-top: 30px;
-            }
-          }
-        }
+  }
+
+  .flot-chart-container {
+    height: 200px;
+  }
+
+  .img-cropper {
+    #putData {
+      margin-bottom: 10px;
+    }
+
+    .docs-toggles {
+      > .dropdown {
+        margin-bottom: 0;
       }
     }
-  
-    .flot-chart-container {
-      height: 200px;
-    }
-  
-    .img-cropper {
-      #putData {
-        margin-bottom: 10px;
-      }
-  
-      .docs-toggles {
-        > .dropdown {
-          margin-bottom: 0;
-        }
-      }
-    }
-  
-    .error-wrapper {
-      .maintenance-icons {
-        li {
-          i {
-            color: $light-color;
-            font-size: 40px;
-          }
-  
-          &:nth-child(2) {
-            i {
-              font-size: 80px;
-              margin-left: 90px;
-            }
-          }
-  
-          &:nth-child(3) {
-            i {
-              font-size: 120px;
-              margin-top: -75px;
-              margin-right: 110px;
-            }
-          }
-        }
-      }
-    }
-  
-    div {
-      &.dataTables_wrapper {
-        div {
-          &.dataTables_paginate {
-            & ~ .dataTables_filter {
-              display: block;
-              width: 100%;
-              margin-top: 20px;
-              margin-bottom: 0;
-            }
-          }
-        }
-      }
-    }
-  
-    .jvector-map-height {
-      height: 280px;
-    }
-  
-    .equal-height-lg {
-      min-height: unset !important;
-    }
-  
-    // user profile
-    .profile-img-style {
-      #aniimated-thumbnials-3 {
-        text-align: center;
-      }
-    }
-    .user-profile {
-      .photos {
-        ul {
-          li {
-            width: 20%;
-          }
-        }
-      }
-      .profile-header {
-        height: 380px;
-        .userpro-box {
-          max-width: 325px;
-          padding: 25px;
-          .icon-wrapper {
-            width: 30px;
-            height: 30px;
-            font-size: 13px;
-          }
-          .avatar {
-            width: 85px;
-            height: 85px;
-          }
-          h4 {
-            font-size: 18px;
-          }
-          h6 {
-            font-size: 14px;
-          }
-        }
-      }
-      .social-media {
-        ul {
-          &.user-list-social {
-            li {
-              a {
-                width: 28px;
-                height: 28px;
-              }
-            }
-          }
-        }
-      }
-    }
-    .social-tab {
-      padding: 20px;
-      ul {
-        li {
-          a {
-            padding: 8px 10px;
-            font-size: 12px;
-          }
-        }
-      }
-    }
-  
-    // blog
-    .blog-list .blog-details {
-      p,
-      hr {
-        display: block;
-      }
-    }
-  
-    //mega menu
-    .mega-menu {
-      .onhover-show-div {
-        height: 435px;
-        overflow-x: scroll;
-        left: 215px;
-      }
-  
-      .mega-bg {
-        display: none;
-      }
-  
-      .lg-mt {
-        margin-top: 25px;
-      }
-    }
-  
-    .button-builder {
-      .button-generator-bx {
-        position: relative;
-        width: 100%;
-      }
-    }
-  
-    // comming soon
-    .comingsoon {
-      .comingsoon-inner {
-        h5 {
+  }
+
+  .error-wrapper {
+    .maintenance-icons {
+      li {
+        i {
+          color: $light-color;
           font-size: 40px;
         }
+
+        &:nth-child(2) {
+          i {
+            font-size: 80px;
+            margin-left: 90px;
+          }
+        }
+
+        &:nth-child(3) {
+          i {
+            font-size: 120px;
+            margin-top: -75px;
+            margin-right: 110px;
+          }
+        }
       }
     }
-  
-    // blog
-    .learning-box {
-      .details-main {
-        margin: 20px;
-        h6 {
+  }
+
+  div {
+    &.dataTables_wrapper {
+      div {
+        &.dataTables_paginate {
+          & ~ .dataTables_filter {
+            display: block;
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .jvector-map-height {
+    height: 280px;
+  }
+
+  .equal-height-lg {
+    min-height: unset !important;
+  }
+
+  // user profile
+  .profile-img-style {
+    #aniimated-thumbnials-3 {
+      text-align: center;
+    }
+  }
+  .user-profile {
+    .photos {
+      ul {
+        li {
+          width: 20%;
+        }
+      }
+    }
+    .profile-header {
+      height: 380px;
+      .userpro-box {
+        max-width: 325px;
+        padding: 25px;
+        .icon-wrapper {
+          width: 30px;
+          height: 30px;
+          font-size: 13px;
+        }
+        .avatar {
+          width: 85px;
+          height: 85px;
+        }
+        h4 {
           font-size: 18px;
         }
-      }
-    }
-  
-    //error and maintenace
-    .error-wrapper {
-      .svg-wrapper {
-        svg {
-          height: 310px;
-        }
-      }
-      .maintenance-heading {
-        margin-top: 30px;
-        .headline {
-          font-size: 60px;
-          margin-bottom: 15px;
-        }
-        .cloud-second {
-          margin-top: -25px;
+        h6 {
+          font-size: 14px;
         }
       }
     }
-  
-    //ecommerce dashboard
-    .crm-overall {
-      .overall-chart {
-        height: 200px;
-      }
-    }
-  
-    // eccommerce product
-    .product-table {
-      table.dataTable thead > tr > th {
-        padding-right: 50px;
-      }
-    }
-  
-    //chat
-    .chat-box {
-      .chat-menu {
-        .people-list {
-          ul.list {
-            max-height: 515px;
-            overflow-y: auto;
-          }
-        }
-      }
-      .btn-lg {
-        font-size: 12px;
-      }
-      .chat-right-aside {
-        .chat {
-          .chat-header {
-            height: auto;
-            .chat-menu-icons li a svg {
-              width: 20px;
-              height: 20px;
-            }
-          }
-          .chat-message {
-            margin: 0;
-            bottom: 15px;
-          }
-        }
-      }
-      .chat-history {
-        .total-time h2 {
-          font-size: 25px;
-        }
-        .row {
-          .col-sm-7 {
-            padding-right: 0;
-          }
-        }
-  
-        .caller-img-sec {
-          display: none;
-        }
-      }
-      .border-tab.nav-tabs {
-        width: 100%;
-        .nav-item {
-          margin-right: 5px;
-        }
-      }
-      .border-tab {
-        &.nav-tabs {
-          .nav-item {
+    .social-media {
+      ul {
+        &.user-list-social {
+          li {
             a {
-              height: auto;
-              line-height: 1.2;
+              width: 28px;
+              height: 28px;
             }
           }
         }
       }
-      .toogle-bar {
-        display: inline-block;
-      }
-      .people-list {
-        ul {
-          height: 500px;
+    }
+  }
+  .social-tab {
+    padding: 20px;
+    ul {
+      li {
+        a {
+          padding: 8px 10px;
+          font-size: 12px;
         }
       }
     }
-  
-    .chat-menu-icons {
+  }
+
+  // blog
+  .blog-list .blog-details {
+    p,
+    hr {
       display: block;
-      clear: both;
-      width: 100%;
-      text-align: right;
     }
-  
-    .chat-history {
-      height: 447px;
+  }
+
+  //mega menu
+  .mega-menu {
+    .onhover-show-div {
+      height: 435px;
+      overflow-x: scroll;
+      left: 215px;
     }
-  
-    // Email app
-    .email-wrap {
-      .email-right-aside {
-        .email-body {
-          .b-r-light {
-            border-right: none !important;
-          }
-        }
-        .radius-left {
-          border-top-left-radius: 4px !important;
-          border-bottom-left-radius: 4px !important;
-        }
-      }
-      .email-aside-toggle {
-        display: block;
-      }
-      .email-sidebar {
-        position: relative;
-        .email-aside-toggle {
-          margin-bottom: 20px;
-          width: fit-content;
-        }
-        .email-left-aside {
-          position: absolute;
-          top: 100%;
-          left: 0;
-          opacity: 0;
-          visibility: hidden;
-          z-index: 2;
-          width: 300px;
-          transition: all 0.5s ease;
-          &.open {
-            visibility: visible;
-            opacity: 1;
-          }
-        }
-      }
+
+    .mega-bg {
+      display: none;
     }
-  
-    // job search
-  
-    .job-accordion {
-      .card {
-        margin-bottom: 20px;
-      }
+
+    .lg-mt {
+      margin-top: 25px;
     }
-    .job-sidebar {
+  }
+
+  .button-builder {
+    .button-generator-bx {
       position: relative;
-      .job-toggle {
-        display: block;
-        margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  // comming soon
+  .comingsoon {
+    .comingsoon-inner {
+      h5 {
+        font-size: 40px;
       }
-      .job-left-aside {
+    }
+  }
+
+  // blog
+  .learning-box {
+    .details-main {
+      margin: 20px;
+      h6 {
+        font-size: 18px;
+      }
+    }
+  }
+
+  //error and maintenace
+  .error-wrapper {
+    .svg-wrapper {
+      svg {
+        height: 310px;
+      }
+    }
+    .maintenance-heading {
+      margin-top: 30px;
+      .headline {
+        font-size: 60px;
+        margin-bottom: 15px;
+      }
+      .cloud-second {
+        margin-top: -25px;
+      }
+    }
+  }
+
+  //ecommerce dashboard
+  .crm-overall {
+    .overall-chart {
+      height: 200px;
+    }
+  }
+
+  // eccommerce product
+  .product-table {
+    table.dataTable thead > tr > th {
+      padding-right: 50px;
+    }
+  }
+
+  //chat
+  .chat-box {
+    .chat-menu {
+      .people-list {
+        ul.list {
+          max-height: 515px;
+          overflow-y: auto;
+        }
+      }
+    }
+    .btn-lg {
+      font-size: 12px;
+    }
+    .chat-right-aside {
+      .chat {
+        .chat-header {
+          height: auto;
+          .chat-menu-icons li a svg {
+            width: 20px;
+            height: 20px;
+          }
+        }
+        .chat-message {
+          margin: 0;
+          bottom: 15px;
+        }
+      }
+    }
+    .chat-history {
+      .total-time h2 {
+        font-size: 25px;
+      }
+      .row {
+        .col-sm-7 {
+          padding-right: 0;
+        }
+      }
+
+      .caller-img-sec {
+        display: none;
+      }
+    }
+    .border-tab.nav-tabs {
+      width: 100%;
+      .nav-item {
+        margin-right: 5px;
+      }
+    }
+    .border-tab {
+      &.nav-tabs {
+        .nav-item {
+          a {
+            height: auto;
+            line-height: 1.2;
+          }
+        }
+      }
+    }
+    .toogle-bar {
+      display: inline-block;
+    }
+    .people-list {
+      ul {
+        height: 500px;
+      }
+    }
+  }
+
+  .chat-menu-icons {
+    display: block;
+    clear: both;
+    width: 100%;
+    text-align: right;
+  }
+
+  .chat-history {
+    height: 447px;
+  }
+
+  // Email app
+  .email-wrap {
+    .email-right-aside {
+      .email-body {
+        .b-r-light {
+          border-right: none !important;
+        }
+      }
+      .radius-left {
+        border-top-left-radius: 4px !important;
+        border-bottom-left-radius: 4px !important;
+      }
+    }
+    .email-aside-toggle {
+      display: block;
+    }
+    .email-sidebar {
+      position: relative;
+      .email-aside-toggle {
+        margin-bottom: 20px;
+        width: fit-content;
+      }
+      .email-left-aside {
         position: absolute;
         top: 100%;
         left: 0;
-        margin-top: 20px;
-        opacity: 1;
-        visibility: hidden;
-        overflow-y: scroll;
-        z-index: 3;
-        max-width: 270px;
-        height: 600px;
-        background-color: $white;
-        border: 1px solid $light-gray;
-        padding: 20px;
-        &.open {
-          opacity: 1;
-          visibility: visible;
-        }
-      }
-    }
-    .learning-block {
-      > div {
-        &:first-child {
-          order: 2;
-        }
-      }
-    }
-  
-    // chat
-  
-    // icons
-    .icon-lists {
-      div {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        max-width: 209px;
-      }
-    }
-  
-    // tour page
-    .like-comment-lg-mb {
-      margin-bottom: 12px;
-    }
-  
-    // ribbons page
-    .ribbon-space-bottom {
-      top: 9px;
-    }
-  
-    // touchspin page
-    .bootstrap-touchspin {
-      .touchspin-vertical-tab {
-        .input-group {
-          width: 98.5% !important;
-        }
-      }
-    }
-  
-    // jsgrid-table page
-    #batchDelete {
-      .jsgrid-grid-header {
-        .jsgrid-table {
-          .jsgrid-header-row {
-            .jsgrid-header-cell {
-              &:first-child {
-                width: 95px !important;
-              }
-            }
-          }
-        }
-      }
-      .jsgrid-grid-body {
-        .jsgrid-table {
-          .jsgrid-row {
-            .jsgrid-cell {
-              &:first-child {
-                width: 95px !important;
-              }
-            }
-          }
-        }
-      }
-    }
-    // calender page
-    .calendar-wrap {
-      .fc-day-grid-event {
-        width: 87%;
-      }
-    }
-    input[type="checkbox"].tui-full-calendar-checkbox-round + span {
-      margin-right: 2px;
-      width: 4px;
-    }
-    // product-page //
-  
-    // sidebar
-    .md-sidebar {
-      .md-sidebar-toggle {
-        display: block;
-      }
-      .md-sidebar-aside {
-        position: absolute;
-        top: 100%;
-        left: 0px;
         opacity: 0;
         visibility: hidden;
-        z-index: 3;
-        width: 280px;
+        z-index: 2;
+        width: 300px;
+        transition: all 0.5s ease;
         &.open {
-          opacity: 1;
           visibility: visible;
+          opacity: 1;
         }
       }
     }
+  }
+
+  // job search
+
+  .job-accordion {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+  .job-sidebar {
+    position: relative;
+    .job-toggle {
+      display: block;
+      margin-bottom: 20px;
+    }
+    .job-left-aside {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 20px;
+      opacity: 1;
+      visibility: hidden;
+      overflow-y: scroll;
+      z-index: 3;
+      max-width: 270px;
+      height: 600px;
+      background-color: $white;
+      border: 1px solid $light-gray;
+      padding: 20px;
+      &.open {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
+  .learning-block {
+    > div {
+      &:first-child {
+        order: 2;
+      }
+    }
+  }
+
+  // chat
+
+  // icons
+  .icon-lists {
+    div {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 209px;
+    }
+  }
+
+  // tour page
+  .like-comment-lg-mb {
+    margin-bottom: 12px;
+  }
+
+  // ribbons page
+  .ribbon-space-bottom {
+    top: 9px;
+  }
+
+  // touchspin page
+  .bootstrap-touchspin {
+    .touchspin-vertical-tab {
+      .input-group {
+        width: 98.5% !important;
+      }
+    }
+  }
+
+  // jsgrid-table page
+  #batchDelete {
+    .jsgrid-grid-header {
+      .jsgrid-table {
+        .jsgrid-header-row {
+          .jsgrid-header-cell {
+            &:first-child {
+              width: 95px !important;
+            }
+          }
+        }
+      }
+    }
+    .jsgrid-grid-body {
+      .jsgrid-table {
+        .jsgrid-row {
+          .jsgrid-cell {
+            &:first-child {
+              width: 95px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+  // calender page
+  .calendar-wrap {
+    .fc-day-grid-event {
+      width: 87%;
+    }
+  }
+  input[type="checkbox"].tui-full-calendar-checkbox-round + span {
+    margin-right: 2px;
+    width: 4px;
+  }
+  // product-page //
+
+  // sidebar
+  .md-sidebar {
+    .md-sidebar-toggle {
+      display: block;
+    }
+    .md-sidebar-aside {
+      position: absolute;
+      top: 100%;
+      left: 0px;
+      opacity: 0;
+      visibility: hidden;
+      z-index: 3;
+      width: 280px;
+      &.open {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 1120px) {
@@ -2043,10 +2043,10 @@
 }
 
 @media only screen and (max-width: 1199px) and (min-width: 992px) {
-  .browser-table{
-    table{
-      tr{
-        td{
+  .browser-table {
+    table {
+      tr {
+        td {
           padding-top: 16px;
           padding-bottom: 16px;
         }
@@ -2076,14 +2076,14 @@
       font-size: 14px !important;
     }
   }
-  .bookmark-tabcontent{
-    .details-bookmark{
-      .bookmark-card{
-        &.card{
-          .title-bookmark{
-            p{
-              text-overflow:ellipsis;
-              overflow:hidden;
+  .bookmark-tabcontent {
+    .details-bookmark {
+      .bookmark-card {
+        &.card {
+          .title-bookmark {
+            p {
+              text-overflow: ellipsis;
+              overflow: hidden;
               display: -webkit-box !important;
               -webkit-line-clamp: 2;
               -webkit-box-orient: vertical;
@@ -2181,10 +2181,10 @@
   .search-page {
     .tab-content {
       .tab-pane {
-        &:last-child{
+        &:last-child {
           .row {
             [class*="col-"] {
-              &:nth-child(2){
+              &:nth-child(2) {
                 order: -1;
               }
             }
@@ -2193,13 +2193,13 @@
       }
     }
   }
-  .todo{
-    .todo-list-wrapper{
-      .todo-list-body{
+  .todo {
+    .todo-list-wrapper {
+      .todo-list-body {
         max-height: 100%;
       }
     }
-  }  
+  }
   .todo-list-wrapper {
     #todo-list {
       li {
@@ -3103,28 +3103,28 @@
 }
 
 @media only screen and (max-width: 767px) {
-  .calendar-basic{
-    .fc{
-      .fc-toolbar{
-        &.fc-header-toolbar{
+  .calendar-basic {
+    .fc {
+      .fc-toolbar {
+        &.fc-header-toolbar {
           display: block;
-          .fc-toolbar-chunk{
+          .fc-toolbar-chunk {
             text-align: center;
-            + .fc-toolbar-chunk{
+            + .fc-toolbar-chunk {
               margin-top: 10px;
             }
           }
         }
       }
-    } 
+    }
   }
-  .contact-form{
-    .theme-form{
+  .contact-form {
+    .theme-form {
       padding: 18px;
     }
-  } 
-  .cal-datepicker{
-    .datepicker-here{
+  }
+  .cal-datepicker {
+    .datepicker-here {
       width: 100%;
     }
   }
@@ -4366,11 +4366,11 @@
   }
 }
 @media only screen and (max-width: 630px) {
-  .calendar-basic{
-    #external-events{
+  .calendar-basic {
+    #external-events {
       width: auto;
     }
-  } 
+  }
   .left-header .level-menu .nav-link {
     svg {
       margin-right: 0;
@@ -6307,19 +6307,19 @@
       }
     }
   }
-  .alert-theme.notify-alert{
+  .alert-theme.notify-alert {
     right: 0 !important;
-    .close{
+    .close {
       padding: 0;
     }
   }
-  .cal-date-widget{
-    .datepicker{
-      .datepicker--cell-day{
+  .cal-date-widget {
+    .datepicker {
+      .datepicker--cell-day {
         height: 38px;
       }
     }
-  }  
+  }
   .page-wrapper .page-header .header-wrapper .nav-right .onhover-show-div {
     right: 20px;
     width: 280px;
@@ -6756,15 +6756,15 @@
 }
 
 @media only screen and (max-width: 420px) {
-  .todo{
-    .todo-list-wrapper{
-      .mark-all-tasks{
-        .mark-all-tasks-container{
+  .todo {
+    .todo-list-wrapper {
+      .mark-all-tasks {
+        .mark-all-tasks-container {
           display: none;
         }
       }
     }
-  }   
+  }
   .chat-box {
     .chat-menu {
       left: 12px;
@@ -6981,7 +6981,7 @@
   .card-header-right {
     .card-option {
       li {
-        i{
+        i {
           margin: 0 2px !important;
         }
       }

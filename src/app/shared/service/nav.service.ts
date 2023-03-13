@@ -96,13 +96,25 @@ export class NavService {
       type: 'sub',
       active: false,
       children: [
-        { path: '/page-layout/boxed', title: 'boxed', type: 'link' },
-        { path: '/page-layout/Rtl', title: 'Rtl', type: 'link' },
-
         {
-          path: '/page-layout/footer-light',
-          title: 'footer-light',
-          type: 'link',
+          path: "/page-layout/hide-nav",
+          title: "Hide New Scroll",
+          type: "link",
+        },
+        {
+          path: "/page-layout/footer-light",
+          title: "Footer Light",
+          type: "link",
+        },
+        {
+          path: "/page-layout/footer-dark",
+          title: "footer Dark",
+          type: "link",
+        },
+        {
+          path: "/page-layout/footer-fixed",
+          title: "Footer Fixed",
+          type: "link",
         },
       ],
     },
@@ -576,7 +588,10 @@ export class NavService {
       icon: 'maps',
       type: 'sub',
       active: false,
-      children: [{ path: '/maps/map-js', title: 'Google Map', type: 'link' }],
+      children: [
+        { path: '/maps/map-js', title: 'Google Map', type: 'link' },
+        { path: '/maps/leaflet-map', title: 'Leaflet', type: 'link' },
+      ],
     },
     {
       path: '/editors',

@@ -7,9 +7,8 @@ import { buttons } from '../../../shared/data/button/button';
   styleUrls: ['./default-style.component.scss'],
 })
 export class DefaultStyleComponent {
-  btns = buttons.defaultButtons;
-  btns2 = buttons.defaultButtons2;
-  groupBtn = buttons.buttonsGroup;
+  buttons = buttons.defaultButtons;
+  buttonsOnline = buttons.buttonOnline;
   constructor() {}
 
   ngOnInit(): void {}

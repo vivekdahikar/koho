@@ -1589,7 +1589,7 @@ export let widget5: ChartOptions | any = {
       hollow: {
         margin: 15,
         size: '70%',
-        image: '../assets/images/email-template/success.png',
+        image: 'assets/images/email-template/success.png',
         imageWidth: 64,
         imageHeight: 64,
         imageClipped: false,
@@ -1611,7 +1611,7 @@ export let widget5: ChartOptions | any = {
   fill: {
     type: 'image',
     image: {
-      src: ['../assets/images/user-card/5.jpg'],
+      src: ['assets/images/user-card/5.jpg'],
     },
   },
   stroke: {

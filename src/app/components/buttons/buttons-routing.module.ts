@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DefaultStyleComponent } from '../forms/form-controls/mega-options/default-style/default-style.component';
 import { ButtonGroupComponent } from './button-group/button-group.component';
+import { DefaultStyleComponent } from './default-style/default-style.component';
 var routingAnimation = localStorage.getItem('animate');
 
 const routes: Routes = [
