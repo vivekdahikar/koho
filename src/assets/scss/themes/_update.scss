@@ -1,45 +1,9 @@
 @import "../utils/variables";
-// jsgrid css
-.jsgrid-filter-row {
-  select,
-  input {
-    padding: 6px 10px;
-    border: 1px solid $horizontal-border-color;
-    background: $white;
-  }
-}
-.basic_table{
-  .jsgrid-cell{
-    &:nth-child(7) {
-      color: $danger-color;
-    }
-  }
-}
-.jsgrid {
-	.jsgrid-button {
-    width: 20px;
-		height: 20px;
-  }
-  .jsgrid-delete-button {
-    background-position: 0 -78px;
-    width: 22px;
-    height: 22px;
-  }
-  .jsgrid-edit-button {
-    background-position: -2px -122px;
-    width: 22px;
-    height: 22px;
-  }
-  .jsgrid-insert-mode-button {
-    background-position: -2px -160px;
-    width: 25px;
-    height: 25px;
-  }
-  .jsgrid-insert-button {
-    background-position: -3px -202px;
-    width: 16px;
-    height: 16px;
-  }
+// header search
+body.offcanvas{
+  visibility: visible;
+  bottom: unset;
+  top: 0;
 }
 .todo-wrap {
   .card-header {

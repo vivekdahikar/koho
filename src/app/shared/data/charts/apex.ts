@@ -89,26 +89,26 @@ export let splineArea1: ChartOptions | any = {
     curve: 'straight',
   },
   labels: [
-    '13 Nov 2022',
-    '14 Nov 2022',
-    '15 Nov 2022',
-    '16 Nov 2022',
-    '17 Nov 2022',
-    '20 Nov 2022',
-    '21 Nov 2022',
-    '22 Nov 2022',
-    '23 Nov 2022',
-    '24 Nov 2022',
-    '27 Nov 2022',
-    '28 Nov 2022',
-    '29 Nov 2022',
-    '30 Nov 2022',
-    '01 Dec 2022',
-    '04 Dec 2022',
-    '05 Dec 2022',
-    '06 Dec 2022',
-    '07 Dec 2022',
-    '08 Dec 2022',
+    '13 Nov 2023',
+    '14 Nov 2023',
+    '15 Nov 2023',
+    '16 Nov 2023',
+    '17 Nov 2023',
+    '20 Nov 2023',
+    '21 Nov 2023',
+    '22 Nov 2023',
+    '23 Nov 2023',
+    '24 Nov 2023',
+    '27 Nov 2023',
+    '28 Nov 2023',
+    '29 Nov 2023',
+    '30 Nov 2023',
+    '01 Dec 2023',
+    '04 Dec 2023',
+    '05 Dec 2023',
+    '06 Dec 2023',
+    '07 Dec 2023',
+    '08 Dec 2023',
   ],
   xaxis: {
     type: 'datetime',
@@ -151,13 +151,13 @@ export let areaSpalineChart: ChartOptions | any = {
   xaxis: {
     type: 'datetime',
     categories: [
-      '2022-09-19T00:00:00',
-      '2022-09-19T01:30:00',
-      '2022-09-19T02:30:00',
-      '2022-09-19T03:30:00',
-      '2022-09-19T04:30:00',
-      '2022-09-19T05:30:00',
-      '2022-09-19T06:30:00',
+      '2023-09-19T00:00:00',
+      '2023-09-19T01:30:00',
+      '2023-09-19T02:30:00',
+      '2023-09-19T03:30:00',
+      '2023-09-19T04:30:00',
+      '2023-09-19T05:30:00',
+      '2023-09-19T06:30:00',
     ],
   },
   tooltip: {
@@ -516,28 +516,28 @@ export let bubbleChart: ChartOptions | any = {
   series: [
     {
       name: 'Product1',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      data: generateData(new Date('11 Feb 2023 GMT').getTime(), 20, {
         min: 10,
         max: 60,
       }),
     },
     {
       name: 'Product2',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      data: generateData(new Date('11 Feb 2023 GMT').getTime(), 20, {
         min: 10,
         max: 60,
       }),
     },
     {
       name: 'Product3',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      data: generateData(new Date('11 Feb 2023 GMT').getTime(), 20, {
         min: 10,
         max: 60,
       }),
     },
     {
       name: 'Product4',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      data: generateData(new Date('11 Feb 2023 GMT').getTime(), 20, {
         min: 10,
         max: 60,
       }),
@@ -655,7 +655,7 @@ export let columnChart2: ChartOptions | any = {
     ],
     xaxis: [
       {
-        x: new Date('23 Nov 2022').getTime(),
+        x: new Date('23 Nov 2023').getTime(),
         strokeDashArray: 0,
         borderColor: '#775DD0',
         label: {
@@ -668,8 +668,8 @@ export let columnChart2: ChartOptions | any = {
         },
       },
       {
-        x: new Date('26 Nov 2022').getTime(),
-        x2: new Date('28 Nov 2022').getTime(),
+        x: new Date('26 Nov 2023').getTime(),
+        x2: new Date('28 Nov 2023').getTime(),
         fillColor: '#B3F7CA',
         opacity: 0.4,
         label: {
@@ -686,7 +686,7 @@ export let columnChart2: ChartOptions | any = {
     ],
     points: [
       {
-        x: new Date('01 Dec 2022').getTime(),
+        x: new Date('01 Dec 2023').getTime(),
         y: 8607.55,
         marker: {
           size: 8,
@@ -725,26 +725,26 @@ export let columnChart2: ChartOptions | any = {
     align: 'left',
   },
   labels: [
-    '13 Nov 2022',
-    '14 Nov 2022',
-    '15 Nov 2022',
-    '16 Nov 2022',
-    '17 Nov 2022',
-    '20 Nov 2022',
-    '21 Nov 2022',
-    '22 Nov 2022',
-    '23 Nov 2022',
-    '24 Nov 2022',
-    '27 Nov 2022',
-    '28 Nov 2022',
-    '29 Nov 2022',
-    '30 Nov 2022',
-    '01 Dec 2022',
-    '04 Dec 2022',
-    '05 Dec 2022',
-    '06 Dec 2022',
-    '07 Dec 2022',
-    '08 Dec 2022',
+    '13 Nov 2023',
+    '14 Nov 2023',
+    '15 Nov 2023',
+    '16 Nov 2023',
+    '17 Nov 2023',
+    '20 Nov 2023',
+    '21 Nov 2023',
+    '22 Nov 2023',
+    '23 Nov 2023',
+    '24 Nov 2023',
+    '27 Nov 2023',
+    '28 Nov 2023',
+    '29 Nov 2023',
+    '30 Nov 2023',
+    '01 Dec 2023',
+    '04 Dec 2023',
+    '05 Dec 2023',
+    '06 Dec 2023',
+    '07 Dec 2023',
+    '08 Dec 2023',
   ],
   xaxis: {
     type: 'datetime',

@@ -46,12 +46,12 @@ export class LayoutSettingComponent {
     this.layoutType = val;
     this.layout.config.settings.layout_type = val;
     document.getElementsByTagName('html')[0].removeAttribute('dir');
-    document.getElementsByTagName('body')[0].removeAttribute('dir');
+    document.getElementsByTagName('body')[0].removeAttribute('class');
 
     document.body?.classList.remove('box-layout');
     if (val == 'rtl' || val == 'ltr') {
       document.getElementsByTagName('html')[0].setAttribute('dir', val);
-      document.getElementsByTagName('body')[0].setAttribute('dir', val);
+      document.getElementsByTagName('body')[0].setAttribute('class', val);
     } else {
       document.body?.classList.add('box-layout');
     }

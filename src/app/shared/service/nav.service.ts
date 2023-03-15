@@ -127,7 +127,6 @@ export class NavService {
       icon: 'project',
       type: 'sub',
       badgeType: 'light-info',
-      badgeValue: 'New',
       active: false,
       children: [
         { path: '/project/project-list', title: 'Project List', type: 'link' },

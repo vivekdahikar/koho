@@ -9,7 +9,7 @@ export var areaChart1: any = {
      ['2018', 1000, 400],
      ['2019', 1170, 460],
      ['2020', 660, 1120],
-     ['2021', 1030, 540]
+     ['2023', 1030, 540]
    ],
    options: {
      title: 'Company Performance',
@@ -30,7 +30,7 @@ export var areaChart2: any = {
      ['2018', 100, 400, 2000, 400],
      ['2019', 500, 700, 530, 800],
      ['2020', 2000, 1000, 620, 120],
-     ['2021', 120, 201, 2501, 540]
+     ['2023', 120, 201, 2501, 540]
    ],
    options: {
      title: 'Company Performance',
@@ -50,13 +50,13 @@ export var columnChart1: any = {
     ["Year", "Sales", "Expenses", "Profit"],
     ["2019", 1e3, 400, 250],
     ["2020", 1170, 460, 300],
-    ["2021", 660, 1120, 400],
-    ["2022", 1030, 540, 450]
+    ["2023", 660, 1120, 400],
+    ["2023", 1030, 540, 450]
   ],
   options: {
     chart: {
       title: "Company Performance",
-      subtitle: "Sales, Expenses, and Profit: 2019-2022"
+      subtitle: "Sales, Expenses, and Profit: 2019-2023"
     },
     bars: "vertical",
     vAxis: {
@@ -76,13 +76,13 @@ export var columnChart2: any = {
     ["Year", "Sales", "Expenses", "Profit"],
     ["2019", 1e3, 400, 250],
     ["2020", 1170, 460, 300],
-    ["2021", 660, 1120, 400],
-    ["2022", 1030, 540, 450]
+    ["2023", 660, 1120, 400],
+    ["2023", 1030, 540, 450]
   ],
   options: {
     chart: {
       title: "Company Performance",
-      subtitle: "Sales, Expenses, and Profit: 2019-2022"
+      subtitle: "Sales, Expenses, and Profit: 2019-2023"
     },
     bars: "horizontal",
     vAxis: {

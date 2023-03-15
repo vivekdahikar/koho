@@ -61,7 +61,7 @@ export const articlesAndVideos = [
        img: 'assets/images/faq/1.jpg',
        post: 'Web Design',
        desc: "A Web Designing course belongs to the field of Computer Science and IT. It enables students to learn various techniques.",
-       date: 'Dec 15, 2022',
+       date: 'Dec 15, 2023',
        rating: '2',
     },
     {
@@ -69,7 +69,7 @@ export const articlesAndVideos = [
        img: 'assets/images/faq/2.jpg',
        post: 'Web Development',
        desc: "This course is designed to start you on a path toward future studies in web development and design.",
-       date: 'Aug 04, 2022',
+       date: 'Aug 04, 2023',
        rating: '4',
  
     },
@@ -78,7 +78,7 @@ export const articlesAndVideos = [
        img: 'assets/images/faq/3.jpg',
        post: 'UI Design',
        desc: "User interface design (UI) is the design for machines and software, such as mobile devices, computers.",
-       date: 'Jan 22, 2022',
+       date: 'Jan 22, 2023',
        rating: '5',
  
     },
@@ -87,7 +87,7 @@ export const articlesAndVideos = [
        img: 'assets/images/faq/4.jpg',
        post: 'Tailwind Design',
        desc: "A Web Designing course belongs to the field of Computer Science and IT. It enables students to learn various techniques.",
-       date: 'Nov 09, 2022',
+       date: 'Nov 09, 2023',
        rating: '3',
  
     }

@@ -204,7 +204,7 @@ export let todayvalue: ChartOptions | any = {
   ],
   chart: {
     type: 'bar',
-    height: 155,
+    height: 145,
     stacked: true,
     stackType: '100%',
     toolbar: {
@@ -258,7 +258,7 @@ export let todayvalue: ChartOptions | any = {
       },
     },
   },
-  colors: [secondary_color, '#f4f6fd'],
+  colors: [secondary_color, '#EADAD3'],
   xaxis: {
     show: false,
     axisBorder: {
@@ -1579,9 +1579,9 @@ export let widget4: ChartOptions | any = {
 };
 export let widget5: ChartOptions | any = {
   data: [],
-  series: [70],
+  series: [62],
   chart: {
-    height: 170,
+    height: 190,
     type: 'radialBar',
   },
   plotOptions: {
@@ -1617,7 +1617,8 @@ export let widget5: ChartOptions | any = {
   stroke: {
     lineCap: 'round',
   },
-  labels: ['Volatility'],
+  colors: [primary_color, '#C4C4C4'],
+  labels: [''],
   responsive: [
     {
       breakpoint: 420,
