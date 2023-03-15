@@ -164,13 +164,7 @@ export const content: Routes = [
         (m) => m.ChartsModule
       ),
   },
-  {
-    path: 'landing-page',
-    loadChildren: () =>
-      import('../../../components/landing-page/landing-page.module').then(
-        (m) => m.LandingPageModule
-      ),
-  },
+
   {
     path: 'sample-page',
     loadChildren: () =>
@@ -178,13 +172,7 @@ export const content: Routes = [
         (m) => m.SamplePageModule
       ),
   },
-  {
-    path: 'internationalization',
-    loadChildren: () =>
-      import(
-        '../../../components/internationalization/internationalization.module'
-      ).then((m) => m.InternationalizationModule),
-  },
+
   {
     path: 'starter kit',
     loadChildren: () =>
