@@ -1126,19 +1126,11 @@ body {
           div.sidebar-wrapper {
             .sidebar-main {
               .sidebar-links {
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        > li {
-                          &.sidebar-list:hover {
-                            > a:hover {
-                              background-color: rgba($white, 0.1);
-                              color: $dark-all-font-color;
-                            }
-                          }
-                        }
-                      }
+                > li {
+                  &.sidebar-list:hover {
+                    > a:hover {
+                      background-color: rgba($white, 0.1);
+                      color: $dark-all-font-color;
                     }
                   }
                 }
@@ -1375,62 +1367,53 @@ body {
                     }
                   }
                 }
+                .menu-box {
+                  background-color: darken($primary-color, 32%);
+                }
+                > li {
+                  .sidebar-link {
+                    &.active {
+                      background-color: rgba($white, 0.05);
+                      svg {
+                        color: $dark-all-font-color;
+                        stroke: $dark-all-font-color;
+                      }
+                    }
+                  }
 
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        .menu-box {
-                          background-color: darken($primary-color, 32%);
+                  .mega-menu-container {
+                    .mega-box {
+                      .link-section {
+                        .submenu-title {
+                          h5 {
+                            color: $dark-all-font-color;
+                          }
                         }
-                        > li {
-                          .sidebar-link {
-                            &.active {
-                              background-color: rgba($white, 0.05);
-                              svg {
-                                color: $dark-all-font-color;
-                                stroke: $dark-all-font-color;
-                              }
-                            }
-                          }
 
-                          .mega-menu-container {
-                            .mega-box {
-                              .link-section {
-                                .submenu-title {
-                                  h5 {
-                                    color: $dark-all-font-color;
-                                  }
-                                }
-
-                                .submenu-content {
-                                  &.opensubmegamenu {
-                                    li {
-                                      a {
-                                        color: $dark-all-font-color;
-                                        font-weight: 400;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-
-                            &::after {
-                              background-color: $light-all-font-color;
-                            }
-                          }
-
-                          .sidebar-submenu {
+                        .submenu-content {
+                          &.opensubmegamenu {
                             li {
                               a {
                                 color: $dark-all-font-color;
-                                &.active{
-                                  color: $light-primary-color;
-                                }
+                                font-weight: 400;
                               }
                             }
                           }
+                        }
+                      }
+                    }
+
+                    &::after {
+                      background-color: $light-all-font-color;
+                    }
+                  }
+
+                  .sidebar-submenu {
+                    li {
+                      a {
+                        color: $dark-all-font-color;
+                        &.active{
+                          color: $light-primary-color;
                         }
                       }
                     }
@@ -1475,47 +1458,39 @@ body {
             border-top: 1px solid $dark-card-border;
             .sidebar-main {
               .sidebar-links {
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        > li {
-                          > a {
-                            color: $dark-all-font-color;
-                          }
+                > li {
+                  > a {
+                    color: $dark-all-font-color;
+                  }
 
-                          .sidebar-submenu {
-                            background: $dark-card-background;
+                  .sidebar-submenu {
+                    background: $dark-card-background;
 
-                            li {
-                              a {
-                                color: $dark-all-font-color;
+                    li {
+                      a {
+                        color: $dark-all-font-color;
 
-                                &.active,
-                                &:hover {
-                                  color: var(--theme-default);
-                                }
-                              }
+                        &.active,
+                        &:hover {
+                          color: var(--theme-default);
+                        }
+                      }
 
-                              .nav-sub-childmenu {
-                                background: $dark-card-background;
-                              }
-                            }
-                          }
+                      .nav-sub-childmenu {
+                        background: $dark-card-background;
+                      }
+                    }
+                  }
 
-                          .mega-menu-container {
-                            background: $dark-card-background;
+                  .mega-menu-container {
+                    background: $dark-card-background;
 
-                            .mega-box {
-                              .link-section {
-                                .submenu-content {
-                                  li {
-                                    a {
-                                      color: $dark-all-font-color;
-                                    }
-                                  }
-                                }
-                              }
+                    .mega-box {
+                      .link-section {
+                        .submenu-content {
+                          li {
+                            a {
+                              color: $dark-all-font-color;
                             }
                           }
                         }
@@ -7011,64 +6986,55 @@ body {
                     }
                   }
                 }
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        .menu-box {
-                          background-color: darken($primary-color, 32%);
+                .menu-box {
+                  background-color: darken($primary-color, 32%);
+                }
+                > li {
+                  .sidebar-link {
+                    &.active {
+                      background-color: rgba($primary-color, 0.2);
+                      svg {
+                        color: var(--theme-default);
+                        stroke: var(--theme-default);
+                      }
+                    }
+                  }
+
+                  .mega-menu-container {
+                    .mega-box {
+                      .link-section {
+                        .submenu-title {
+                          h5 {
+                            color: $dark-all-font-color;
+                          }
                         }
-                        > li {
-                          .sidebar-link {
-                            &.active {
-                              background-color: rgba($primary-color, 0.2);
-                              svg {
-                                color: var(--theme-default);
-                                stroke: var(--theme-default);
-                              }
-                            }
-                          }
 
-                          .mega-menu-container {
-                            .mega-box {
-                              .link-section {
-                                .submenu-title {
-                                  h5 {
-                                    color: $dark-all-font-color;
-                                  }
-                                }
-
-                                .submenu-content {
-                                  &.opensubmegamenu {
-                                    li {
-                                      a {
-                                        color: $dark-all-font-color;
-                                        font-weight: 400;
-                                      }
-                                    }
-                                  }
-                                }
-                              }
-                            }
-
-                            &::after {
-                              background-color: $light-all-font-color;
-                            }
-                          }
-
-                          .sidebar-submenu {
+                        .submenu-content {
+                          &.opensubmegamenu {
                             li {
                               a {
                                 color: $dark-all-font-color;
+                                font-weight: 400;
                               }
                             }
                           }
                         }
                       }
                     }
+
+                    &::after {
+                      background-color: $light-all-font-color;
+                    }
+                  }
+
+                  .sidebar-submenu {
+                    li {
+                      a {
+                        color: $dark-all-font-color;
+                      }
+                    }
                   }
                 }
-
                 .sidebar-list {
                   ul.sidebar-submenu {
                     li {
@@ -7104,46 +7070,38 @@ body {
               background-color: $dark-card-background;
 
               .sidebar-links {
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        > li {
-                          > a {
-                            color: $dark-all-font-color;
-                          }
+                > li {
+                  > a {
+                    color: $dark-all-font-color;
+                  }
 
-                          .sidebar-submenu {
-                            background: $dark-card-background;
+                  .sidebar-submenu {
+                    background: $dark-card-background;
 
-                            li {
-                              a {
-                                color: $dark-all-font-color;
+                    li {
+                      a {
+                        color: $dark-all-font-color;
 
-                                &.active,
-                                &:hover {
-                                  color: var(--theme-default);
-                                }
-                              }
+                        &.active,
+                        &:hover {
+                          color: var(--theme-default);
+                        }
+                      }
 
-                              .nav-sub-childmenu {
-                                background: $dark-card-background;
-                              }
-                            }
-                          }
-                          .mega-menu-container {
-                            background: $dark-card-background;
+                      .nav-sub-childmenu {
+                        background: $dark-card-background;
+                      }
+                    }
+                  }
+                  .mega-menu-container {
+                    background: $dark-card-background;
 
-                            .mega-box {
-                              .link-section {
-                                .submenu-content {
-                                  li {
-                                    a {
-                                      color: $dark-all-font-color;
-                                    }
-                                  }
-                                }
-                              }
+                    .mega-box {
+                      .link-section {
+                        .submenu-content {
+                          li {
+                            a {
+                              color: $dark-all-font-color;
                             }
                           }
                         }
@@ -7152,7 +7110,6 @@ body {
                   }
                 }
               }
-
               .left-arrow,
               .right-arrow {
                 background-color: $dark-card-background;

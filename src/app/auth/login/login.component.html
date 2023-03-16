@@ -14,15 +14,11 @@
           <div class="login-main">
             <form class="theme-form" [formGroup]="loginForm">
               <h2 class="text-center">Sign in to account</h2>
-              <h6>Welcome back! Log in to your account.</h6>
               <p class="text-center">Enter your email & password to login</p>
 
               <div class="form-group">
                 <label class="col-form-label">Email Address</label>
                 <div class="input-group">
-                  <span class="input-group-text"
-                    ><i class="icon-email"></i
-                  ></span>
                   <input
                     class="form-control"
                     type="email"
@@ -46,9 +42,6 @@
               <div class="form-group">
                 <label class="col-form-label">Password</label>
                 <div class="input-group">
-                  <span class="input-group-text"
-                    ><i class="icon-lock"></i
-                  ></span>
                   <input
                     class="form-control"
                     [type]="show ? 'text' : 'password'"
@@ -81,7 +74,7 @@
               </div>
               <div class="form-group">
                 <button
-                  class="btn btn-primary btn-block"
+                  class="btn btn-primary d-block w-100"
                   [disabled]="!loginForm.valid"
                   (click)="login()"
                   type="button"
@@ -90,7 +83,7 @@
                 </button>
               </div>
               <div class="login-social-title">
-                <h5>Sign in with</h5>
+                <h3>Or Sign in with</h3>
               </div>
               <div class="form-group">
                 <ul class="login-social">
@@ -116,7 +109,7 @@
                   </li>
                 </ul>
               </div>
-              <p>
+              <p class="mt-4 mb-0 text-center">
                 Don't have account?<a
                   class="ms-2"
                   [routerLink]="'/authentication/register/image-one'"

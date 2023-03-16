@@ -168,25 +168,17 @@
             left: 30px;
           }
           .sidebar-main .sidebar-links {
-            .simplebar-wrapper {
-              .simplebar-mask {
-                .simplebar-content-wrapper {
-                  .simplebar-content {
-                    > li .badge {
-                      left: 50px !important;
-                      right: unset !important;
-                    }
-                    .menu-box {
-                      > ul {
-                        > li {
-                          .sidebar-link {
-                            &.active {
-                              border-left: unset;
-                              border-right: 2px solid $secondary-color;
-                            }
-                          }
-                        }
-                      }
+            > li .badge {
+              left: 50px !important;
+              right: unset !important;
+            }
+            .menu-box {
+              > ul {
+                > li {
+                  .sidebar-link {
+                    &.active {
+                      border-left: unset;
+                      border-right: 2px solid $secondary-color;
                     }
                   }
                 }
@@ -212,19 +204,11 @@
 
             .sidebar-main {
               .sidebar-links {
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        > li {
-                          a {
-                            svg {
-                              margin-left: 0;
-                              margin-right: 0;
-                            }
-                          }
-                        }
-                      }
+                > li {
+                  a {
+                    svg {
+                      margin-left: 0;
+                      margin-right: 0;
                     }
                   }
                 }
@@ -247,18 +231,10 @@
             &:hover {
               .sidebar-main {
                 .sidebar-links {
-                  .simplebar-wrapper {
-                    .simplebar-mask {
-                      .simplebar-content-wrapper {
-                        .simplebar-content {
-                          > li {
-                            a {
-                              svg {
-                                margin-left: 13px;
-                              }
-                            }
-                          }
-                        }
+                  > li {
+                    a {
+                      svg {
+                        margin-left: 13px;
                       }
                     }
                   }
@@ -281,19 +257,10 @@
                     }
                   }
                 }
-
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        > li {
-                          a {
-                            svg {
-                              float: none;
-                            }
-                          }
-                        }
-                      }
+                > li {
+                  a {
+                    svg {
+                      float: none;
                     }
                   }
                 }
@@ -307,29 +274,21 @@
 
           .sidebar-main {
             .sidebar-links {
-              .simplebar-wrapper {
-                .simplebar-mask {
-                  .simplebar-content-wrapper {
-                    .simplebar-content {
-                      > li {
-                        .sidebar-submenu {
-                          &:after {
-                            right: 30px;
-                            left: unset;
-                          }
+              > li {
+                .sidebar-submenu {
+                  &:after {
+                    right: 30px;
+                    left: unset;
+                  }
 
-                          > li {
-                            a {
-                              padding-right: 45px !important;
-                              padding-left: unset !important;
+                  > li {
+                    a {
+                      padding-right: 45px !important;
+                      padding-left: unset !important;
 
-                              &:after {
-                                right: 26px;
-                                left: unset;
-                              }
-                            }
-                          }
-                        }
+                      &:after {
+                        right: 26px;
+                        left: unset;
                       }
                     }
                   }
@@ -345,19 +304,11 @@
         .sidebar-wrapper {
           .sidebar-main {
             .sidebar-links {
-              .simplebar-wrapper {
-                .simplebar-mask {
-                  .simplebar-content-wrapper {
-                    .simplebar-content {
-                      > li {
-                        a {
-                          svg {
-                            margin-right: unset;
-                            margin-left: 15px;
-                          }
-                        }
-                      }
-                    }
+              > li {
+                a {
+                  svg {
+                    margin-right: unset;
+                    margin-left: 15px;
                   }
                 }
               }
@@ -367,44 +318,36 @@
         div.sidebar-wrapper {
           .sidebar-main {
             .sidebar-links {
-              .simplebar-wrapper {
-                .simplebar-mask {
-                  .simplebar-content-wrapper {
-                    .simplebar-content {
-                      > li {
-                        .mega-menu-container {
-                          .mega-box {
-                            .link-section {
-                              .submenu-content.opensubmegamenu {
-                                li {
-                                  a {
-                                    padding: 6px 45px 6px 25px;
-                                  }
-                                }
-                              }
-                              .submenu-title {
-                                h5 {
-                                  padding: 6px 45px 6px 25px;
-                                  &:after {
-                                    left: unset;
-                                    right: 25px;
-                                  }
-                                }
-                              }
-                            }
+              > li {
+                .mega-menu-container {
+                  .mega-box {
+                    .link-section {
+                      .submenu-content.opensubmegamenu {
+                        li {
+                          a {
+                            padding: 6px 45px 6px 25px;
                           }
                         }
                       }
-                      .menu-box {
-                        > ul {
-                          > li {
-                            a {
-                              svg {
-                                margin-right: unset;
-                              }
-                            }
+                      .submenu-title {
+                        h5 {
+                          padding: 6px 45px 6px 25px;
+                          &:after {
+                            left: unset;
+                            right: 25px;
                           }
                         }
+                      }
+                    }
+                  }
+                }
+              }
+              .menu-box {
+                > ul {
+                  > li {
+                    a {
+                      svg {
+                        margin-right: unset;
                       }
                     }
                   }
@@ -6442,17 +6385,9 @@
     .sidebar-wrapper {
       .sidebar-main {
         .sidebar-links {
-          .simplebar-wrapper {
-            .simplebar-mask {
-              .simplebar-content-wrapper {
-                .simplebar-content {
-                  > li {
-                    margin-left: 8px;
-                    margin-right: unset;
-                  }
-                }
-              }
-            }
+          > li {
+            margin-left: 8px;
+            margin-right: unset;
           }
         }
       }
