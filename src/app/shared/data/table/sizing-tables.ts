@@ -6,7 +6,7 @@ export const sizingTablesXl = {
     {
       id: 1,
       Name: 'Mark Jecno',
-      Date: '22/08/2022',
+      Date: '22/08/2023',
       Status: 'On leave',
       statusClass: 'font-danger',
       hours: '0',
@@ -15,7 +15,7 @@ export const sizingTablesXl = {
     {
       id: 2,
       Name: 'Elana Robbert',
-      Date: '21/08/2022',
+      Date: '21/08/2023',
       Status: 'Present',
       statusClass: 'font-success',
       hours: '10',
@@ -24,7 +24,7 @@ export const sizingTablesXl = {
     {
       id: 3,
       Name: 'John Deo',
-      Date: '18/08/2022',
+      Date: '18/08/2023',
       Status: 'On leave',
       statusClass: 'font-danger',
       hours: '8',

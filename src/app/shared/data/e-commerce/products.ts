@@ -7,7 +7,7 @@ export const PRODUCTS: product[] = [
 
     amount: 10,
     stock: 'In Stock',
-    startData: '20/08/2022',
+    startData: '20/08/2023',
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const PRODUCTS: product[] = [
 
     amount: 12,
     stock: 'out of stock',
-    startData: '12/04/2022',
+    startData: '12/04/2023',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export const PRODUCTS: product[] = [
 
     amount: 14,
     stock: 'In Stock',
-    startData: '04/08/2022',
+    startData: '04/08/2023',
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ export const PRODUCTS: product[] = [
 
     amount: 20,
     stock: 'Low Stock',
-    startData: '25/04/2022',
+    startData: '25/04/2023',
   },
   {
     id: 5,
@@ -46,7 +46,7 @@ export const PRODUCTS: product[] = [
 
     amount: 22,
     stock: 'In Stock',
-    startData: '29/06/2022',
+    startData: '29/06/2023',
   },
   {
     id: 6,
@@ -55,7 +55,7 @@ export const PRODUCTS: product[] = [
 
     amount: 10,
     stock: 'out of stock',
-    startData: '15/05/2022',
+    startData: '15/05/2023',
   },
   {
     id: 7,
@@ -64,7 +64,7 @@ export const PRODUCTS: product[] = [
 
     amount: 24,
     stock: 'out of stock',
-    startData: '01/03/2022',
+    startData: '01/03/2023',
   },
   {
     id: 8,
@@ -74,7 +74,7 @@ export const PRODUCTS: product[] = [
 
     amount: 21,
     stock: 'Low Stock',
-    startData: '11/11/2022',
+    startData: '11/11/2023',
   },
   {
     id: 9,
@@ -84,7 +84,7 @@ export const PRODUCTS: product[] = [
 
     amount: 19,
     stock: 'In Stock',
-    startData: '18/12/2022',
+    startData: '18/12/2023',
   },
   {
     id: 10,
@@ -93,6 +93,6 @@ export const PRODUCTS: product[] = [
 
     amount: 30,
     stock: 'Red Skirt',
-    startData: '14/04/2022',
+    startData: '14/04/2023',
   },
 ];

@@ -19,10 +19,14 @@
   }
   .nav-link {
     padding: 0;
-    position: relative;  
+    position: relative;
+    color: $primary-color;
     .settings{
       z-index: 3;
       position: relative;
+      &.buy-now{
+        border-radius: 0 0 6px 6px;
+      }
     } 
     &:before {
       content: "";

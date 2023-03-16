@@ -115,18 +115,15 @@
 @import "components/avatars";
 @import "components/badge";
 @import "components/breadcrumb";
-@import "components/builders";
 @import "components/buttons";
 @import "components/card";
 @import "components/color";
 @import "components/datatable";
 @import "components/datepicker";
 @import "components/dropdown";
-@import "components/form-builder";
 @import "components/form-input";
 @import "components/form-wizard";
 @import "components/forms";
-@import "components/form_builder-2";
 @import "components/icons";
 @import "components/list";
 @import "components/loader";
@@ -201,10 +198,10 @@
 	*** themes ***
 -----------------------*/
 @import "themes/dark";
-@import "themes/dark-sidebar";
 @import "themes/rtl";
 @import "themes/theme-customizer";
 @import "themes/update";
+@import "../css/style";
 
 @import "vendors/whether-icon";
 // @import "vendors/font-awesome/variables";

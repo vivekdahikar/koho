@@ -4,7 +4,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/1.jpg',
     post: 'Web Design',
     desc: 'A Web Designing course belongs to the field of Computer Science and IT. It enables students to learn various techniques.',
-    date: 'Jan 21, 2022',
+    date: 'Jan 21, 2023',
     rating: 5,
   },
   {
@@ -12,7 +12,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/2.jpg',
     post: 'Web Development',
     desc: 'This course is designed to start you on a path toward future studies in web development and design.',
-    date: 'Dec 15, 2022',
+    date: 'Dec 15, 2023',
     rating: 4,
   },
   {
@@ -20,7 +20,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/3.jpg',
     post: 'UI Design',
     desc: ' User interface design (UI) is the design for machines and software, such as mobile devices, computers.',
-    date: 'Feb 10, 2022',
+    date: 'Feb 10, 2023',
     rating: 3,
   },
   {
@@ -28,7 +28,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/1.jpg',
     post: 'Tailwind Design',
     desc: 'A Web Designing course belongs to the field of Computer Science and IT. It enables students to learn various techniques.',
-    date: 'Nov 05, 2022',
+    date: 'Nov 05, 2023',
     rating: 1,
   },
   {
@@ -36,7 +36,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/4.jpg',
     post: 'UI Design',
     desc: ' User interface design (UI) is the design for machines and software, such as mobile devices, computers.',
-    date: 'Apr 20, 2022',
+    date: 'Apr 20, 2023',
     rating: 4,
   },
 
@@ -45,7 +45,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/2.jpg',
     post: 'Php Developer',
     desc: 'This course is designed to start you on a path toward future studies in web development and design.',
-    date: 'May 01, 2022',
+    date: 'May 01, 2023',
     rating: 5,
   },
   {
@@ -53,7 +53,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/3.jpg',
     post: 'Graphic Design',
     desc: ' User interface design (UI) is the design for machines and software, such as mobile devices, computers.',
-    date: 'Dec 08, 2022',
+    date: 'Dec 08, 2023',
     rating: 3,
   },
   {
@@ -61,7 +61,7 @@ export const featuredTutorials = [
     img: 'assets/images/faq/4.jpg',
     post: 'Developer',
     desc: ' User interface design (UI) is the design for machines and software, such as mobile devices, computers.',
-    date: 'Sept 14, 2022',
+    date: 'Sept 14, 2023',
     rating: 2,
   },
 ];

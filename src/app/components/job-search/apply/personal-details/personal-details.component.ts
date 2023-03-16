@@ -14,7 +14,7 @@ export class PersonalDetailsComponent {
       this.date.push(i);
     }
 
-    for (let i = 1985; i <= 2022; i++) {
+    for (let i = 1985; i <= 2023; i++) {
       this.year.push(i);
     }
   }
