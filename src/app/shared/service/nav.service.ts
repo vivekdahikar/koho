@@ -82,7 +82,7 @@ export class NavService {
     },
     {
       title: 'Widgets',
-      icon: 'widgets',
+      icon: 'airplay',
       type: 'sub',
       active: false,
       children: [
@@ -92,29 +92,29 @@ export class NavService {
     },
     {
       title: 'Page layout',
-      icon: 'page',
+      icon: 'layout',
       type: 'sub',
       active: false,
       children: [
         {
-          path: "/page-layout/hide-nav",
-          title: "Hide New Scroll",
-          type: "link",
+          path: '/page-layout/hide-nav',
+          title: 'Hide New Scroll',
+          type: 'link',
         },
         {
-          path: "/page-layout/footer-light",
-          title: "Footer Light",
-          type: "link",
+          path: '/page-layout/footer-light',
+          title: 'Footer Light',
+          type: 'link',
         },
         {
-          path: "/page-layout/footer-dark",
-          title: "footer Dark",
-          type: "link",
+          path: '/page-layout/footer-dark',
+          title: 'footer Dark',
+          type: 'link',
         },
         {
-          path: "/page-layout/footer-fixed",
-          title: "Footer Fixed",
-          type: "link",
+          path: '/page-layout/footer-fixed',
+          title: 'Footer Fixed',
+          type: 'link',
         },
       ],
     },
@@ -124,7 +124,7 @@ export class NavService {
 
     {
       title: 'Project',
-      icon: 'project',
+      icon: 'box',
       type: 'sub',
       badgeType: 'light-info',
       badgeValue: 'New',
@@ -137,7 +137,7 @@ export class NavService {
 
     {
       title: 'E-Commerce',
-      icon: 'ecommerce',
+      icon: 'shopping-bag',
       type: 'sub',
       active: false,
       children: [
@@ -170,8 +170,9 @@ export class NavService {
 
     {
       path: '/file-manager',
+      icon: 'git-pull-request',
+
       title: 'File Manager',
-      icon: 'file',
       active: true,
 
       type: 'link',
@@ -179,7 +180,7 @@ export class NavService {
     },
     {
       title: 'Email',
-      icon: 'email',
+      icon: 'mail',
       type: 'sub',
       active: false,
       children: [
@@ -190,7 +191,7 @@ export class NavService {
     },
     {
       title: 'Chat',
-      icon: 'chat',
+      icon: 'message-square',
       type: 'sub',
       active: false,
       children: [
@@ -209,35 +210,35 @@ export class NavService {
         { path: '/users/users-cards', title: 'Users Cards', type: 'link' },
       ],
     },
-    { path: '/bookmark', title: 'Bookmark', icon: 'bookmark', type: 'link' },
+    { path: '/bookmark', title: 'Bookmark', icon: 'heart', type: 'link' },
     {
       path: '/contacts',
       title: 'Contacts',
-      icon: 'contacts',
+      icon: 'list',
       type: 'link',
       bookmark: true,
     },
     {
       path: '/task',
       title: 'Task',
-      icon: 'task',
+      icon: 'check-square',
       type: 'link',
       bookmark: true,
     },
 
-    { path: '/calender', title: 'Calender', icon: 'calender', type: 'link' },
-    { path: '/social-app', title: 'Social App', icon: 'social', type: 'link' },
+    { path: '/calender', title: 'Calender', icon: 'calendar', type: 'link' },
+    { path: '/social-app', title: 'Social App', icon: 'zap', type: 'link' },
     {
       path: '/to-do',
       title: 'To-Do',
-      icon: 'todo',
+      icon: 'clock',
       type: 'link',
       bookmark: true,
     },
     {
       path: '/search-website',
       title: 'Search Website',
-      icon: 'website',
+      icon: 'search',
       type: 'link',
     },
     {
@@ -246,7 +247,7 @@ export class NavService {
 
     {
       title: 'Forms',
-      icon: 'forms',
+      icon: 'sliders',
       type: 'sub',
       active: false,
       children: [
@@ -360,7 +361,7 @@ export class NavService {
     },
     {
       title: 'Tables',
-      icon: 'tables',
+      icon: 'server',
       type: 'sub',
       active: true,
       children: [
@@ -381,7 +382,7 @@ export class NavService {
     },
     {
       title: 'Ui Kits',
-      icon: 'uikits',
+      icon: 'box',
       type: 'sub',
       active: false,
       children: [
@@ -425,7 +426,7 @@ export class NavService {
     },
     {
       title: 'Bonus Ui',
-      icon: 'bonusui',
+      icon: 'folder-plus',
       type: 'sub',
       active: false,
       children: [
@@ -453,7 +454,7 @@ export class NavService {
 
     {
       title: 'Icons',
-      icon: 'icons',
+      icon: 'command',
       type: 'sub',
       active: false,
       children: [
@@ -468,7 +469,7 @@ export class NavService {
 
     {
       title: 'Buttons',
-      icon: 'buttons',
+      icon: 'cloud',
       type: 'sub',
       active: false,
       children: [
@@ -483,7 +484,7 @@ export class NavService {
     {
       path: '/charts',
       title: 'Charts',
-      icon: 'charts',
+      icon: 'bar-chart',
       active: false,
       type: 'sub',
       children: [
@@ -503,7 +504,7 @@ export class NavService {
     {
       path: '/gallery',
       title: 'Gallery',
-      icon: 'gallery',
+      icon: 'image',
       active: false,
       type: 'sub',
       children: [
@@ -532,7 +533,7 @@ export class NavService {
     {
       path: '/blog',
       title: 'Blog',
-      icon: 'blog',
+      icon: 'film',
       type: 'sub',
       active: false,
       children: [
@@ -541,11 +542,11 @@ export class NavService {
         { path: '/blog/add-post', title: 'Add Post', type: 'link' },
       ],
     },
-    { path: '/faq', title: 'Faq', icon: 'faq', type: 'sub ' },
+    { path: '/faq', title: 'Faq', icon: 'help-circle', type: 'sub ' },
     {
       path: '/job-search',
       title: 'Job Search',
-      icon: 'jobsearch',
+      icon: 'package',
       type: 'sub',
       active: false,
       children: [
@@ -566,7 +567,7 @@ export class NavService {
     {
       path: '/learning',
       title: 'Learning',
-      icon: 'learning',
+      icon: 'radio',
       type: 'sub',
       active: false,
       children: [
@@ -585,7 +586,7 @@ export class NavService {
     {
       path: '/maps',
       title: 'Maps',
-      icon: 'maps',
+      icon: 'map',
       type: 'sub',
       active: false,
       children: [
@@ -596,7 +597,7 @@ export class NavService {
     {
       path: '/editors',
       title: 'Editors',
-      icon: 'editors',
+      icon: 'git-pull-request',
       type: 'sub',
       active: false,
       children: [
@@ -611,7 +612,7 @@ export class NavService {
     {
       path: '/knowledgebases',
       title: 'Knowledgebase',
-      icon: 'knowledgebase',
+      icon: 'database',
       active: false,
       type: 'sub',
       children: [
@@ -635,7 +636,7 @@ export class NavService {
     {
       path: '/support-ticket',
       title: 'Support Ticket',
-      icon: 'ticket',
+      icon: 'headphones',
       type: 'link',
     },
   ];

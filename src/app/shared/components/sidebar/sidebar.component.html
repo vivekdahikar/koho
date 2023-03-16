@@ -72,7 +72,7 @@
             *ngIf="menuItem.type === 'sub'"
             (click)="toggletNavActive(menuItem)"
           >
-            <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
+            <app-feather-icon [icon]="menuItem.icon"></app-feather-icon>
             <span class="lan-5">{{ menuItem.title | translate }}</span
             ><span
               class="badge badge-primary"
@@ -96,7 +96,7 @@
             [ngClass]="{ active: menuItem.active }"
             *ngIf="menuItem.type === 'link'"
           >
-            <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
+            <app-feather-icon [icon]="menuItem.icon"></app-feather-icon>
             <span class="lan-3" (click)="close()">{{
               menuItem.title | translate
             }}</span>
