@@ -335,22 +335,6 @@
       }
     }
   }
-  .page-wrapper {
-    &.compact-wrapper {
-      .page-header {
-        margin-left: 85px;
-        width: calc(100% - 85px);
-      }
-    }
-  }
-}
-@media (max-width: 1400px) and (min-width: 1200px) {
-  .page-body-wrapper {
-    .page-body,
-    footer {
-      margin-left: 85px !important;
-    }
-  }
 }
 @media (max-width: 1470px) {
   .color-selector {

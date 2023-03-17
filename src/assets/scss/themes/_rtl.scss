@@ -5038,24 +5038,6 @@
       }
     }
   }
-  @media only screen and (max-width: 1400px) {
-    .page-wrapper{
-      &.compact-wrapper{
-        .page-header{
-          margin-right: 85px;
-          margin-left: unset;
-          width: calc(100% - 85px);
-        }
-      }
-    }
-    .page-body-wrapper {
-      .page-body,
-      footer {
-        margin-right: 85px !important;
-        margin-left: unset !important;
-      }
-    }
-  }
   @media only screen and (max-width: 1470px) {
     // edit profile
     .edit-profile {

@@ -895,7 +895,23 @@ body {
         background-color: $primary-color !important;
       }
     }
-
+    .page-wrapper{
+      .page-header{
+        .header-wrapper{
+          .left-header{
+            .Typeahead-menu{
+              .ProfileCard{
+                .ProfileCard-avatar{
+                  svg{
+                    stroke: $dark-all-font-color;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     // form wizard
     .f1 {
       .f1-steps {
@@ -1428,7 +1444,7 @@ body {
                         }
 
                         &.active {
-                          color: var(--theme-default);
+                          color: $light-primary-color;
                         }
                       }
                     }

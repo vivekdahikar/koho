@@ -57,7 +57,7 @@ export class SidebarComponent {
   }
 
   close() {
-    if (this.width < 1199) {
+    if (this.width <= 1199) {
       document.querySelector('.sidebar-wrapper')?.classList.add('close_icon');
     }
   }

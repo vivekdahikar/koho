@@ -331,6 +331,9 @@
               transform: rotateY(180deg);
 
               li {
+                .droplet-dropdown{
+                  position: relative;
+                }
                 &:first-child {
                   height: 160px !important;
                 }
@@ -530,6 +533,19 @@
               vertical-align: bottom;
               margin-right: 10px;
               stroke: $dark-color;
+            }
+          }
+        }
+      }
+      .left-header{
+        .Typeahead-menu{
+          .ProfileCard{
+            border: 0 !important;
+            padding: 8px;
+            .ProfileCard-avatar{
+              svg{
+                stroke: $theme-body-font-color;
+              }
             }
           }
         }
@@ -1185,7 +1201,7 @@
             }
             ~ .page-body,
             ~ footer {
-              margin-left: 85px;
+              margin-left: 90px;
               transition: 0.5s;
             }
             ~ .footer-fix {

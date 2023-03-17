@@ -21,9 +21,7 @@
                     [routerLink]="item?.path"
                     routerLinkActive="item?.active"
                   >
-                    <svg-icon
-                      src="assets/svgIcon/{{ item.icon }}.svg"
-                    ></svg-icon>
+                  <app-feather-icon [icon]="item.icon"></app-feather-icon>
                   </a>
                 </div>
               </ng-container>
@@ -56,9 +54,7 @@
                   *ngFor="let item of menuItems | slice : 0 : 8"
                 >
                   <div class="ProfileCard-avatar">
-                    <svg-icon
-                      src="assets/svgIcon/{{ item.icon }}.svg"
-                    ></svg-icon>
+                    <app-feather-icon [icon]="item.icon"></app-feather-icon>
                   </div>
                   <div class="ProfileCard-details">
                     <div class="ProfileCard-realName">
