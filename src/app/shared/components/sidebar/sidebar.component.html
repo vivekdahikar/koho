@@ -117,7 +117,7 @@
             [ngClass]="{ active: menuItem.active }"
             *ngIf="menuItem.type === 'extLink'"
           >
-            <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
+            <app-feather-icon [icon]="menuItem.icon"></app-feather-icon>
             <span class="lan-3">{{ menuItem.title | translate }}</span>
 
             <div class="according-menu">
@@ -137,7 +137,7 @@
             [ngClass]="{ active: menuItem.active }"
             *ngIf="menuItem.type === 'extTabLink'"
           >
-            <svg-icon src="assets/svgIcon/{{ menuItem.icon }}.svg"></svg-icon>
+            <app-feather-icon [icon]="menuItem.icon"></app-feather-icon>
             <span class="lan-3">{{ menuItem.title | translate }}</span>
 
             <div class="according-menu">

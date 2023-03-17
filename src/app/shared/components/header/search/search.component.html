@@ -22,10 +22,7 @@
     *ngFor="let menuItem of menuItems | slice : 0 : 8"
   >
     <div class="ProfileCard-avatar">
-      <svg-icon
-        src="assets/svgIcon/{{ menuItem.icon }}.svg"
-        class="header-search"
-      ></svg-icon>
+      <app-feather-icon [icon]="menuItem.icon"></app-feather-icon>
     </div>
     <div class="ProfileCard-details">
       <div class="ProfileCard-realName">
