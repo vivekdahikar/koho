@@ -174,22 +174,14 @@
               }
               .sidebar-main {
                 .sidebar-links {
-                  height: calc(100vh - 210px);
-                  .simplebar-wrapper {
-                    .simplebar-mask {
-                      .simplebar-content-wrapper {
-                        .simplebar-content {
-                          .menu-box {
-                            > ul {
-                              > li {
-                                a {
-                                  padding: 12px 30px;
-                                  svg {
-                                    margin-right: unset;
-                                  }
-                                }
-                              }
-                            }
+                  height: calc(100vh - 188px) !important;
+                  .menu-box {
+                    > ul {
+                      > li {
+                        a {
+                          padding: 12px 30px;
+                          svg {
+                            margin-right: unset;
                           }
                         }
                       }
@@ -203,25 +195,14 @@
               &:hover {
                 width: 250px;
                 .sidebar-main {
-                  .simplebar-offset {
-                    height: calc(100vh - 340px);
-                  }
                   .sidebar-links {
                     height: calc(100vh - 340px); 
-                    .simplebar-wrapper {
-                      .simplebar-mask {
-                        .simplebar-content-wrapper {
-                          .simplebar-content {
-                            .menu-box {
-                              > ul {
-                                > li {
-                                  a {
-                                    svg {
-                                      margin-right: 10px;
-                                    }
-                                  }
-                                }
-                              }
+                    .menu-box {
+                      > ul {
+                        > li {
+                          a {
+                            svg {
+                              margin-right: 10px;
                             }
                           }
                         }
@@ -236,27 +217,15 @@
             }
 
             .sidebar-main {
-              .simplebar-offset {
-                height: calc(100vh - 410px);
-              }
               .sidebar-links {
                 margin-top: 10px;
-                margin-bottom: 20px;
-                height: calc(100vh - 380px) !important;
-                padding: 20px;
-                .simplebar-wrapper {
-                  .simplebar-mask {
-                    .simplebar-content-wrapper {
-                      .simplebar-content {
-                        .menu-box {
-                          > ul {
-                            > li {
-                              a {
-                                padding: 12px 15px;
-                              }
-                            }
-                          }
-                        }
+                margin-bottom: 52px;
+                height: calc(100vh - 410px) !important;
+                .menu-box {
+                  > ul {
+                    > li {
+                      a {
+                        padding: 12px 15px;
                       }
                     }
                   }
@@ -271,7 +240,7 @@
             overflow: scroll;
             max-height: calc(100vh - 220px);
             padding-bottom: 70px;
-            margin-left: 85px;
+            margin-left: 250px;
 
             &::-webkit-scrollbar-track {
               -webkit-box-shadow: inset 0 0 6px $light-gray;
@@ -291,11 +260,6 @@
             }
           }
         }
-        .simplebar-content-wrapper {
-          .simplebar-content {
-            padding: 0 !important;
-          }
-        }
       }
       &.horizontal-wrapper {
         &:before {
@@ -304,9 +268,9 @@
         .page-body-wrapper {
           margin-top: 40px;
           .page-body {
-            margin-top: 80px;
+            margin-top: 90px;
             min-height: calc(100vh - 310px);
-            max-height: calc(100vh - 230px);
+            max-height: calc(100vh - 270px);
             overflow: scroll;
             &::-webkit-scrollbar-track {
               -webkit-box-shadow: inset 0 0 6px $light-gray;
@@ -347,7 +311,7 @@
         left: 0;
         right: 0;
         transition: $sidebar-transition;
-        padding-left: 85px;
+        padding-left: 250px;
         margin-top: $box-layout-space;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -450,7 +414,7 @@
         footer {
           width: 1280px;
           margin: 0 auto;
-          padding-left: 100px;
+          padding-left: 280px;
           margin-bottom: 40px !important;
           position: fixed;
           left: 50%;

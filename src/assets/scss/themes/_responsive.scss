@@ -1200,6 +1200,10 @@
       .page-body-wrapper {
         div.sidebar-wrapper {
           top: 0;
+          .sidebar-links{
+            height: calc(100vh - 330px) !important;
+            padding-bottom: 0;
+          }
           &.close_icon {
             &:hover {
               transform: translate(-285px);
@@ -2210,9 +2214,6 @@
         }
       }
     }
-  }
-  .simplebar-mask {
-    top: 70px;
   }
   .project-cards {
     .tab-content {
