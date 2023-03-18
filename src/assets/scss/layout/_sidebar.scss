@@ -333,6 +333,55 @@
               li {
                 .droplet-dropdown{
                   position: relative;
+                  .Typeahead-menu{
+                    box-shadow: none;
+                    .ProfileCard{
+                      border: 0 !important;
+                      padding: 8px;
+                      &:hover{
+                        background-color: transparent;
+                      }
+                      .ProfileCard-avatar{
+                        svg{
+                          width: 20px;
+                          height: 20px;
+                          opacity: 1;
+                        }
+                      }
+                      .ProfileCard-details{
+                        padding-left: 10px;
+                        text-align: left;
+                        width: 100%;
+                      }
+                    }
+                  }
+                  .Typeahead-menu{
+                    background: transparent;
+                    box-shadow: none;
+                    left: -1px;
+                    max-height: 93px;
+                    overflow: auto;
+                    padding: 8px 8px 8px 20px;
+                    .ProfileCard-avatar{
+                      svg{
+                        path{
+                          stroke: $theme-body-font-color;
+                        }
+                      }
+                    }
+                    .ProfileCard-realName{
+                      display: flex;
+                      justify-content: space-between;
+                      .realname{
+                        color: $theme-body-font-color;
+                      }
+                      span{
+                        i{
+                          vertical-align: middle;
+                        }
+                      }
+                    }
+                  }
                 }
                 &:first-child {
                   height: 160px !important;
@@ -542,9 +591,28 @@
           .ProfileCard{
             border: 0 !important;
             padding: 8px;
+            margin: 0;
+            &:hover{
+              .ProfileCard-realName{
+                a{
+                  color: $primary-color;
+                }
+              }
+              .ProfileCard-avatar{
+                svg{
+                  stroke: $primary-color;
+                }
+              }
+            }
+            .ProfileCard-realName{
+              a{
+                color: $theme-body-font-color;
+              }
+            }
             .ProfileCard-avatar{
               svg{
                 stroke: $theme-body-font-color;
+                vertical-align: middle;
               }
             }
           }

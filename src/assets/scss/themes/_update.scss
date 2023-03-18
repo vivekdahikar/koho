@@ -5,6 +5,9 @@ body.offcanvas{
   bottom: unset;
   top: 0;
 }
+.starred{
+  color: $warning-color;
+}
 .todo-wrap {
   .card-header {
     &.b-bottom {

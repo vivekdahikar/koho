@@ -895,12 +895,58 @@ body {
         background-color: $primary-color !important;
       }
     }
+    .ProfileCard:hover{
+      background-color: $dark-card-background;
+    }
     .page-wrapper{
       .page-header{
         .header-wrapper{
+          .nav-right{
+            .flip-card{
+              .flip-card-inner{
+                .back{
+                  li{
+                    .droplet-dropdown{
+                      .Typeahead-menu{
+                        .ProfileCard-realName{
+                          .realname{
+                            color: $dark-all-font-color;
+                          }
+                        }
+                        .ProfileCard-avatar{
+                          svg{
+                            path{
+                              stroke: $dark-all-font-color;
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
           .left-header{
             .Typeahead-menu{
               .ProfileCard{
+                &:hover{
+                  .ProfileCard-realName{
+                    a{
+                      color: $primary-color;
+                    }
+                  }
+                  .ProfileCard-avatar{
+                    svg{
+                      stroke: $primary-color;
+                    }
+                  }
+                }
+                .ProfileCard-realName{
+                  a{
+                    color: $dark-all-font-color;
+                  }
+                }
                 .ProfileCard-avatar{
                   svg{
                     stroke: $dark-all-font-color;
