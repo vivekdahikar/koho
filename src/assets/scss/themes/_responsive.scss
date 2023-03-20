@@ -1145,7 +1145,7 @@
           .header-logo-wrapper {
             display: flex;
           }
-          .logo- .toggle-sidebar {
+          .toggle-sidebar {
             width: 35px;
             height: 35px;
             border-radius: 50%;
@@ -1240,7 +1240,7 @@
       .header-wrapper {
         margin: 0;
         padding: 12px 30px;
-
+        justify-content: space-between;
         .nav-right {
           .notification {
             top: 10px;
@@ -3088,6 +3088,16 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .left-header{
+    .input-group{
+      ~ .Typeahead-menu{
+        top: calc(100% + 25px);
+        width: 220px;
+        right: auto;
+        left: auto;
+      }
+    }
+  }
   .calendar-basic {
     .fc {
       .fc-toolbar {
@@ -6226,9 +6236,9 @@
   .onhover-dropdown {
     &:hover {
       .onhover-show-div {
-        opacity: 0;
+        opacity: 1;
         transform: none;
-        visibility: hidden;
+        visibility: visible;
 
         &.active {
           opacity: 1;

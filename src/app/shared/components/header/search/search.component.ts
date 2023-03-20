@@ -13,7 +13,8 @@ export class SearchComponent {
   public searchResult: boolean = false;
   public searchResultEmpty: boolean = false;
   public text!: string;
-
+  open = false;
+  
   constructor(public navServices: NavService) {
     this.navServices.items.subscribe((menuItems) => (this.items = menuItems));
   }
@@ -71,6 +72,9 @@ export class SearchComponent {
     document.body.classList.add('offcanvas');
   }
 
+  openMenu() {
+    this.open = !this.open;
+  }
   removeFix() {
     this.searchResult = false;
     document.body.classList.remove('offcanvas');

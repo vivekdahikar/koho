@@ -1621,10 +1621,26 @@ export let widget5: ChartOptions | any = {
   labels: [''],
   responsive: [
     {
+      breakpoint: 1500,
+      options: {
+        chart: {
+          height: 160,
+        },
+      },
+    },
+    {
+      breakpoint: 1380,
+      options: {
+        chart: {
+          height: 160,
+        },
+      },
+    },
+    {
       breakpoint: 420,
       options: {
         chart: {
-          height: 280,
+          height: 160,
         },
       },
     },

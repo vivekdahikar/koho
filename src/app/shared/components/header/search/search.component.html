@@ -1,6 +1,7 @@
-<div class="input-group">
+<div class="input-group" (click)="openMenu()">
   <input
     class="form-control"
+    [class.open]="open"
     [(ngModel)]="text"
     [ngModelOptions]="{ standalone: true }"
     (keyup)="searchTerm(text)"

@@ -158,6 +158,31 @@
     }
   }
   .page-wrapper {
+    .page-header{
+      .header-wrapper{
+        .nav-right{
+          .flip-card{
+            .flip-card-inner{
+              .back{
+                li{
+                  .droplet-dropdown{
+                    .Typeahead-menu{
+                      padding: 8px 20px 8px 8px;
+                      .ProfileCard{
+                        .ProfileCard-details{
+                          padding-left: unset;
+                          padding-right: 10px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     &.compact-wrapper {
       .page-body-wrapper {
         .sidebar-wrapper {
@@ -1383,7 +1408,7 @@
         > ul {
           > li {
             &:first-child {
-              margin-right: 0;
+              margin-left: 0;
             }
           }
         }
@@ -5363,6 +5388,15 @@
       }
       .page-header {
         .header-wrapper {
+          .nav-right{
+            .onhover-show-div:not(.profile-dropdown){
+              li{
+                &:first-child{
+                  padding-left: 20px !important;
+                }
+              }
+            }
+          }
           .header-logo-wrapper {
             margin-left: 0;
             margin-right: unset;
@@ -5787,6 +5821,14 @@
     }
   }
   @media only screen and (max-width: 767px) {
+    .left-header{
+      .input-group{
+        .form-control{
+          right: 10px;
+          left: unset;
+        }
+      }
+    }  
     .list-persons {
       .profile-mail {
         .email-general {

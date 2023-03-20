@@ -44,11 +44,9 @@ export class ColorComponent {
   customizeMixLayout(val: any) {
     this.MIXLayout = val;
     this.layout.config.settings.layout_version = val;
-    document.body?.classList.remove('light-only', 'dark-sidebar', 'dark-only');
+    document.body?.classList.remove('light-only', 'dark-only');
     if (val === 'default') {
       document.body?.classList.add('light-only');
-    } else if (val === 'dark-sidebar') {
-      document.body?.classList.add('dark-sidebar');
     } else {
       document.body?.classList.add('dark-only');
     }

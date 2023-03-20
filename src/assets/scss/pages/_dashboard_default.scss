@@ -328,6 +328,13 @@ tr {
     .progress-circle {
       position: relative;
       top: 3px;
+      .apexcharts-datalabels-group{
+        transform: translate(0 , -25px);
+        text{
+          font: bold 20px Arial;
+          color: $primary-color;
+        }
+      }
       input {
         &:focus {
           outline: none;
@@ -404,7 +411,7 @@ tr {
     padding: 0 15px;
     overflow: hidden;
     #beyo-line {
-      margin-bottom: -32px;
+      margin-bottom: -35px;
       margin-top: -18px;
       .apexcharts-xaxis,
       .apexcharts-yaxis {
@@ -805,6 +812,13 @@ tr {
   }
 }
 @media screen and (max-width: 1470px) and (min-width: 1366px){
+  .beyo-line{
+    .beyoline-header{
+      #beyo-line{
+        margin-bottom: -48px;
+      }
+    }
+  }  
   .investment-chart{
     .investment-group{
       .chart-detail{
@@ -858,12 +872,21 @@ tr {
     height: 268px;
     .greeting-img {
       img {
-        height: 180px;
+        height: 138px;
       }
     }
   }
 }
 @media screen and (max-width: 1199px) and (min-width: 992px){ 
+  .activity-review{
+    table{
+      tr{
+        td ,th{
+          padding: 7px 6px !important;
+        }
+      }
+    }
+  }
   .upgrade-history{
     height: 234px;
   }
@@ -1000,6 +1023,13 @@ tr {
     max-width: 100%;
     flex: 0 0 100%;
   }
+  .beyo-line{
+    .beyoline-header{
+      #beyo-line{
+        margin-bottom: -45px;
+      }
+    }
+  } 
 }
 @media screen and (max-width: 1470px) {
   .transaction-history {
@@ -1184,6 +1214,13 @@ tr {
   }
 }
 @media screen and (max-width: 480px) {
+  .beyo-line{
+    .beyoline-header{
+      #beyo-line{
+        margin-bottom: -55px;
+      }
+    }
+  }  
   .profile-greeting {
     text-align: center;
     height: 200px;
@@ -1250,7 +1287,7 @@ tr {
             margin-right: 10px !important;
           }
           h5 {
-            font-size: 12px;
+            font-size: 13px;
           }
         }
       }
