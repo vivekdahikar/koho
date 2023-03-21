@@ -123,6 +123,24 @@
         }
       }
     }
+    .weekend-view{
+      .card-body{
+        .img-wrapper{
+          margin-bottom: 38px;
+        }
+      }
+    } 
+    .best-sellers{
+      .card-body{
+        table{
+          tr{
+            td{
+              padding-bottom: 14px;
+            }
+          }
+        }
+      }
+    }
     .project-cards {
       .card {
         margin-bottom: 25px !important;
@@ -588,7 +606,7 @@
               }
             }
 
-            &.text-right {
+            &.text-end {
               text-align: center !important;
             }
           }
@@ -945,7 +963,7 @@
         font-size: 16px;
       }
       .card-body{
-        padding: 38px 12px !important;
+        padding: 20px 12px !important;
       }
     } 
     .profile-greeting {
@@ -988,6 +1006,9 @@
           .icon{
             width: 36px;
             height: 36px;
+            app-feather-icon{
+              height: 18px;
+            }
             svg{
               height: 18px;
             }
@@ -1023,8 +1044,8 @@
     }
     .small-chart-view{
       svg{
-        width: 100px;
-        transform: translate(-40px, 0);
+        width: 95px;
+        transform: translate(-30px, 0);
       }
     }
     .progress-circle{

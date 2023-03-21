@@ -1185,7 +1185,7 @@
         div.sidebar-wrapper {
           top: 0;
           .sidebar-links{
-            height: calc(100vh - 330px) !important;
+            height: calc(100vh - 320px) !important;
             padding-bottom: 0;
           }
           &.close_icon {
@@ -2047,7 +2047,7 @@
         .icon {
           width: 40px;
           height: 40px;
-          svg {
+          app-feather-icon,svg {
             height: 20px;
           }
         }
@@ -4385,6 +4385,13 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .cal-date-widget {
+    .cal-datepicker {
+      ngb-datepicker {
+        padding: 8px;
+      }
+    }
+  }
   .page-wrapper.only-body {
     .page-header {
       .header-wrapper {
@@ -4573,7 +4580,7 @@
     .text-md-end {
       margin-top: 10px;
     }
-    .text-right {
+    .text-end {
       text-align: right;
     }
     .text-xs-center {
@@ -5670,7 +5677,7 @@
   }
 
   .date-picker {
-    .text-right {
+    .text-end {
       text-align: left !important;
     }
   }

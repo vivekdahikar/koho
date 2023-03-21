@@ -42,13 +42,13 @@
       <ul class="list digits custom-scrollbar">
         <ng-container *ngFor="let call of calls">
           <li class="clearfix">
-            <div class="media">
+            <div class="d-flex">
               <img
                 class="rounded-circle user-image"
                 src="{{ call.profile }}"
                 alt=""
               />
-              <div class="media-body">
+              <div class="flex-grow-1">
                 <div class="about">
                   <div class="name">{{ call.user }}</div>
                   <div class="status">

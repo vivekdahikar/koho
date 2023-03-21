@@ -8,27 +8,13 @@ import { Component } from '@angular/core';
 export class ProductsComponent {
   customOptions = {
     loop: true,
-    margin: 10,
     nav: false,
-    dout: false, // responsive: {
-    //   0: {
-    //     items: 1,
-    //   },
-    //   400: {
-    //     items: 2,
-    //   },
-    //   760: {
-    //     items: 2,
-    //   },
-    //   1000: {
-    //     items: 2,
-    //   },
-    // },
+    dot: false,
     responsive: {
       0: {
-        items: 2,
+        items: 1,
       },
-      600: {
+      380: {
         items: 2,
       },
       1000: {

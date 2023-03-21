@@ -1405,13 +1405,6 @@
   .page-header {
     .header-wrapper {
       .nav-right {
-        > ul {
-          > li {
-            &:first-child {
-              margin-left: 0;
-            }
-          }
-        }
         &.right-header {
           ul {
             li {
@@ -2991,7 +2984,7 @@
     fieldset {
       .component {
         .form-group {
-          .text-lg-left {
+          .text-lg-start {
             text-align: right !important;
           }
           .input-group {
@@ -3112,7 +3105,7 @@
           .tab-pane {
             .component {
               .form-group {
-                .text-lg-left {
+                .text-lg-start {
                   text-align: right !important;
                 }
                 .input-group {
@@ -5389,6 +5382,13 @@
       .page-header {
         .header-wrapper {
           .nav-right{
+            > ul {
+              > li {
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
+            }
             .onhover-show-div:not(.profile-dropdown){
               li{
                 &:first-child{

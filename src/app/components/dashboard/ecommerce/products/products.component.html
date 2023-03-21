@@ -1,15 +1,15 @@
 <div class="items-slider">
   <owl-carousel-o [options]="customOptions">
     <ng-template *ngFor="let item of products" carouselSlide>
-      <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
-        <div class="card rated-product bg-primary">
+      <div class="col-xl-12 col-sm-12">
+        <div class="card rated-product {{item.class}}">
           <div class="card-body">
             <div class="img-wrapper">
               <img
                 class="img-fluid"
                 src="{{ item.image }}"
                 alt="apple-watch"
-              /><span class="badge {{ item.class }} rated-product-badge">{{
+              /><span class="badge bg-primary rated-product-badge">{{
                 item.badge
               }}</span>
             </div>

@@ -15,14 +15,14 @@
             <ng-container *ngFor="let item of listData">
               <div class="col-xl-2 box-col-3 col-md-4 col-sm-6">
                 <div class="prooduct-details-box">
-                  <div class="media">
+                  <div class="d-flex">
                     <a ruterLink="/e-commerce/product-page"
                       ><img
                         class="align-self-center img-fluid"
                         src="{{ item.img }}"
                         alt="#"
                     /></a>
-                    <div class="media-body">
+                    <div class="flex-grow-1">
                       <div class="product-name">
                         <a ruterLink="/e-commerce/product-page">
                           <h6>{{ item.name }}</h6></a

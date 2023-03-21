@@ -724,7 +724,7 @@ export let salechart: ChartOptions | any = {
     },
   ],
   tittle: 'Total Sales',
-  icon: 'shopping bag',
+  icon: 'shopping-bag',
   sale: '54,750',
 };
 
@@ -929,7 +929,7 @@ export let orderchart: ChartOptions | any = {
   ],
   tittle: 'Order Paid',
   icon: 'file-text',
-  sale: '55,900',
+  sale: '45,900',
 };
 export let visitorchart: ChartOptions | any = {
   data: [],
@@ -1651,7 +1651,7 @@ export let widget6: ChartOptions | any = {
   chart: {
     type: 'radialBar',
     height: 385,
-    offsetY: -20,
+    offsetY: 0,
     offsetX: 0,
   },
   plotOptions: {
@@ -2341,6 +2341,74 @@ export let widget13: ChartOptions | any = {
   legend: {
     horizontalAlign: 'left',
   },
+};
+export let widget14: ChartOptions | any = {
+  data: [],
+  series: [70],
+  chart: {
+    height: 350,
+    type: 'radialBar',
+  },
+  plotOptions: {
+    radialBar: {
+      hollow: {
+        margin: 15,
+        size: '70%',
+        image: 'assets/images/email-template/success.png',
+        imageWidth: 64,
+        imageHeight: 64,
+        imageClipped: false,
+      },
+      dataLabels: {
+        name: {
+          show: false,
+          color: '#fff',
+        },
+        value: {
+          show: true,
+          color: '#333',
+          offsetY: 70,
+          fontSize: '22px',
+        },
+      },
+    },
+  },
+  fill: {
+    type: 'image',
+    image: {
+      src: ['assets/images/user-card/5.jpg'],
+    },
+  },
+  stroke: {
+    lineCap: 'round',
+  },
+  labels: [''],
+  responsive: [
+    {
+      breakpoint: 1500,
+      options: {
+        chart: {
+          height: 160,
+        },
+      },
+    },
+    {
+      breakpoint: 1380,
+      options: {
+        chart: {
+          height: 160,
+        },
+      },
+    },
+    {
+      breakpoint: 420,
+      options: {
+        chart: {
+          height: 160,
+        },
+      },
+    },
+  ],
 };
 export let progress1: ChartOptions | any = {
   data: [],

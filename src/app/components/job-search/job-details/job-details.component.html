@@ -21,14 +21,14 @@
             <div class="card">
               <div class="job-search">
                 <div class="card-body">
-                  <div class="media">
+                  <div class="d-flex">
                     <img
                       class="img-40 img-fluid m-r-20"
                       *ngIf="job.iconImg"
                       src="{{ job.iconImg }}"
                       alt=""
                     />
-                    <div class="media-body">
+                    <div class="flex-grow-1">
                       <h6 class="f-w-700">
                         <a [routerLink]="['/job-search/list-view']">{{
                           job.title
@@ -53,13 +53,13 @@
           <div class="card">
             <div class="job-search">
               <div class="card-body">
-                <div class="media">
+                <div class="d-flex">
                   <img
                     class="img-40 img-fluid m-r-20"
                     src="assets/images/job-search/3.jpg"
                     alt=""
                   />
-                  <div class="media-body">
+                  <div class="flex-grow-1">
                     <h6 class="f-w-700">
                       <a href="javascript:void(0)">Senior UX designer</a
                       ><span class="pull-right">5 days ago</span>

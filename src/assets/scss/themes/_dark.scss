@@ -626,7 +626,58 @@ body {
         }
       }
     }
-
+    ngb-datepicker{
+      .ngb-dp-content{
+        .ngb-dp-week{
+          .btn-light{
+            color: $dark-all-font-color;
+          }
+        }
+      }
+    }
+    .cal-date-widget {
+      .cal-datepicker {
+        ngb-datepicker {
+          background-color: $dark-body-background;
+        }
+      }
+    }
+    ngb-datepicker {
+      .ngb-dp-header {
+        background-color: $dark-body-background;
+        .ngb-dp-arrow-btn {
+          background-color: $primary-color;
+          color: $white;
+        }
+      }
+      .ngb-dp-weekday {
+        color: $white;
+      }
+      .ngb-dp-content {
+        .ngb-dp-week {
+          .btn-light {
+            background-color: $dark-body-background !important;
+            border-color: $dark-card-border !important;
+            &:hover {
+              background-color: $primary-color !important;
+              border-color: $primary-color !important;
+              color: $white;
+              &.text-muted {
+                color: $white !important;
+              }
+            }
+            &.text-white {
+              background-color: transparent !important;
+              border: 1px solid $primary-color !important;
+              color: $black !important;
+            }
+          }
+        }
+      }
+      .ngb-dp-weekdays {
+        background-color: $dark-body-background;
+      }
+    }
     // dashboard 02
     .sale-chart {
       .sale-detail {
@@ -638,7 +689,7 @@ body {
     .recent-order {
       .card-body {
         .medium-chart {
-          #recent-chart {
+          .recent-chart {
             .apexcharts-yaxis-label {
               fill: rgba($white, 0.8) !important;
             }

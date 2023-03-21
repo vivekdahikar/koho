@@ -25,7 +25,7 @@
               <h6>{{ sale.title }}</h6>
               <h5>
                 $<span class="counter">{{ sale.price }}</span
-                ><span class="font-primary">{{ sale.sub }}</span>
+                ><span [ngClass]="sale.icon == 'up' ? 'font-success' : 'font-danger'">{{ sale.persontData }}</span>
               </h5>
             </div>
           </div>

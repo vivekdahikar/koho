@@ -7,5 +7,5 @@ import * as chartData from '../../../../shared/data/widget/widget';
   styleUrls: ['./total-earning.component.scss'],
 })
 export class TotalEarningComponent {
-  public widget5 = chartData.widget5;
+  public widget14 = chartData.widget14;
 }

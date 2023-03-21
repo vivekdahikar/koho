@@ -17,9 +17,9 @@
               *ngFor="let p of iconTitle.icons"
               (click)="toggleWithInfo(p)"
             >
-              <div class="media">
+              <div class="d-flex">
                 <app-feather-icon [icon]="p"></app-feather-icon>
-                <div class="media-body align-self-center">
+                <div class="flex-grow-1 align-self-center">
                   <h6 class="mt-0">{{ p }}</h6>
                 </div>
               </div>

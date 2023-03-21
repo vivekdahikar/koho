@@ -98,7 +98,7 @@ export class NavService {
       children: [
         {
           path: '/page-layout/hide-nav',
-          title: 'Hide New Scroll',
+          title: 'Hide Nav Scroll',
           type: 'link',
         },
         {

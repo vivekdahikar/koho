@@ -17,9 +17,9 @@
               *ngFor="let i of icon"
               (click)="toggleWithInfo(i.abbrivation)"
             >
-              <div class="media">
+              <div class="d-flex">
                 <i class="flag-icon flag-icon-{{ i.abbrivation }}"></i>
-                <div class="media-body align-self-center">
+                <div class="flex-grow-1 align-self-center">
                   <h5>{{ i.abbrivation | uppercase }}</h5>
                   <h6 class="mt-0">{{ i.name }}</h6>
                 </div>

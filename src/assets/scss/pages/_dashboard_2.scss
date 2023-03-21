@@ -18,6 +18,9 @@
         align-items: center;
         justify-content: center;
         background: $light;
+        app-feather-icon{
+          height: 25px;
+        }
         svg {
           width: auto;
           height: 24px;
@@ -65,7 +68,7 @@
     .medium-chart {
       margin-right: -10px;
       margin-left: -10px;
-      #recent-chart {
+      .recent-chart {
         .apexcharts-yaxis-label {
           font-size: 14px;
           font-family: $font-roboto !important;
@@ -228,7 +231,20 @@
     }
   }
 }
-
+.items-slider{
+  .owl-theme{
+    .owl-dots{
+      display: none;
+    }
+  } 
+  .owl-carousel{
+    .owl-item{
+      img{
+        width: auto;
+      }
+    }
+  }
+}
 // Rated Product
 .rated-product {
   margin-left: 10px;
@@ -477,7 +493,7 @@
         .icon{
           width: 36px;
           height: 36px;
-          svg{
+          app-feather-icon,svg{
             height: 18px;
           }
         }
@@ -486,6 +502,24 @@
   }
 }
 @media screen and (max-width: 1470px) and (min-width: 1200px) {
+  .weekend-view{
+    .card-body{
+      .img-wrapper{
+        margin-bottom: 50px;
+      }
+    }
+  }  
+  .best-sellers{
+    .card-body{
+      table{
+        tr{
+          td{
+            padding-bottom: 18px;
+          }
+        }
+      }
+    }
+  }
   .rated-product{
     .img-wrapper{
       img{
@@ -584,7 +618,7 @@
         .icon {
           width: 40px;
           height: 40px;
-          svg {
+          app-feather-icon,svg {
             height: 20px;
           }
         }
@@ -648,7 +682,7 @@
   .recent-order {
     .card-body {
       .medium-chart {
-        #recent-chart {
+        .recent-chart {
           .apexcharts-yaxis-label {
             font-size: 12px;
           }

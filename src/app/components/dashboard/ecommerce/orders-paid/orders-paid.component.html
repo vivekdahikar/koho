@@ -3,7 +3,7 @@
     <div class="d-flex">
       <div class="flex-shrink-0">
         <div class="sale-detail">
-          <div class="icon"><i data-feather="file-text"></i></div>
+          <div class="icon"><app-feather-icon [icon]="data.icon"></app-feather-icon></div>
           <div class="sale-content">
             <h3>{{ data.tittle }}</h3>
             <p>{{ data.sale }}</p>
@@ -14,7 +14,9 @@
         <apx-chart
           [series]="data.series"
           [chart]="data.chart"
+          [plotOptions]="data.plotOptions"
           [stroke]="data.stroke"
+          [states]="data.states"
           [annotations]="data.annotations"
           [colors]="data.colors"
           [yaxis]="data.yaxis"

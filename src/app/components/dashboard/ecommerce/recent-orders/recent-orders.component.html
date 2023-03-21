@@ -1,21 +1,27 @@
 <div class="card-header pb-0">
   <h3>Recent Orders</h3>
-  <apx-chart
-    [series]="recentchart.series"
-    [chart]="recentchart.chart"
-    [stroke]="recentchart.stroke"
-    [annotations]="recentchart.annotations"
-    [colors]="recentchart.colors"
-    [yaxis]="recentchart.yaxis"
-    [xaxis]="recentchart.xaxis"
-    [legend]="recentchart.legend"
-    [tooltip]="recentchart.tooltip"
-    [dataLabels]="recentchart.dataLabels"
-    [grid]="recentchart.grid"
-    [responsive]="recentchart.responsive"
-    [plotOptions]="recentchart.plotOption"
-    [states]="recentchart.states"
-  >
-  </apx-chart>
-  <div class="card-header-right"></div>
+</div>
+<div class="card-body pb-0">
+  <div class="medium-chart">
+      <div class="recent-chart">
+        <apx-chart
+        [series]="recentchart.series"
+        [chart]="recentchart.chart"
+        [stroke]="recentchart.stroke"
+        [annotations]="recentchart.annotations"
+        [colors]="recentchart.colors"
+        [fill]="recentchart.fill"
+        [yaxis]="recentchart.yaxis"
+        [xaxis]="recentchart.xaxis"
+        [legend]="recentchart.legend"
+        [tooltip]="recentchart.tooltip"
+        [dataLabels]="recentchart.dataLabels"
+        [grid]="recentchart.grid"
+        [responsive]="recentchart.responsive"
+        [plotOptions]="recentchart.plotOption"
+        [states]="recentchart.states"
+        >
+        </apx-chart>
+      </div>
+  </div>
 </div>

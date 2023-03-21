@@ -1,7 +1,36 @@
 /**=====================
     52. Datepicker CSS Start
 ==========================**/
-
+.date-picker{
+  ngb-datepicker-month{
+    .ngb-dp-day{
+      .custom-day{
+        &:hover{
+          background-color: $primary-color;
+        }
+        &.range{
+          background-color: $primary-color;
+          &.faded{
+            background-color: rgba($primary-color,0.4);
+          }
+        }
+      }
+    }
+  }
+  .datepicker-here{
+    padding: 10px;
+  }
+}
+ngb-datepicker.dropdown-menu{
+  padding: 10px !important;
+}
+.dp-hidden{
+  .input-group{
+    input{
+      visibility: hidden;
+    }
+  }
+}
 //colors
 .clockpicker-canvas {
   line {
