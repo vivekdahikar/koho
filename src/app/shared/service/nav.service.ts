@@ -135,6 +135,17 @@ export class NavService {
     },
 
     {
+      path: '/file-manager',
+      icon: 'git-pull-request',
+
+      title: 'File Manager',
+      active: true,
+
+      type: 'link',
+      bookmark: true,
+    },
+    
+    {
       title: 'E-Commerce',
       icon: 'shopping-bag',
       type: 'sub',
@@ -167,16 +178,6 @@ export class NavService {
       ],
     },
 
-    {
-      path: '/file-manager',
-      icon: 'git-pull-request',
-
-      title: 'File Manager',
-      active: true,
-
-      type: 'link',
-      bookmark: true,
-    },
     {
       title: 'Email',
       icon: 'mail',

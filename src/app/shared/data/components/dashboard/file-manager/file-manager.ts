@@ -35,7 +35,7 @@ export const Quickdata = [
     folderName: 'Zip File',
   },
   {
-    icon: 'fa-music',
+    icon: 'fa-trash',
     iconColor: 'danger',
     folderName: 'Trash',
   },

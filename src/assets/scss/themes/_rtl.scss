@@ -839,7 +839,16 @@
       }
     }
   }
-
+  .cal-datepicker{
+    ngb-datepicker-navigation-select{
+      > .form-select{
+        + .form-select{
+          margin-left: unset;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
   // ecommerce
   .pro-filter-sec {
     .product-sidebar {
