@@ -54,6 +54,11 @@ body {
     .form-select {
       color: $dark-all-font-color;
     }
+    .customizer-contain{
+      .form-select{
+        background-color: $white;
+      }
+    }
     .add-project {
       .text-inherit {
         color: $dark-all-font-color;

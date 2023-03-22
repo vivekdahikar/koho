@@ -40,8 +40,11 @@
     background-color: $primary-color;
   }
 } 
+.dropzone i {
+  color: var(--theme-default);
+}
 ngx-dropzone {
-  border: 2px dashed var(--theme-deafult) !important;
+  border: 2px dashed var(--theme-default) !important;
   background-color: rgba($primary-color, 0.1) !important;
   height: auto !important;
   padding: 50px;
