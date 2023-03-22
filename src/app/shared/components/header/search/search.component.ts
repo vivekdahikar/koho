@@ -14,6 +14,7 @@ export class SearchComponent {
   public searchResultEmpty: boolean = false;
   public text: string = '';
   open = false;
+  searchBox: any;
   constructor(public navServices: NavService) {
     this.navServices.items.subscribe((menuItems) => (this.items = menuItems));
   }
@@ -80,5 +81,9 @@ export class SearchComponent {
     this.searchResult = false;
     this.text = '';
     document.body.classList.remove('offcanvas');
+  }
+
+  onSearch() {
+    this.searchBox = !this.searchBox;
   }
 }

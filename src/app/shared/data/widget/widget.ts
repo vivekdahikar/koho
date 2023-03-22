@@ -1825,8 +1825,23 @@ export let widget8: ChartOptions | any = {
   },
   labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun'],
 };
+
+function generateData(baseval: any, count: any, yrange: any) {
+  var i = 0;
+  var series = [];
+  while (i < count) {
+    var x = Math.floor(Math.random() * (750 - 1 + 1)) + 1;
+    var y =
+      Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+    var z = Math.floor(Math.random() * (75 - 15 + 1)) + 15;
+
+    series.push([x, y, z]);
+    baseval += 86400000;
+    i++;
+  }
+  return series;
+}
 export let widget9: ChartOptions | any = {
-  data: [],
   chart: {
     toolbar: {
       show: false,
@@ -1837,7 +1852,36 @@ export let widget9: ChartOptions | any = {
   dataLabels: {
     enabled: false,
   },
-  series: [],
+  series: [
+    {
+      name: 'Bubble1',
+      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
+    },
+    {
+      name: 'Bubble2',
+      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
+    },
+    {
+      name: 'Bubble3',
+      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
+    },
+    {
+      name: 'Bubble4',
+      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+        min: 10,
+        max: 60,
+      }),
+    },
+  ],
   fill: {
     type: 'gradient',
     gradient: {
@@ -2144,8 +2188,42 @@ export let widget10: ChartOptions | any = {
   },
 };
 
+// Finance
+var trigoStrength = 3;
+var iteration = 11;
+
+function getRandom() {
+  var i = iteration;
+  return (
+    (Math.sin(i / trigoStrength) * (i / trigoStrength) +
+      i / trigoStrength +
+      1) *
+    (trigoStrength * 2)
+  );
+}
+
+function getRangeRandom(yrange: any) {
+  return Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
+}
+
+function generateMinuteWiseTimeSeries(baseval: any, count: any, yrange: any) {
+  var i = 0;
+  var series = [];
+  while (i < count) {
+    var x = baseval;
+    var y =
+      (Math.sin(i / trigoStrength) * (i / trigoStrength) +
+        i / trigoStrength +
+        1) *
+      (trigoStrength * 2);
+
+    series.push([x, y]);
+    baseval += 300000;
+    i++;
+  }
+  return series;
+}
 export let widget11: ChartOptions | any = {
-  data: [],
   chart: {
     height: 350,
     type: 'bar',
@@ -2157,7 +2235,34 @@ export let widget11: ChartOptions | any = {
       },
     },
 
-    events: {},
+    events: {
+      animationEnd: function (chartCtx: any) {
+        const newData = chartCtx.w.config.series[0].data.slice();
+        newData.shift();
+        window.setTimeout(function () {
+          chartCtx.updateOptions(
+            {
+              series: [
+                {
+                  data: newData,
+                },
+              ],
+              xaxis: {
+                min: chartCtx.minX,
+                max: chartCtx.maxX,
+              },
+              subtitle: {
+                text:
+                  parseInt(getRangeRandom({ min: 1, max: 20 })).toString() +
+                  '%',
+              },
+            },
+            false,
+            false
+          );
+        }, 300);
+      },
+    },
     toolbar: {
       show: false,
     },
@@ -2171,7 +2276,19 @@ export let widget11: ChartOptions | any = {
   stroke: {
     width: 0,
   },
-  series: [],
+  series: [
+    {
+      name: 'Load Average',
+      data: generateMinuteWiseTimeSeries(
+        new Date('12/12/2016 00:20:00').getTime(),
+        12,
+        {
+          min: 10,
+          max: 110,
+        }
+      ),
+    },
+  ],
   title: {
     text: 'Load Average',
     align: 'left',
@@ -2294,12 +2411,25 @@ export let widget12: ChartOptions | any = {
   },
 };
 export let widget13: ChartOptions | any = {
-  data: [],
+  series: [
+    {
+      name: 'STOCK ABC',
+      data: [
+        8107.85, 8128.0, 8122.9, 8165.5, 8340.7, 8423.7, 8423.5, 8514.3,
+        8481.85, 8487.7, 8506.9, 8626.2, 8668.95, 8602.3, 8607.55, 8512.9,
+        8496.25, 8600.65, 8881.1, 9340.85,
+      ],
+    },
+  ],
+  colors: [primary_color],
   chart: {
-    height: 320,
     type: 'area',
+    height: 320,
     zoom: {
       enabled: false,
+    },
+    toolbar: {
+      show: false,
     },
   },
   dataLabels: {
@@ -2308,35 +2438,33 @@ export let widget13: ChartOptions | any = {
   stroke: {
     curve: 'straight',
   },
-  fill: {
-    colors: [primary_color],
-    type: 'gradient',
-    gradient: {
-      shade: 'light',
-      type: 'vertical',
-      shadeIntensity: 0.4,
-      inverseColors: false,
-      opacityFrom: 0.9,
-      opacityTo: 0.8,
-      stops: [0, 100],
-    },
-  },
-
-  series: [
-    {
-      name: 'STOCK ABC',
-    },
+  labels: [
+    '13 Nov 2022',
+    '14 Nov 2022',
+    '15 Nov 2022',
+    '16 Nov 2022',
+    '17 Nov 2022',
+    '20 Nov 2022',
+    '21 Nov 2022',
+    '22 Nov 2022',
+    '23 Nov 2022',
+    '24 Nov 2022',
+    '27 Nov 2022',
+    '28 Nov 2022',
+    '29 Nov 2022',
+    '30 Nov 2022',
+    '01 Dec 2022',
+    '04 Dec 2022',
+    '05 Dec 2022',
+    '06 Dec 2022',
+    '07 Dec 2022',
+    '08 Dec 2022',
   ],
-  title: {
-    text: 'Fundamental Analysis of Stocks',
-    align: 'left',
-  },
-  colors: [primary_color],
   xaxis: {
     type: 'datetime',
   },
   yaxis: {
-    opposite: false,
+    opposite: true,
   },
   legend: {
     horizontalAlign: 'left',
@@ -2716,5 +2844,133 @@ export let progress5: ChartOptions | any = {
   },
   yaxis: {
     max: 100,
+  },
+};
+export let orderStatus2: ChartOptions | any = {
+  chart: {
+    height: 350,
+    type: 'line',
+    stacked: true,
+    animations: {
+      enabled: true,
+      easing: 'linear',
+      dynamicAnimation: {
+        speed: 1000,
+      },
+    },
+    events: {
+      animationEnd: function (chartCtx: any) {
+        const newData1 = chartCtx.w.config.series[0].data.slice();
+        newData1.shift();
+        const newData2 = chartCtx.w.config.series[1].data.slice();
+        newData2.shift();
+        window.setTimeout(function () {
+          chartCtx.updateOptions(
+            {
+              series: [
+                {
+                  data: newData1,
+                },
+                {
+                  data: newData2,
+                },
+              ],
+              subtitle: {
+                // text: parseInt(getRandom() * Math.random()).toString(),
+              },
+            },
+            false,
+            false
+          );
+        }, 300);
+      },
+    },
+    toolbar: {
+      show: false,
+    },
+    zoom: {
+      enabled: false,
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: {
+    curve: 'straight',
+    width: 5,
+  },
+  grid: {
+    padding: {
+      left: 10,
+      right: 0,
+    },
+  },
+  fill: {
+    opacity: 0.9,
+  },
+  colors: [primary_color, secondary_color],
+  markers: {
+    size: 0,
+    hover: {
+      size: 0,
+    },
+  },
+  series: [
+    {
+      name: 'Running',
+      data: generateMinuteWiseTimeSeries(
+        new Date('12/12/2016 00:20:00').getTime(),
+        12,
+        {
+          min: 30,
+          max: 110,
+        }
+      ),
+    },
+    {
+      name: 'Waiting',
+      data: generateMinuteWiseTimeSeries(
+        new Date('12/12/2016 00:20:00').getTime(),
+        12,
+        {
+          min: 30,
+          max: 110,
+        }
+      ),
+    },
+  ],
+  xaxis: {
+    type: 'datetime',
+    range: 2700000,
+  },
+  yaxis: {
+    decimalsInFloat: 1,
+  },
+  title: {
+    text: 'Processes',
+    align: 'left',
+    style: {
+      fontSize: '12px',
+    },
+  },
+  subtitle: {
+    text: '20',
+    floating: true,
+    align: 'right',
+    offsetY: 0,
+    style: {
+      fontSize: '22px',
+    },
+  },
+  legend: {
+    show: true,
+    floating: true,
+    horizontalAlign: 'left',
+    onItemClick: {
+      toggleDataSeries: false,
+    },
+    position: 'top',
+    offsetY: -30,
+    offsetX: 60,
   },
 };
