@@ -43,13 +43,13 @@ export const Quickdata = [
 export const FoldersData = [
   {
     icon: 'file-archive-o',
-    folderName: 'Endless admin',
+    folderName: 'Tivo admin',
     fileSize: '20 files',
     filetime: '2 Hour ago',
   },
   {
     icon: 'folder',
-    folderName: 'Universal admin',
+    folderName: 'Viho admin',
     fileSize: '10 files',
     filetime: '3 Hour ago',
   },

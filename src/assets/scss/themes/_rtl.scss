@@ -1242,18 +1242,21 @@
       }
     }
   }
-
-  // file manager css
+  .color-selector{
+    ul{
+      li{
+        + li{
+          margin-left: unset;
+          margin-right: 4px;
+        }
+      }
+    }
+  }
   // file manager css
   .file-content {
     li{
-      // margin-right: unset;
-      // margin-left: 20px;
-    .files-list {
-      .file-left {
-        margin-left: 8px;
-      }
-    }
+      margin-right: unset;
+      margin-left: 20px;
     }
     .folder-box{
       .files-list{
@@ -1262,12 +1265,6 @@
           margin-right: unset;
         }
       }
-    }
-  }
-  .quick-file{
-    li{
-      margin-right: unset;
-      margin-left: 20px;
     }
   }
   .file-content {
@@ -1289,13 +1286,9 @@
       li {
         &:nth-child(n + 2) {
           margin-left: unset;
+          margin-right: 12px;
         }
       }
-    }
-  }
-  .files-content{
-    li{
-      margin-right: unset;
     }
   }
   .file-sidebar {
@@ -5054,6 +5047,18 @@
         }
       }
     }
+    .files-content{
+      li{
+        margin-left: 8px;
+        margin-right: unset;
+        .files-list{
+          .flex-grow-1{
+            margin-right: 8px !important;
+            margin-left: unset !important;
+          }
+        }
+      }
+    }
   }
   @media screen and (max-width: 1400px) and (min-width: 1200px) {
     .social-widget-card {
@@ -5094,7 +5099,18 @@
       }
     }
   }
-
+  @media screen and (max-width: 1580px) and (min-width: 1471px){
+    .files-content{
+      li{
+        .files-list{
+          .flex-grow-1{
+            margin-left: unset !important;
+            margin-right: 10px !important;
+          }
+        }
+      }
+    }
+  }
   @media screen and (max-width: 1550px) and (min-width: 1366px) {
     .best-seller {
       table {
