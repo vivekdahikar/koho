@@ -7,18 +7,22 @@ import { NavService, Menu } from '../../../../shared/service/nav.service';
   styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent {
-  public menuItems!: Menu[];
-  public items!: Menu[];
+  public menuItems: Menu[] = [];
+  public items: Menu[] = [];
 
   public searchResult: boolean = false;
   public searchResultEmpty: boolean = false;
-  public text!: string;
+  public text: string = '';
   open = false;
-  
   constructor(public navServices: NavService) {
     this.navServices.items.subscribe((menuItems) => (this.items = menuItems));
   }
 
+  ngOnInit() {}
+  // menu open
+  openMenu() {
+    this.open = !this.open;
+  }
   searchToggle() {
     this.navServices.search = false;
     document.getElementsByTagName('body')[0].classList.remove('offcanvas');
@@ -72,12 +76,9 @@ export class SearchComponent {
     document.body.classList.add('offcanvas');
   }
 
-  openMenu() {
-    this.open = !this.open;
-  }
   removeFix() {
     this.searchResult = false;
-    document.body.classList.remove('offcanvas');
     this.text = '';
+    document.body.classList.remove('offcanvas');
   }
 }

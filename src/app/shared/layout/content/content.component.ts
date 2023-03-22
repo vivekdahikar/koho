@@ -89,7 +89,7 @@ export class ContentComponent implements AfterViewInit {
       document.documentElement.scrollTop ||
       document.body.scrollTop ||
       0;
-    if (window.location.pathname == '/page-layout/hide-nav-scroll') {
+    if (window.location.pathname == '/page-layout/hide-nav') {
       if (number > 600) {
         this.show = true;
       } else if (number === 0) {

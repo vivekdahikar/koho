@@ -7,7 +7,7 @@ import * as chartData from '../../../shared/data/widget/widget';
   styleUrls: ['./ecommerce.component.scss'],
 })
 export class EcommerceComponent {
-  public salechart = chartData.orderchart;
+  public salechart = chartData.salechart;
 
   public income = chartData.income;
   public orderchart = chartData.orderchart;
