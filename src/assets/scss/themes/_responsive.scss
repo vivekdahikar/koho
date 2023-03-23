@@ -492,8 +492,95 @@
     }
   }
 }
-
+@media screen and (max-width: 1470px) and (min-width: 1200px){
+  .social-app-profile{
+    .activity-log-main{
+      display: none;
+    }
+  }
+  .email-wrap{
+    &.bookmark-wrap{
+      &.todo-wrap{
+        .email-app-sidebar{
+          .d-flex{
+            .flex-grow-1{
+              p{
+                width: unset;
+                max-width: unset;
+                overflow: unset;
+                text-overflow: unset;
+                white-space: unset;
+              }
+            }
+          }
+        }
+      }
+      .email-app-sidebar{
+        .d-flex{
+          img{
+            margin-right: 8px !important;
+          }
+          .flex-grow-1{
+            p{
+              max-width: 136px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+      .xl-30{
+        max-width: 25%;
+        flex: 0 0 25%;
+      }
+      .xl-70{
+        max-width: 75%;
+        flex: 0 0 75%;
+      }
+    }
+  } 
+  .files-content{
+    .folder-box{
+      .files-list{
+        h6{
+          font-size: 14px;
+        }
+      }
+    }
+    li{
+      margin-right: 8px;
+      .files-list{
+        .file-left{
+          padding: 12px 14px;
+        }
+        .flex-grow-1{
+          margin-left: 10px !important;
+        }
+      }
+    }
+  }
+  .quick-file{
+    li{
+      .quick-box{
+        padding: 20px 24px;
+      }
+    }
+  }
+}
 @media screen and (max-width: 1366px) and (min-width: 1200px) {
+  .file-manager{
+    .folder{
+      .folder-box{
+        p{
+          span{
+            float: unset;
+            display: block;
+          }
+        }
+      }
+    }
+  }
   .custom-card .card-footer > div {
     padding: 10px 0;
   }
@@ -1322,9 +1409,6 @@
         padding-right: 40px;
       }
     }
-  }
-  .file-sidebar {
-    padding-right: 12px;
   }
   .col-xl-7.b-center.bg-size {
     top: 0;
@@ -6954,6 +7038,13 @@
 }
 
 @media only screen and (max-width: 360px) {
+  .bottom-content{
+    .row{
+      &.text-center{
+        margin-bottom: 20px;
+      }
+    }
+  }
   .language-nav {
     display: none !important;
   }

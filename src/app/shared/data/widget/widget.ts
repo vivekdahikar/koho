@@ -1854,29 +1854,29 @@ export let widget9: ChartOptions | any = {
   },
   series: [
     {
-      name: 'Bubble1',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      name: "Bubble1",
+      data: generateData(new Date("11 Feb 2023 GMT").getTime(), 20, {
         min: 10,
         max: 60,
       }),
     },
     {
-      name: 'Bubble2',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      name: "Bubble2",
+      data: generateData(new Date("11 Feb 2023 GMT").getTime(), 20, {
         min: 10,
         max: 60,
       }),
     },
     {
-      name: 'Bubble3',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      name: "Bubble3",
+      data: generateData(new Date("11 Feb 2023 GMT").getTime(), 20, {
         min: 10,
         max: 60,
       }),
     },
     {
-      name: 'Bubble4',
-      data: generateData(new Date('11 Feb 2022 GMT').getTime(), 20, {
+      name: "Bubble4",
+      data: generateData(new Date("11 Feb 2023 GMT").getTime(), 20, {
         min: 10,
         max: 60,
       }),
@@ -2513,26 +2513,10 @@ export let widget14: ChartOptions | any = {
   labels: [''],
   responsive: [
     {
-      breakpoint: 1500,
-      options: {
-        chart: {
-          height: 160,
-        },
-      },
-    },
-    {
-      breakpoint: 1380,
-      options: {
-        chart: {
-          height: 160,
-        },
-      },
-    },
-    {
       breakpoint: 420,
       options: {
         chart: {
-          height: 160,
+          height: 250,
         },
       },
     },
@@ -2742,7 +2726,7 @@ export let progress4: ChartOptions | any = {
       },
     },
   },
-  colors: ['#51bb25'],
+  colors: ['#3EBCB9'],
   stroke: {
     width: 0,
   },
@@ -2753,10 +2737,10 @@ export let progress4: ChartOptions | any = {
     },
   ],
   fill: {
-    colors: ['#51bb25'],
+    colors: ['#3EBCB9'],
     type: 'gradient',
     gradient: {
-      gradientToColors: ['#51bb25'],
+      gradientToColors: ['#3EBCB9'],
     },
   },
   title: {

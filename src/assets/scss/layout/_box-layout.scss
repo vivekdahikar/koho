@@ -123,6 +123,18 @@
         }
       }
     }
+    .file-manager{
+      .folder{
+        .folder-box{
+          p{
+            span{
+              float: unset;
+              display: block;
+            }
+          }
+        }
+      }
+    }
     .weekend-view{
       .card-body{
         .img-wrapper{

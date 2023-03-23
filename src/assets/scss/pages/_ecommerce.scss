@@ -24,6 +24,21 @@
 .toggle-data {
   cursor: pointer;
 }
+.new-products{
+  .product-details{
+    ul{
+      display: flex;
+      li{
+        + li{
+          margin-left: 2px;
+        }
+      }
+    }
+  }
+  .owl-carousel{
+    display: block;
+  }
+}
 .product-sidebar {
   .filter-sidebar {
     max-height: 1000px;
@@ -233,11 +248,6 @@
     }
   }
 }
-// .product-6-layout-view {
-//   .left-filter {
-
-//   }
-// }
 .square-product-setting {
   height: 36px;
   vertical-align: middle;
@@ -267,6 +277,9 @@
       cursor: pointer;
       border: 1px solid $light-gray;
       position: relative;
+      + li{
+        margin-left: 4px;
+      }
       &.active {
         &:before {
           content: "\f00c";
@@ -409,11 +422,79 @@
     }
   }
 }
+.modal {
+  .modal-header {
+    .product-box {
+      .product-details {
+        padding: 25px 10px;
+        h6 {
+          text-transform: capitalize;
+        }
+        .product-price {
+          margin-bottom: 10px;
+        }
+        .product-view {
+          padding: 20px 0px;
+          border-top: 1px solid rgba($primary-color, 0.2);
+          border-bottom: 1px solid rgba($primary-color, 0.2);
+        }
+        .product-size {
+          margin: 20px 0;
+          ul {
+            li {
+              display: inline-block;
+              background-color: rgba($primary-color, 0.1);
+              border-radius: 5px;
+              button {
+                color: $primary-color;
+                width: 35px;
+                height: 35px;
+                font-size: 16px;
+                padding: 0;
+                font-weight: 500;
+                border-radius: 5px;
+              }
+              &:nth-child(n + 2) {
+                margin-left: 15px;
+              }
+              &.active,
+              &:hover {
+                button {
+                  background-color: $primary-color !important;
+                  color: $white;
+                }
+              }
+            }
+          }
+        }
+        .product-qnty {
+          fieldset {
+            margin-bottom: 20px;
+            .input-group {
+              width: 35%;
+              .btn {
+                padding: 5px 12px;
+              }
+            }
+          }
+          .addcart-btn {
+            .btn {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 .product-box {
   overflow: hidden;
   border-radius: 10px;
   .product-details {
     padding: 25px;
+    a{
+
+    }
     h4 {
       font-weight: 600;
       color: $theme-body-font-color;
@@ -421,6 +502,9 @@
       line-height: 1;
       margin-bottom: 5px;
       text-transform: capitalize;
+      &:focus, &:focus-visible{
+        outline: none;
+      }
     }
     p {
       margin-bottom: 5px;
@@ -433,72 +517,6 @@
     }
     span {
       color: $dark-gray;
-    }
-  }
-  .modal {
-    .modal-header {
-      background-color: $light;
-      .product-box {
-        .product-details {
-          padding: 25px 10px;
-          h6 {
-            text-transform: capitalize;
-          }
-          .product-price {
-            margin-bottom: 10px;
-          }
-          .product-view {
-            padding: 20px 0px;
-            border-top: 1px solid rgba($primary-color, 0.2);
-            border-bottom: 1px solid rgba($primary-color, 0.2);
-          }
-          .product-size {
-            margin: 20px 0;
-            ul {
-              li {
-                display: inline-block;
-                background-color: rgba($primary-color, 0.1);
-                border-radius: 5px;
-                button {
-                  color: $primary-color;
-                  width: 35px;
-                  height: 35px;
-                  font-size: 16px;
-                  padding: 0;
-                  font-weight: 500;
-                  border-radius: 5px;
-                }
-                &:nth-child(n + 2) {
-                  margin-left: 15px;
-                }
-                &.active,
-                &:hover {
-                  button {
-                    background-color: $primary-color !important;
-                    color: $white;
-                  }
-                }
-              }
-            }
-          }
-          .product-qnty {
-            fieldset {
-              margin-bottom: 20px;
-              .input-group {
-                width: 35%;
-                .btn {
-                  padding: 5px 12px;
-                }
-              }
-            }
-            .addcart-btn {
-              .btn {
-                font-weight: 600;
-              }
-            }
-          }
-        }
-      }
     }
   }
   .product-img {

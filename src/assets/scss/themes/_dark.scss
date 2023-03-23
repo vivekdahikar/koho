@@ -57,6 +57,8 @@ body {
     .customizer-contain{
       .form-select{
         background-color: $white;
+        border: 1px solid $light-gray;
+        color: $theme-body-font-color
       }
     }
     .add-project {
