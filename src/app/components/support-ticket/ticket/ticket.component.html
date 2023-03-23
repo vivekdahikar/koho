@@ -1,6 +1,6 @@
 <div class="table-responsive theme-scrollbar support-table data-table">
   <form>
-    <div class="mb-3 row justify-content-end">
+    <div class="mb-3 row">
       <label
         for="table-complete-search"
         class="col-xs-3 col-sm-auto col-form-label"
@@ -63,7 +63,7 @@
 
     <div class="d-flex justify-content-between p-2">
       <select
-        class="form-select"
+        class="form-select pe-4"
         style="width: auto"
         name="pageSize"
         [(ngModel)]="service.pageSize"
@@ -74,10 +74,10 @@
         <option [ngValue]="10">100 items per page</option>
       </select>
       <ngb-pagination
+        class="pagination-primary"
         [collectionSize]="(total$ | async)!"
         [(page)]="service.page"
-        [pageSize]="service.pageSize"
-      >
+        [pageSize]="service.pageSize">
       </ngb-pagination>
     </div>
   </form>
