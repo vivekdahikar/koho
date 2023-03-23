@@ -32,7 +32,7 @@ export class ProductsComponent {
       badge: 'New',
     },
     {
-      name: 'Apple Smartwatch',
+      name: ' Apple Smartwatch',
       price: '$1185.99',
       badge: 'hot',
       class: 'bg-primary',
