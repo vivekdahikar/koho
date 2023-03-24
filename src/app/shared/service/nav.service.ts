@@ -144,7 +144,7 @@ export class NavService {
       type: 'link',
       bookmark: true,
     },
-    
+
     {
       title: 'E-Commerce',
       icon: 'shopping-bag',
@@ -497,7 +497,166 @@ export class NavService {
         },
       ],
     },
+    {
+      headTitle1: 'Pages',
+    },
+    {
+      path: '/sample-page',
+      title: 'Sample Page',
+      icon: 'file-text',
+      type: 'link',
+    },
+    {
+      title: 'Others',
+      icon: 'layers',
+      type: 'sub',
+      children: [
+        {
+          title: 'Error Pages',
+          type: 'sub',
+          active: false,
+          children: [
+            {
+              path: '/error-page/error-page1',
+              title: 'Error page 1',
+              type: 'link',
+            },
+            {
+              path: '/error-page/error-page2',
+              title: 'Error page 2',
+              type: 'link',
+            },
+            {
+              path: '/error-page/error-page3',
+              title: 'Error page 3',
+              type: 'link',
+            },
+            {
+              path: '/error-page/error-page4',
+              title: 'Error page 4',
+              type: 'link',
+            },
+          ],
+        },
+        {
+          title: 'Authentication',
+          type: 'sub',
+          active: false,
+          children: [
+            {
+              path: '/authentication/login/login-simple',
+              title: 'Login Simple',
+              type: 'link',
+            },
+            {
+              path: '/authentication/login/login-image-one',
+              title: 'Login with bg image',
+              type: 'link',
+            },
+            {
+              path: '/authentication/login/login-image-two',
+              title: 'Login with image two',
+              type: 'link',
+            },
+            {
+              path: '/authentication/login/validation',
+              title: 'Login With Validation',
+              type: 'link',
+            },
+            {
+              path: '/authentication/login/tooltip',
+              title: 'Login With Tooltip',
+              type: 'link',
+            },
+            {
+              path: '/authentication/login/sweetalert',
+              title: 'Login With Sweetalert',
+              type: 'link',
+            },
+            {
+              path: '/authentication/register/register-simple',
+              title: 'Register Simple',
+              type: 'link',
+            },
 
+            {
+              path: '/authentication/register/register-bg-video',
+              title: 'Register With Bg Video',
+              type: 'link',
+            },
+            {
+              path: '/authentication/unlock-user',
+              title: 'Unlock User',
+              type: 'link',
+            },
+            {
+              path: '/authentication/forgot-password',
+              title: 'Forgot Password',
+              type: 'link',
+            },
+            {
+              path: '/authentication/create-password',
+              title: 'Create Password',
+              type: 'link',
+            },
+            {
+              path: '/authentication/maintenance',
+              title: 'Maintenance',
+              type: 'link',
+            },
+          ],
+        },
+        {
+          title: 'Coming Soon',
+          type: 'sub',
+          active: false,
+          children: [
+            {
+              path: '/coming-soon/coming-simple',
+              title: 'Coming Simple',
+              type: 'link',
+            },
+            {
+              path: '/coming-soon/coming-bg-image',
+              title: 'Coming With bg image',
+              type: 'link',
+            },
+          ],
+        },
+        {
+          title: 'Email templates',
+          type: 'sub',
+          active: false,
+          children: [
+            {
+              path: 'http://admin.pixelstrap.com/koho/theme/basic-template.html',
+              title: 'Basic Email',
+              type: 'extTabLink',
+            },
+            {
+              path: 'http://admin.pixelstrap.com/koho/theme/email-header.html',
+              title: 'Basic With Header',
+              type: 'extTabLink',
+            },
+            {
+              path: 'http://admin.pixelstrap.com/koho/theme/template-email-2.html',
+              title: 'Email Template 2',
+              type: 'extTabLink',
+            },
+            {
+              path: 'http://admin.pixelstrap.com/koho/theme/ecommerce-templates.html',
+              title: 'Ecommerce Email',
+              type: 'extTabLink',
+            },
+            {
+              path: 'http://admin.pixelstrap.com/koho/theme/email-order-success.html',
+              title: 'Order Success',
+              type: 'extTabLink',
+            },
+          ],
+        },
+      ],
+    },
     {
       headTitle1: 'Miscelleneous',
     },

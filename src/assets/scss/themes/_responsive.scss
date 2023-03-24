@@ -7056,6 +7056,13 @@
 }
 
 @media only screen and (max-width: 360px) {
+  .bottom-content{
+    .row{
+      &.text-center{
+        margin-bottom: 20px;
+      }
+    }
+  }
   .language-nav {
     display: none !important;
   }

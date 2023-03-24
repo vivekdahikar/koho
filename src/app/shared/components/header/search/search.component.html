@@ -1,4 +1,4 @@
-<div class="input-group" (click)="onSearch()">
+<div class="input-group">
   <input
     class="form-control"
     [class.open]="open"
@@ -17,6 +17,7 @@
   [class.is-open]="searchResult"
   *ngIf="menuItems?.length"
   id="search-outer"
+  [class.open]="open"
 >
   <div
     class="ProfileCard u-cf"

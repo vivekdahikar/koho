@@ -51,6 +51,7 @@ import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive'
 import { productService } from 'src/app/shared/service/product/product.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { InvoiceDataTableComponent } from './invoice/invoice-data-table/invoice-data-table.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
 
 @NgModule({
   declarations: [
@@ -90,6 +91,8 @@ import { InvoiceDataTableComponent } from './invoice/invoice-data-table/invoice-
     NgbModule,
     NgbTypeaheadModule,
     NgFor,
+    CarouselModule,
+
     DecimalPipe,
     FormsModule,
     AsyncPipe,
