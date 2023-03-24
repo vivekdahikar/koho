@@ -1,6 +1,5 @@
 <app-breadcrumb
   [title]="'Support ticket'"
-  [items]="['Apps']"
   [active_item]="'Support ticket'"
 ></app-breadcrumb>
 <div class="container-fluid">
@@ -14,7 +13,7 @@
         <div class="card-body">
           <div class="row">
             <ng-container *ngFor="let ticket of ticketListStatus">
-              <div class="col-xl-4 col-sm-6 box-col-4">
+              <div class="col-xl-4 col-md-6 box-col-4">
                 <div class="card ecommerce-widget">
                   <div class="card-body support-ticket-font">
                     <div class="row">

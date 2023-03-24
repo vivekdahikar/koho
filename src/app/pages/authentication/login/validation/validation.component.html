@@ -60,7 +60,9 @@
                     >Remember password</label
                   >
                 </div>
-                <a class="link" href="forget-password.html">Forgot password?</a>
+                <a class="link" [routerLink]="'/authentication/forgot-password'"
+                  >Forgot password?</a
+                >
                 <div class="text-end mt-3">
                   <button class="btn btn-primary btn-block w-100" type="submit">
                     Sign in
@@ -95,7 +97,9 @@
                 </ul>
               </div>
               <p class="mt-4 mb-0 text-center">
-                Don't have account?<a class="ms-2" href="sign-up.html"
+                Don't have account?<a
+                  class="ms-2"
+                  [routerLink]="'/authentication/register/register-simple'"
                   >Create Account</a
                 >
               </p>

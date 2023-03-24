@@ -376,6 +376,21 @@ ngb-datepicker {
 .toast-container{
   z-index: 999;
 }
+
+
+
+// angular scss
+.upcoming-course, .job-search, .prooduct-details-box, .pro-review{
+  ngb-rating{
+    span{
+      color: #ff8819;
+      font-size: 18px;
+      padding-left: 0;
+      line-height: 1.2
+    }
+  }
+}
+
 /**=====================
     angular plugin css end
   ==========================**/

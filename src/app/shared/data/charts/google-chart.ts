@@ -1,5 +1,5 @@
-let primary_color = localStorage.getItem('primary_color') || 'rgb(99, 98, 231)';
-let secondary_color = localStorage.getItem('secondary_color') || 'rgb(255, 197, 0)';
+let primary_color = localStorage.getItem('primary_color') || '#534686';
+let secondary_color = localStorage.getItem('secondary_color') || '#FFA47A';
 
 // Area Chart 1
 export var areaChart1: any = {
@@ -38,7 +38,7 @@ export var areaChart2: any = {
      vAxis: { minValue: 0 },
      width: '100%',
      height: 400,
-     colors: [primary_color, secondary_color, "#7dc006", "#f8d62b"],
+     colors: [primary_color, secondary_color, "#67C100", "#f4c705"],
      backgroundColor: 'transparent'
    },
  };
@@ -64,7 +64,7 @@ export var columnChart1: any = {
     },
     height: 400,
     width: '100%',
-    colors: [primary_color, secondary_color, "#7dc006"],
+    colors: [primary_color, secondary_color, "#67C100"],
     backgroundColor: 'transparent'
   },
 };
@@ -90,7 +90,7 @@ export var columnChart2: any = {
     },
     height: 400,
     width: '100%',
-    colors: [primary_color, secondary_color, "#7dc006"],
+    colors: [primary_color, secondary_color, "#67C100"],
     backgroundColor: 'transparent'
   },
 };
@@ -118,7 +118,7 @@ export var lineChart: any = {
       title: 'Box Office Earnings in First Two Weeks of Opening',
       subtitle: 'in millions of dollars (USD)'
     },
-    colors: [primary_color, secondary_color, "#7dc006"],
+    colors: [primary_color, secondary_color, "#67C100"],
     height: 500,
     width: '100%',
     backgroundColor: 'transparent'
@@ -145,7 +145,7 @@ export var comboChart: any = {
      series: { 5: { type: 'line' } },
      height: 500,
      fullWidth: true,
-     colors: [primary_color, secondary_color, "#7dc006", "#a927f9", "#f8d62b"],
+     colors: [primary_color, secondary_color, "#67C100", "#a927f9", "#f8d62b"],
      backgroundColor: 'transparent'
    },
  };
