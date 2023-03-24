@@ -81,6 +81,9 @@
             display: inline-block;            
             letter-spacing: -2px;
           }
+          li+li{
+            margin-left: 4px;
+          }
         }
       }
       .job-apply-btn{
@@ -262,7 +265,7 @@
       font-size: 13px;
     }
     .d-flex {
-      display: block;
+      display: block !important;
       text-align: center;
       .flex-grow-1{
         text-align: center;

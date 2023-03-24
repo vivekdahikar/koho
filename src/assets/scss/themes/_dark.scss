@@ -82,6 +82,18 @@ body {
         }
       }
     }
+    .ck-editor__editable{
+      color: $theme-body-font-color;
+    }
+    .angular-editor-textarea {
+      border: 1px solid $dark-card-border !important;
+    }
+    .ng-select{
+      .ng-select-container{
+        background-color: $dark-body-background;
+        border-color: $dark-card-border;
+      }
+    }
     .product-details-box {
       .d-flex {
         border: 1px solid $dark-card-border;
@@ -4129,6 +4141,9 @@ body {
             border: 1px solid $dark-card-border !important;
           }
           .blog-box {
+            h6{
+              color: $dark-all-font-color;
+            }
             .blog-date {
               color: $dark-all-font-color;
               span {

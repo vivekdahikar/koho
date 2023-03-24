@@ -54,6 +54,12 @@ $card-footer-bg-color: $white;
   }
 }
 .features-faq {
+  .card-footer{
+    ngb-rating {
+      float: right;
+      color: $primary-color;
+    }  
+  }
   .faq-image {
     img {
       border-top-left-radius: 8px;

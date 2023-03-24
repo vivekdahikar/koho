@@ -1,6 +1,6 @@
 <app-breadcrumb
   [title]="'knowledge Category'"
-  [items]="['knowledgebase']"
+  [items]="['Knowledgebase']"
   [active_item]="'knowledge Category'"
 ></app-breadcrumb>
 <div class="container-fluid faq-section">
@@ -15,11 +15,11 @@
       </div>
       <div class="row browse">
         <ng-container *ngFor="let category of categories">
-          <div class="col-xl-4 xl-50 col-md-6">
+          <div class="col-xl-4 col-md-6">
             <div class="browse-articles">
-              <h4>
+              <h3>
                 <span><i data-feather="archive"></i></span>{{ category.title }}
-              </h4>
+              </h3>
               <ul>
                 <ng-container *ngFor="let point of category.points">
                   <li>
