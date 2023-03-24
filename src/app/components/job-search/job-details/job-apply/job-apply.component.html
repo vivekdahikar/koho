@@ -7,10 +7,10 @@
         alt=""
       />
       <div class="flex-grow-1">
-        <h6 class="f-w-600">
+        <h3 class="f-w-600">
           <a href="javascript:void(0)">Product Designer (UI/UX Designer) </a>
-        </h6>
-        <p>Viho - United States</p>
+        </h3>
+        <p>Koho - United States</p>
         <ul class="rating">
           <li><i class="fa fa-star font-warning"></i></li>
           <li><i class="fa fa-star font-warning"></i></li>
@@ -24,11 +24,11 @@
       </div>
     </div>
     <div class="job-description" *ngFor="let d of description">
-      <h6>Job Description</h6>
+      <h4>Job Description</h4>
       <p class="text-start">{{ d.desc }}</p>
     </div>
     <div class="job-description">
-      <h6>Qualifications</h6>
+      <h4>Qualifications</h4>
       <ul>
         <ng-container *ngFor="let p of qualifications">
           <li>{{ p.point }}</li>
@@ -36,7 +36,7 @@
       </ul>
     </div>
     <div class="job-description">
-      <h6>Agency experience</h6>
+      <h4>Agency experience</h4>
       <ul>
         <ng-container *ngFor="let p of agencyExperience">
           <li>{{ p.point }}</li>
@@ -44,7 +44,7 @@
       </ul>
     </div>
     <div class="job-description">
-      <h6>Perks</h6>
+      <h4>Perks</h4>
       <ul>
         <ng-container *ngFor="let p of perks">
           <li>{{ p.point }}</li>

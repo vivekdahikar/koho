@@ -29,7 +29,7 @@
                       alt=""
                     />
                     <div class="flex-grow-1">
-                      <h6 class="f-w-700">
+                      <h3 class="f-w-700">
                         <a [routerLink]="['/job-search/list-view']">{{
                           job.title
                         }}</a
@@ -38,7 +38,7 @@
                           *ngIf="job.NewTag == 'New'"
                           >{{ job.NewTag }}</span
                         >
-                      </h6>
+                      </h3>
                       <p>{{ job.subTitle }}</p>
                       <ngb-rating [rate]="job?.rating"></ngb-rating>
                     </div>
@@ -60,10 +60,10 @@
                     alt=""
                   />
                   <div class="flex-grow-1">
-                    <h6 class="f-w-700">
+                    <h3 class="f-w-700">
                       <a href="javascript:void(0)">Senior UX designer</a
                       ><span class="pull-right">5 days ago</span>
-                    </h6>
+                    </h3>
                     <p>Sutherland <span>Lelystad, Netherlands </span></p>
                     <ul class="rating">
                       <li><i class="fa fa-star font-warning"></i></li>

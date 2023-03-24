@@ -123,6 +123,37 @@
         }
       }
     }
+    .blog-box{
+      &.blog-shadow{
+        .blog-details{
+          padding: 20px;
+        }
+      }
+      .blog-details{
+        .blog-social{
+          li{
+            &:nth-child(n+2){
+              padding-left: 10px;
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      .blog-details-second{
+        .detail-footer{
+          ul{
+            &.sociyal-list{
+              li{
+                &:nth-child(n+2){
+                  margin-left: 10px;
+                  padding-left: 10px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .file-manager{
       .folder{
         .folder-box{

@@ -36,7 +36,7 @@
                   alt=""
                 />
                 <div class="flex-grow-1">
-                  <h6 class="f-w-600">
+                  <h3 class="f-w-600">
                     <a routerLink="/job-search/job-details">{{ job.title }}</a
                     ><span class="pull-right">{{ job.day }}</span
                     ><span
@@ -44,7 +44,7 @@
                       *ngIf="job.NewTag == 'New'"
                       >{{ job.NewTag }}</span
                     >
-                  </h6>
+                  </h3>
                   <p>{{ job.subTitle }}</p>
                   <ngb-rating [rate]="job.rating"></ngb-rating>
                 </div>

@@ -49,6 +49,8 @@ p {
 hr {
   background-color: $light-gray;
   opacity: 1;
+  height: 1px;
+  border-top: none;
 }
 code {
   color: $code-tag-color !important;
