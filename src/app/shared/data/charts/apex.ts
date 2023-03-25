@@ -18,9 +18,9 @@ import {
   ApexGrid,
 } from 'ng-apexcharts';
 
-let primary_color = localStorage.getItem('primary_color') || 'rgb(99, 98, 231)';
+let primary_color = localStorage.getItem('primary_color') || '#534686';
 let secondary_color =
-  localStorage.getItem('secondary_color') || 'rgb(255, 197, 0)';
+  localStorage.getItem('secondary_color') || '#FFA47A';
 
 export type ChartOptions = {
   series?: ApexAxisChartSeries;

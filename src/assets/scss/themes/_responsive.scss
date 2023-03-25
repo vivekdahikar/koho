@@ -685,10 +685,6 @@
     }
   }
 
-  .flot-chart-container {
-    height: 130px;
-  }
-
   // chat
   .chat-box {
     .chat-right-aside {
@@ -901,6 +897,9 @@
   }
 }
 @media only screen and (max-width: 1366px) {
+  .support-table{
+    overflow-x: auto !important;
+  }
   .email-wrap .email-content .email-top .user-emailid:after {
     display: none;
   }
@@ -1662,10 +1661,6 @@
         }
       }
     }
-  }
-
-  .flot-chart-container {
-    height: 200px;
   }
 
   .img-cropper {
@@ -6401,6 +6396,12 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .support-table-footer{
+    display: block !important;
+    .pagination{
+      margin-top: 7px;
+    }
+  }
   // login form //
   .login-card {
     .login-main {

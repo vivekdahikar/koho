@@ -3238,16 +3238,10 @@
     .icon-title {
       text-align: right;
     }
-    .icon-popup {
-      .icon-last {
-        .form-inline {
-          .form-group {
-            .btn {
-              margin-right: 15px;
-              margin-left: unset;
-            }
-          }
-        }
+    .icon-popup{
+      .close-icon{
+        right: unset;
+        left: 10px;
       }
     }
   }

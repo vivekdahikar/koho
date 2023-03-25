@@ -496,6 +496,13 @@ body {
     // dashboard css
 
     // table icon hover dark
+    .table-striped{
+      tbody{
+        tr:nth-of-type(odd){
+          background-color: $dark-body-background;
+        }
+      }
+    }
     table {
       tr {
         .d-flex {
@@ -3341,7 +3348,6 @@ body {
               }
 
               &#line-chart,
-              &#column-chart1,
               &#column-chart2 {
                 rect {
                   fill: $dark-card-background;
