@@ -2320,6 +2320,36 @@ body {
         }
       }
     }
+    .range-slider{
+      .ngx-slider-bar, .ngx-slider-tick{
+        background-color: $dark-body-background;
+      }
+    }
+    .swal2-modal{
+      background-color: $dark-card-background;
+      .swal2-title{
+        color: $dark-all-font-color;
+      }
+      .swal2-html-container{
+        color: $dark-small-font-color;
+      }
+      .swal2-input{
+        background-color: $dark-body-background;
+        color: $dark-all-font-color;
+        border-color: $dark-card-border;
+      }
+    }
+    .ng-star-inserted{
+      .dz-message{
+        h6{
+          color: $dark-all-font-color;
+        }
+        span{
+          color: $dark-small-font-color;
+        }
+      }
+    }
+
     // apex chart css end
     .Typeahead-menu {
       background-color: $dark-body-background;
@@ -2954,6 +2984,19 @@ body {
             color: $dark-all-font-color;
             a {
               color: $dark-all-font-color;
+            }
+          }
+        }
+        .bg-light.breadcrumb-colored{
+          li{
+            a{
+              color: $theme-body-font-color;
+            }
+          }
+          .breadcrumb-item{
+            color: $theme-body-font-color;
+            &::before{
+              color: $theme-body-font-color;
             }
           }
         }

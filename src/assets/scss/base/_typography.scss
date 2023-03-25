@@ -200,13 +200,12 @@ h6 {
   .owl-dots {
     .owl-dot {
       span {
-        background: lighten($primary-color, 20%);
+        background: rgba($primary-color, 0.4) !important;
       }
-
       &.active,
       &:hover {
         span {
-          background: var(--theme-default);
+          background: var(--theme-default) !important;
         }
       }
     }

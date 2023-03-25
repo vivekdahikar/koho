@@ -3251,7 +3251,6 @@
       padding-right: 30px;
     }
   }
-
   .flag-icons,
   .feather-icons {
     div {
@@ -3263,6 +3262,12 @@
       }
     }
   }
+  .br-horizontal{
+    .br-text {
+      margin-left: unset;
+      margin-right: 20px;
+    }
+  } 
 
   // customizer
   .floated-customizer-btn {
@@ -4364,10 +4369,6 @@
     left: -2px;
   }
   .ribbon-vertical-left {
-    right: auto;
-    left: 12px;
-  }
-  .ribbon-vertical-right {
     right: auto;
     left: 12px;
   }
