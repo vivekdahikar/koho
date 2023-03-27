@@ -179,6 +179,15 @@
 }
 
 @media screen and (max-width: 1600px) {
+  .basic-card-item{
+    .custom-profile{
+      .card-profile{
+        .user-img{
+          padding-top: 0 !important;
+        }
+      }
+    }
+  }
   .page-wrapper {
     &.horizontal-wrapper {
       &.material-type {
@@ -328,6 +337,15 @@
   }
 }
 @media (max-width: 1400px) {
+  .basic-cards{
+    .custom-card{
+      .card-header{
+        img{
+          margin-top: -140px;
+        }
+      }
+    }
+  }
   .edit-profile {
     .profile-title {
       .d-flex {
@@ -569,6 +587,15 @@
   }
 }
 @media screen and (max-width: 1366px) and (min-width: 1200px) {
+  .basic-cards{
+    .custom-card{
+      .card-header{
+        img{
+          margin-top: -90px;
+        }
+      }
+    }
+  }
   .file-manager{
     .folder{
       .folder-box{
@@ -897,6 +924,13 @@
   }
 }
 @media only screen and (max-width: 1366px) {
+  .cd-timeline-img{
+    width: 45px;
+    height: 45px;
+    i{
+      font-size: 20px;
+    }
+  }
   .support-table{
     overflow-x: auto !important;
   }
@@ -1224,6 +1258,18 @@
 }
 
 @media only screen and (max-width: 1199px) {
+  .basic-cards{
+    .custom-card{
+      .card-header{
+        img{
+          margin-top: -70px;
+        }
+      }
+    }
+  }
+  .pre-order{
+    order: 1;
+  }
   .page-wrapper {
     .section-space {
       padding: 60px 0;
@@ -6386,13 +6432,6 @@
       left: unset;
     }
   }
-
-  // dropdown-basic //
-  .dropdown-basic {
-    .btn-group {
-      margin-right: unset;
-    }
-  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -7450,10 +7489,6 @@
   .modal-footer {
     display: block;
     text-align: center;
-
-    button:first-child {
-      margin-bottom: 10px;
-    }
   }
 
   // checkout //
@@ -7495,6 +7530,11 @@
 }
 
 @media only screen and (min-width: 576px) {
+  .modal-dialog.modal-lg{
+    .modal-dialog{
+      max-width: 500px;
+    }
+  }
   .product-wrapper-grid {
     &.list-view {
       .col-sm-6 {

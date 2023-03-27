@@ -1,57 +1,255 @@
 /**=====================
      04. Loader CSS Start
 ==========================**/
+
+.loader-wrapper {
+  
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $white;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+
+}
+.loderhide {
+  display: none;
+}
+
+// loader start
+.loader {
+  position: relative;
+  width: 75px;
+  height: 100px;
+  &-bar {
+    position: absolute;
+    bottom: 0;
+    width: 10px;
+    height: 50%;
+    background: $primary-color;
+    transform-origin: center bottom;
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
+
+    @for $i from 1 through 5 {
+      &:nth-child(#{$i}) {
+        left: ($i - 1) * 15px;
+        transform: scale(1, $i * 0.2);
+        animation: barUp#{$i} 4s infinite;
+      }
+    }
+  }
+
+  &-ball {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    background: $secondary-color;
+    border-radius: 50%;
+    animation: ball 4s infinite;
+  }
+}
+
+@keyframes ball {
+  0% {
+    transform: translate(0, 0);
+  }
+  5% {
+    transform: translate(8px, -14px);
+  }
+  10% {
+    transform: translate(15px, -10px);
+  }
+  17% {
+    transform: translate(23px, -24px);
+  }
+  20% {
+    transform: translate(30px, -20px);
+  }
+  27% {
+    transform: translate(38px, -34px);
+  }
+  30% {
+    transform: translate(45px, -30px);
+  }
+  37% {
+    transform: translate(53px, -44px);
+  }
+  40% {
+    transform: translate(60px, -40px);
+  }
+  50% {
+    transform: translate(60px, 0);
+  }
+  57% {
+    transform: translate(53px, -14px);
+  }
+  60% {
+    transform: translate(45px, -10px);
+  }
+  67% {
+    transform: translate(37px, -24px);
+  }
+  70% {
+    transform: translate(30px, -20px);
+  }
+  77% {
+    transform: translate(22px, -34px);
+  }
+  80% {
+    transform: translate(15px, -30px);
+  }
+  87% {
+    transform: translate(7px, -44px);
+  }
+  90% {
+    transform: translate(0, -40px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes barUp1 {
+  0% {
+    transform: scale(1, 0.2);
+  }
+  40% {
+    transform: scale(1, 0.2);
+  }
+  50% {
+    transform: scale(1, 1);
+  }
+  90% {
+    transform: scale(1, 1);
+  }
+  100% {
+    transform: scale(1, 0.2);
+  }
+}
+@keyframes barUp2 {
+  0% {
+    transform: scale(1, 0.4);
+  }
+  40% {
+    transform: scale(1, 0.4);
+  }
+  50% {
+    transform: scale(1, 0.8);
+  }
+  90% {
+    transform: scale(1, 0.8);
+  }
+  100% {
+    transform: scale(1, 0.4);
+  }
+}
+@keyframes barUp3 {
+  0% {
+    transform: scale(1, 0.6);
+  }
+  100% {
+    transform: scale(1, 0.6);
+  }
+}
+@keyframes barUp4 {
+  0% {
+    transform: scale(1, 0.8);
+  }
+  40% {
+    transform: scale(1, 0.8);
+  }
+  50% {
+    transform: scale(1, 0.4);
+  }
+  90% {
+    transform: scale(1, 0.4);
+  }
+  100% {
+    transform: scale(1, 0.8);
+  }
+}
+@keyframes barUp5 {
+  0% {
+    transform: scale(1, 1);
+  }
+  40% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1, 0.2);
+  }
+  90% {
+    transform: scale(1, 0.2);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}
+/**=====================
+     04. Loader CSS Start
+==========================**/
 .loader-wrapper {
   position: fixed;
-  z-index: 9;
+  z-index: 999999;
   background: $white;
   width: 100%;
   height: 100%;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  .loader {
-    display: block;
+  .theme-loader {
+    height: 100px;
+    width: 100px;
     position: relative;
-    height: 80px;
-    width: 80px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: $primary-color;
-    animation: loader 0.5s linear infinite reverse;
-    &:before,
-    &:after {
-      content: "";
-      position: absolute;
+    .loader-p {
+      border: 0 solid transparent;
       border-radius: 50%;
-      border: 3px solid transparent;
-      border-top-color: $primary-color;
-    }
-    &:before {
-      top: 5px;
-      left: 5px;
-      right: 5px;
-      bottom: 5px;
-      animation: loader 0.3s linear infinite forwards;
-    }
-    &:after {
-      top: 15px;
-      left: 15px;
-      right: 15px;
-      bottom: 15px;
-      animation: loader 0.7s linear infinite reverse;
+      width: 150px;
+      height: 150px;
+      position: absolute;
+      top: calc(50vh - 75px);
+      left: calc(50vw - 75px);
+      &:before {
+        content: "";
+        border: 1em solid $primary-color;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s linear infinite;
+        opacity: 0;
+        animation-delay: 0.5s;
+      }
+      &:after {
+        content: "";
+        border: 1em solid $primary-color;
+        border-radius: 50%;
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: loader 2s linear infinite;
+        opacity: 0;
+      }
     }
   }
   @keyframes loader {
     0% {
-      transform: rotate(0deg);
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
     }
     100% {
-      transform: rotate(360deg);
+      transform: scale(1);
+      opacity: 0;
     }
   }
 }
@@ -1117,10 +1315,10 @@
     }
   }
 
-  .loader-37 {
+  .loader-33 {
     border-right: 0.1em solid $success-color;
     border-radius: 100%;
-    animation: loader-37 800ms linear infinite;
+    animation: loader-33 800ms linear infinite;
     &:before,
     &:after {
       content: "";
@@ -1132,7 +1330,7 @@
       left: calc(50% - 0.4em);
       border-left: 0.08em solid $success-color;
       border-radius: 100%;
-      animation: loader-37 400ms linear infinite reverse;
+      animation: loader-33 400ms linear infinite reverse;
     }
     &:after {
       width: 0.6em;
@@ -1145,7 +1343,7 @@
     }
   }
 
-  @keyframes loader-37 {
+  @keyframes loader-33 {
     from {
       transform: rotate(360deg);
     }
@@ -1154,16 +1352,16 @@
     }
   }
 
-  .loader-38 {
+  .loader-27 {
     height: 0.1em;
     width: 0.1em;
     box-shadow: -0.2em -0.2em 0 0.1em $light-font,
       -0.2em -0.2em 0 0.1em $light-font, -0.2em -0.2em 0 0.1em $light-font,
       -0.2em -0.2em 0 0.1em $light-font;
-    animation: loader-38 6s infinite;
+    animation: loader-27 6s infinite;
   }
 
-  @keyframes loader-38 {
+  @keyframes loader-27 {
     0% {
       box-shadow: -0.2em -0.2em 0 0.1em $light-font,
         -0.2em -0.2em 0 0.1em $light-font, -0.2em -0.2em 0 0.1em $light-font,
@@ -1231,13 +1429,13 @@
     }
   }
 
-  .loader-39 {
+  .loader-28 {
     position: relative;
     width: 0.15em;
     height: 0.15em;
     background-color: $warning-color;
     border-radius: 100%;
-    animation: loader-39-1 30s infinite linear;
+    animation: loader-28-1 30s infinite linear;
     &:before,
     &:after {
       content: "";
@@ -1250,15 +1448,15 @@
     &:before {
       width: 20px;
       height: 60px;
-      animation: loader-39-2 0.8s linear infinite;
+      animation: loader-28-2 0.8s linear infinite;
     }
     &:after {
       width: 60px;
       height: 20px;
-      animation: loader-39-2 1.2s linear infinite;
+      animation: loader-28-2 1.2s linear infinite;
     }
   }
-  @keyframes loader-39-1 {
+  @keyframes loader-28-1 {
     0% {
       transform: rotate(0deg);
     }
@@ -1266,7 +1464,7 @@
       transform: rotate(360deg);
     }
   }
-  @keyframes loader-39-2 {
+  @keyframes loader-28-2 {
     0% {
       box-shadow: 0.04em -0.04em 0 0.02em $warning-color;
     }

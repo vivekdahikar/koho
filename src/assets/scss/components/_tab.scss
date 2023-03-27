@@ -155,12 +155,14 @@ $warning-color;
     .nav-link.active,.show > .nav-link{
       border-left-color: nth($nav-color, $i);
       color: nth($nav-color, $i);
+      border-bottom: 0;
     }
   }
   .border-tab.nav-right.nav-#{$var}{
     .nav-link.active,.show > .nav-link{
       border-right-color: nth($nav-color, $i);
       color: nth($nav-color, $i);
+      border-bottom: 0;
     }
   }
 }

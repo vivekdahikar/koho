@@ -2265,7 +2265,21 @@ body {
       }
     }
     // popover css end
-
+    .accordian-page{
+      .accordion-item{
+        border-color: $dark-card-border;
+      }
+      .accordion-header{
+        .accordion-button{
+          background-color: $dark-body-background;
+          color: $dark-all-font-color;
+        }
+      }
+      .accordion-body{
+        background-color: $dark-body-background;
+        color: $dark-all-font-color;
+      }
+    }
     // apex chart css start
     .apex-chart-container {
       .apexcharts-legend {
