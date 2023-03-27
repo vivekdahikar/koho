@@ -390,6 +390,11 @@ ngb-datepicker {
     }
   }
 }
+.range-slider{
+  .ngx-slider-pointer, .ngx-slider-selection{
+    background-color: $primary-color !important;
+  }
+}
 
 /**=====================
     angular plugin css end

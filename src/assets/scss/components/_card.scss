@@ -1,6 +1,18 @@
 /**=====================
     03.  Card CSS Start
 ==========================**/
+.basic-cards{
+  h3{
+    margin-bottom: 15px;
+  }
+  .custom-card{
+    .card-header{
+      img{
+        margin-top: -190px;
+      }
+    }
+  }
+}
 //Card css
 .card {
   margin-bottom: $card-margin-bottom;
@@ -237,7 +249,6 @@
       color: $theme-body-font-color;    
     }
     h6{
-      margin-bottom: 30px;
       margin-top: 10px;
       color:$light-text;
       font-size: 14px;

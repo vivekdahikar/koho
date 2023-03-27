@@ -6396,6 +6396,18 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .image-cropper-btn{
+    input.btn{
+      width: 240px;
+    }
+  }
+  .pagination{
+    .page-item{
+      .page-link{
+        padding: 6px 10px;
+      }
+    }
+  }
   .support-table-footer{
     display: block !important;
     .pagination{
@@ -7057,6 +7069,18 @@
 }
 
 @media only screen and (max-width: 360px) {
+  .sticky-header-main{
+    .note{
+      min-width: 240px;
+    }
+  }
+  .br-{
+    .br-units{
+      .br-unit{
+        font-size: 14px!important;
+      }
+    }
+  }
   .bottom-content{
     .row{
       &.text-center{
