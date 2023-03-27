@@ -232,8 +232,7 @@ export let barChart: ChartOptions | any = {
 // Column Chart
 export let columnChart: ChartOptions | any = {
   chart: {
-    height: 70,
-    width: 90,
+    height: 350,
     type: 'bar',
     toolbar: {
       show: false,
@@ -242,47 +241,37 @@ export let columnChart: ChartOptions | any = {
   plotOptions: {
     bar: {
       horizontal: false,
-      endingShape: 'rounded',
-      columnWidth: '40%',
+      columnWidth: '55%',
     },
-  },
-  grid: {
-    show: false,
   },
   dataLabels: {
     enabled: false,
   },
   stroke: {
-    show: false,
+    show: true,
     width: 2,
     colors: ['transparent'],
   },
   series: [
     {
-      data: [44, 55, 57, 56, 61, 58],
+      name: 'Net Profit',
+      data: [44, 55, 57, 56, 61, 58, 63, 60, 66],
+    },
+    {
+      name: 'Revenue',
+      data: [76, 85, 101, 98, 87, 105, 91, 114, 94],
+    },
+    {
+      name: 'Free Cash Flow',
+      data: [35, 41, 36, 26, 45, 48, 52, 53, 41],
     },
   ],
-
   xaxis: {
-    labels: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
-    },
+    categories: ['Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct'],
   },
   yaxis: {
-    labels: {
-      show: false,
-    },
-    axisTicks: {
-      show: false,
-    },
-    axisBorder: {
-      show: false,
+    title: {
+      text: '$ (thousands)',
     },
   },
   fill: {
@@ -295,7 +284,7 @@ export let columnChart: ChartOptions | any = {
       },
     },
   },
-  colors: [primary_color],
+  colors: [primary_color, secondary_color, '#222222'],
 };
 
 export let smallColumnChart1: ChartOptions | any = {
