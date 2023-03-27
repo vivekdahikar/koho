@@ -8,7 +8,7 @@
     <div class="col-sm-12">
       <div class="card" *ngFor="let iconTitle of allIconData">
         <div class="card-header pb-0">
-          <h5 class="m-b-0">{{ iconTitle.title }}</h5>
+          <h3 class="m-b-0">{{ iconTitle.title }}</h3>
         </div>
         <div class="card-body">
           <div class="row icon-lists">
@@ -18,7 +18,7 @@
               (click)="toggleWithInfo(p)"
             >
               <div class="d-flex">
-                <app-feather-icon [icon]="p"></app-feather-icon>
+                <app-feather-icon [icon]="p" class="me-3"></app-feather-icon>
                 <div class="flex-grow-1 align-self-center">
                   <h6 class="mt-0">{{ p }}</h6>
                 </div>
@@ -45,7 +45,7 @@
           <div class="icon-last icon-last">
             <label class="icon-title">Markup </label>
             <div class="form-inline">
-              <div class="form-group">
+              <div class="form-group mb-0">
                 <input
                   class="inp-val form-control m-r-10"
                   type="text"

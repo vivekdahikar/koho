@@ -1,7 +1,7 @@
 <app-breadcrumb
   [title]="'Default-Style'"
-  [items]="['Apps']"
-  [active_item]="'Buttons'"
+  [items]="['Buttons']"
+  [active_item]="'Default-Style'"
 ></app-breadcrumb>
 
 <div class="container-fluid">
@@ -30,7 +30,7 @@
       </ng-container>
       <div class="card" id="custom-state-button">
         <div class="card-header pb-0">
-          <h5>Custom state buttons</h5>
+          <h3>Custom state buttons</h3>
           <span
             >The <code>.btn</code> class used with <code>&lt;button&gt;</code>,
             <code>&lt;a&gt;</code> and
@@ -65,7 +65,7 @@
       <ng-container *ngFor="let button of buttonsOnline">
         <div class="card" id="outline-button">
           <div class="card-header pb-0">
-            <h5>{{ button.buttonTitle }}</h5>
+            <h3>{{ button.buttonTitle }}</h3>
             <span [innerHTML]="button.buttonSubTitle"></span>
           </div>
           <div class="card-body">
@@ -85,7 +85,7 @@
       </ng-container>
       <div class="card" id="gradiant">
         <div class="card-header pb-0">
-          <h5>Gradien buttons</h5>
+          <h3>Gradien buttons</h3>
           <span>Add <code>.btn-*-gradien</code> class for gradien button</span>
         </div>
         <div class="card-body">

@@ -685,10 +685,6 @@
     }
   }
 
-  .flot-chart-container {
-    height: 130px;
-  }
-
   // chat
   .chat-box {
     .chat-right-aside {
@@ -901,6 +897,9 @@
   }
 }
 @media only screen and (max-width: 1366px) {
+  .support-table{
+    overflow-x: auto !important;
+  }
   .email-wrap .email-content .email-top .user-emailid:after {
     display: none;
   }
@@ -1662,10 +1661,6 @@
         }
       }
     }
-  }
-
-  .flot-chart-container {
-    height: 200px;
   }
 
   .img-cropper {
@@ -6401,6 +6396,24 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .image-cropper-btn{
+    input.btn{
+      width: 240px;
+    }
+  }
+  .pagination{
+    .page-item{
+      .page-link{
+        padding: 6px 10px;
+      }
+    }
+  }
+  .support-table-footer{
+    display: block !important;
+    .pagination{
+      margin-top: 7px;
+    }
+  }
   // login form //
   .login-card {
     .login-main {
@@ -7056,6 +7069,18 @@
 }
 
 @media only screen and (max-width: 360px) {
+  .sticky-header-main{
+    .note{
+      min-width: 240px;
+    }
+  }
+  .br-{
+    .br-units{
+      .br-unit{
+        font-size: 14px!important;
+      }
+    }
+  }
   .bottom-content{
     .row{
       &.text-center{

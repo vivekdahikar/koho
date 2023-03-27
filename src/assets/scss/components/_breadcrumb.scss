@@ -1,6 +1,19 @@
 /**=====================
     57. breadcrumb CSS Start
 ==========================**/
+.bg-light.breadcrumb-colored{
+	li{
+		a{
+			color: $theme-body-font-color;
+		}
+	}
+	.breadcrumb-item{
+		color: $theme-body-font-color;
+		&::before{
+			color: $theme-body-font-color;
+		}
+	}
+}
 .breadcrumb-colored{
 	padding: 12px 16px;
 	border-radius: 4px;

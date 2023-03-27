@@ -76,7 +76,7 @@ export class buttons {
       ],
     },
     {
-      buttonTitle: 'outline small buttons',
+      buttonTitle: 'Outline small buttons',
       buttonSubTitle:
         'Add <code>.btn-outline-*</code> class for outline and <code>.btn-sm</code> class for small button',
       buttonClass: 'btn-sm',
