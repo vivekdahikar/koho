@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-//import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
 @Component({
   selector: 'app-add-post',
@@ -20,7 +20,7 @@ export class AddPostComponent {
   ];
   public selectedCategory: string[] = [];
 
-  //  public ClassicEditor = ClassicEditor;
+  public ClassicEditor = ClassicEditor;
   public config = {
     name: 'document',
     groups: ['mode', 'document', 'doctools'],
