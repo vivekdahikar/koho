@@ -1,6 +1,11 @@
 /**=====================
      51. Search CSS Start
 ==========================**/
+.search-banner{
+  .blog-box.blog-shadow{
+    height: unset !important;
+  }
+}
 .search-page{
   .search-form{
     input{
@@ -103,7 +108,8 @@
   margin-right: auto;
   justify-content: center;
   .nav-item {
-    background-color:rgba($primary-color, 0.1);    
+    background-color:rgba($primary-color, 0.1);   
+    cursor: pointer; 
     .nav-link{
       border: none;
       padding: 0.7rem 1.5rem;     

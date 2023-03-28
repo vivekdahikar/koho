@@ -931,7 +931,7 @@
       font-size: 20px;
     }
   }
-  .support-table{
+  .support-table, .basic-datatable{
     overflow-x: auto !important;
   }
   .email-wrap .email-content .email-top .user-emailid:after {
@@ -4528,6 +4528,28 @@
   }
 }
 @media only screen and (max-width: 575px) {
+  .vertical-tab{
+    .nav-tabs {
+      width: 100%;
+      margin-right: 0;
+    }
+    .tab-content{
+      width: 100%;
+      margin-top: 15px;
+    }
+  }
+  .line-tabs{
+    .card{
+      .card-body{
+        .d-flex{
+          flex-direction: column;
+          li{
+            width: unset;
+          }
+        }
+      }
+    }
+  }
   .cal-date-widget {
     .cal-datepicker {
       ngb-datepicker {
@@ -6435,6 +6457,13 @@
 }
 
 @media only screen and (max-width: 480px) {
+  .box-shadow-title{
+    .btn-group{
+      .btn{
+        padding: 6px 14px;
+      }
+    }
+  }
   .image-cropper-btn{
     input.btn{
       width: 240px;
@@ -6447,7 +6476,7 @@
       }
     }
   }
-  .support-table-footer{
+  .support-table-footer, .basic-datatble-footer{
     display: block !important;
     .pagination{
       margin-top: 7px;

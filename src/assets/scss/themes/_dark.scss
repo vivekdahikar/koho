@@ -82,6 +82,114 @@ body {
         }
       }
     }
+    // calender
+    .cal-month-view {
+      background-color: $dark-card-background;
+      .cal-cell-row {
+        &:hover {
+          background-color: $dark-body-background;
+        }
+        .cal-cell {
+          &:hover,
+          &.cal-has-events.cal-open {
+            background-color: rgba($dark-card-background, 0.3) !important;
+          }
+        }
+      }
+      .cal-day-cell:not(:last-child) {
+        border-right-color: $dark-card-border;
+      }
+      .cal-days {
+        border-color: $dark-card-border;
+        .cal-cell-row {
+          border-bottom-color: $dark-card-border;
+        }
+      }
+      .cal-day-cell {
+        &.cal-weekend {
+          .cal-day-number {
+            color: $danger-color;
+          }
+        }
+      }
+    }
+    .cal-week-view {
+      background-color: $dark-card-background;
+      border-top: 1px solid $dark-card-border;
+      .cal-day-headers {
+        border-color: $dark-card-border;
+        .cal-header {
+          &:not(:last-child) {
+            border-right-color: $dark-card-border;
+          }
+          &:first-child {
+            border-left-color: $dark-card-border;
+          }
+        }
+        .cal-header:hover,
+        .cal-drag-over {
+          background-color: $dark-body-background;
+        }
+      }
+      .cal-hour {
+        &:not(:last-child),
+        &:last-child :not(:last-child) {
+          .cal-hour-segment {
+            border-bottom-color: $dark-card-border;
+          }
+        }
+      }
+      .cal-hour-odd {
+        background-color: $dark-body-background;
+      }
+      .cal-time-events {
+        border-color: $dark-card-border;
+        .cal-day-columns:not(.cal-resize-active) {
+          .cal-hour-segment {
+            &:hover {
+              background-color: $dark-body-background;
+            }
+          }
+        }
+      }
+      .cal-day-column {
+        border-left-color: $dark-card-border;
+      }
+      .cal-all-day-events {
+        border-color: $dark-card-border;
+      }
+    }
+    .social-app-profile{
+      .avatar-showcase{
+        .pepole-knows{
+          ul{
+            li{
+              .add-friend{
+                span{
+                  color: $dark-all-font-color;
+                }
+              }
+            }
+          }
+        }
+      } 
+    } 
+    aw-wizard-navigation-bar.horizontal.large-filled-symbols{
+      ul.steps-indicator{
+        li.current{
+          .step-indicator{
+            color: $white;
+          }
+        }
+      }
+    }  
+    aw-wizard-navigation-bar.horizontal.small{
+      ul.steps-indicator{
+        li:not(:last-child):after{
+          background-color: $dark-body-background;
+        }
+      }
+    }
     .ck-editor__editable{
       color: $theme-body-font-color;
     }

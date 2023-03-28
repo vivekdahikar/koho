@@ -9,6 +9,7 @@
   ul {
     border-bottom: none !important;
     li {
+      cursor: pointer;
       a {
         font-weight: 500;
         display: flex;
@@ -362,6 +363,13 @@
   }
 }
 .social-app-profile {
+  .custom-card{
+    .profile-details{
+      h4{
+        margin-top: 10px;
+      }
+    }
+  }
   .card {
     .socialprofile {
       h5 {

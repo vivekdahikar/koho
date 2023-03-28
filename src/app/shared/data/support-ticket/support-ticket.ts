@@ -35,7 +35,7 @@ export const SUPPORTDB: supportDB[] = [
         },
         {
             id: 2,
-            img: "assets/images/user/2.jpg",
+            img: "assets/images/user/2.png",
             name:"Tiger",
             position: "System Architect",
             salary: "$320,800",
@@ -227,7 +227,7 @@ export const SUPPORTDB: supportDB[] = [
         },
         {
             id: 14,
-            img: "assets/images/user/2.jpg",
+            img: "assets/images/user/2.png",
             name:"Sonya Frost",
             position: "Software Engineer",
             salary: "$103,600",
@@ -371,7 +371,7 @@ export const SUPPORTDB: supportDB[] = [
         },
         {
             id: 23,
-            img: "assets/images/user/2.jpg",
+            img: "assets/images/user/2.png",
             name:"Bradley Greer",
             position: "Software Engineer",
             salary: "$132,000",
@@ -419,7 +419,7 @@ export const SUPPORTDB: supportDB[] = [
         },
         {
             id: 26,
-            img: "assets/images/user/2.jpg",
+            img: "assets/images/user/2.png",
             name:"Yuri Berry",
             position: "Chief Marketing Officer (CMO)",
             salary: "$675,000",
@@ -436,7 +436,7 @@ export const SUPPORTDB: supportDB[] = [
         {
             id: 27,
             img: "assets/images/user/3.jpg",
-            name:"C",
+            name:"Cerry Little",
             position: "Pre-Sales Support",
             salary: "$106,450",
             office: "New York",

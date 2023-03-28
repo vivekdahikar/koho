@@ -421,6 +421,17 @@ ngb-datepicker {
     border-bottom-left-radius: calc(0.3rem - 1px);
   }
 }
+.js-example-rtl{
+  direction: rtl;
+  .ng-select.ng-select-multiple{
+    .ng-select-container{
+      .ng-value-container{
+        padding-left: unset;
+        padding-right: 7px;
+      }
+    }
+  }
+} 
 
 /**=====================
     angular plugin css end

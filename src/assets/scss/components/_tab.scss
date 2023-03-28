@@ -11,7 +11,30 @@
     margin-right: 10px;
   }
 }
-
+.vertical-tab{
+  .tab-content {
+    display: inline-block;
+    width: 70%;
+    vertical-align: top;
+  }
+  .nav-tabs{
+    display: inline-block;
+    width: 28%;
+    margin-right: 2%;
+    margin-bottom: 0;
+    .nav-item {
+      border: 1px solid rgba($black,.125);
+    }  
+    .nav-link{
+      &.active{
+        background-color: $primary-color;
+        color: $white;
+      }
+      padding: 6px 14px;
+      border: none;
+    }
+  }
+}
 .nav-right {
   justify-content: flex-end;
 }

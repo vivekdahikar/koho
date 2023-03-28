@@ -2189,6 +2189,12 @@
       margin-right: 0;
     }
   }
+  .vertical-tab{
+    .nav-tabs {
+      margin-right: unset;
+      margin-left: 2%;
+    }
+  }
   .card {
     text-align: right;
     .card-header {
@@ -2718,6 +2724,34 @@
       right: unset;
     }
   }
+  .data-table{
+    table{
+      thead{
+        tr{
+          th{
+            &::before{
+              float: left;
+              direction: ltr;
+            }
+            &::after{
+              float: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-hover{
+    tbody{
+      tr{
+        td{
+          svg {
+            margin-left: 0;
+          }
+        } 
+      } 
+    } 
+  } 
   .todo-options {
     .badges-todo {
       h6 {
