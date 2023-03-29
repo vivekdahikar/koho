@@ -27,7 +27,7 @@ export const userCards = [
   {
     id: 1,
     image: 'assets/images/user-card/1.jpg',
-    profileImg: 'assets/images/avtar/1.jpg',
+    profileImg: 'assets/images/avtar/3.jpg',
     name: 'Michelle rojas',
     designation: 'Manager',
     follower: '9564',
@@ -37,7 +37,7 @@ export const userCards = [
   {
     id: 2,
     image: 'assets/images/user-card/2.jpg',
-    profileImg: 'assets/images/avtar/2.jpg',
+    profileImg: 'assets/images/avtar/4.jpg',
     name: 'Meryl Streep',
     designation: 'CEO',
     follower: '2578',
@@ -47,7 +47,7 @@ export const userCards = [
   {
     id: 3,
     image: 'assets/images/user-card/3.jpg',
-    profileImg: 'assets/images/avtar/5.jpg',
+    profileImg: 'assets/images/avtar/11.jpg',
     name: 'Dev John',
     designation: 'Engineer',
     follower: '6545',
@@ -56,7 +56,7 @@ export const userCards = [
   },
   {
     id: 4,
-    image: 'assets/images/user-card/4.jpg',
+    image: 'assets/images/user-card/6.jpg',
     profileImg: 'assets/images/user/6.jpg',
     name: 'Mark Jecno',
     designation: 'Developer',
@@ -76,7 +76,7 @@ export const userCards = [
   },
   {
     id: 6,
-    image: 'assets/images/user-card/1.jpg',
+    image: 'assets/images/user-card/7.jpg',
     profileImg: 'assets/images/avtar/3.jpg',
     name: 'Jessica Alba',
     designation: 'Developer',

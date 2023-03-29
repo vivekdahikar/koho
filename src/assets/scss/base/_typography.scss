@@ -385,6 +385,11 @@ fieldset {
     .touchspin {
       height: 50px;
     }
+    .input-group-prepend, .input-group-append{
+      .btn{
+        padding: 14px 28px
+      }
+    }
   }
 }
 .f1 .f1-steps .f1-step .f1-step-icon {
