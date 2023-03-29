@@ -1,8 +1,12 @@
 <div class="md-sidebar">
-  <a class="btn btn-primary md-sidebar-toggle" href="javascript:void(0)"
+  <a
+    class="btn btn-primary md-sidebar-toggle"
+    (click)="openMenu()"
+    href="javascript:void(0)"
+    (click)="openMenu()"
     >email filter</a
   >
-  <div class="md-sidebar-aside email-left-aside">
+  <div class="md-sidebar-aside email-left-aside" [class.open]="open">
     <div class="card">
       <div class="card-body">
         <div class="email-app-sidebar">
@@ -16,7 +20,7 @@
             </div>
             <div class="flex-grow-1">
               <a href="/users/users-profile">
-                <h6 class="f-w-600">MARKJENCO</h6></a
+                <h6 class="f-w-600">MARK JENCO</h6></a
               >
               <p>Markjecno@gmail.com</p>
             </div>
