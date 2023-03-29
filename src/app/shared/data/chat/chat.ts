@@ -33,7 +33,7 @@ export class ChatDB {
       id: 2,
       name: 'Aiden Chavez',
       status: 'Out is my favorite.',
-      profile: 'assets/images/user/2.jpg',
+      profile: 'assets/images/user/3.jpg',
       seen: 'Last Seen 3:55 PM',
       online: false,
       typing: false,
@@ -195,7 +195,7 @@ export class ChatDB {
       callTypeColor: 'danger',
     },
     {
-      profile: 'assets/images/user/2.jpg',
+      profile: 'assets/images/user/3.jpg',
       user: 'Aiden Chavez',
       date: '  3 June, 1:40 PM',
       callType: 'reply',

@@ -10,7 +10,7 @@ export const emailData = [
   },
   {
     liked: false,
-    img: 'assets/images/user/2.jpg',
+    img: 'assets/images/user/2.png',
     name: 'Dee Deo',
     mailDace:
       'Art by Jack Daly Apply now: Graphic Designer @Shell The world is changing fast, and Shell is changing too–not only to keep up with the external pace.',

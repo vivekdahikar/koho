@@ -32,7 +32,7 @@ export class contactData {
     },
     {
       id: 3,
-      image: 'assets/images/user/2.jpg',
+      image: 'assets/images/user/2.png',
       firstName: 'Mark',
       lastName: 'Jecno',
       mail: 'mark@gmail.com',
@@ -63,7 +63,7 @@ export class contactData {
     },
     {
       id: 4,
-      image: 'assets/images/user/2.jpg',
+      image: 'assets/images/user/6.jpg',
       firstName: 'Mark',
       lastName: 'Jecno',
       mail: 'mark@gmail.com',
@@ -78,7 +78,7 @@ export class contactData {
     },
     {
       id: 5,
-      image: 'assets/images/user/2.jpg',
+      image: 'assets/images/user/10.jpg',
       firstName: 'Mark',
       lastName: 'Jecno',
       mail: 'mark@gmail.com',

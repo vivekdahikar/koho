@@ -3,6 +3,6 @@ export const basicColorDropdown = [
   'secondary',
   'success',
   'info',
-  'warning txt-dark',
+  'warning',
   'danger',
 ];

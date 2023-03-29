@@ -123,6 +123,23 @@
         }
       }
     }
+    .basic-datatable{
+      overflow-x: auto !important;
+    }
+    .basic-card-item{
+      .custom-card{
+        .card-footer > div{
+          padding: 12px;
+        }
+      }
+    }
+    .social-app-profile{
+      .custom-card{
+        .card-footer > div{
+          padding: 12px;
+        }
+      }
+    }
     .blog-box{
       &.blog-shadow{
         .blog-details{

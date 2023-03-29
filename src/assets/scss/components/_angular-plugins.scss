@@ -74,8 +74,11 @@ ngx-dropzone {
   .accordion-button {
     color: $theme-body-font-color;
     &:not(.collapsed) {
-      color: var(--theme-deafult);
+      color: $primary-color !important;
       background-color: rgba($primary-color, 0.1) !important;
+    }
+    &:focus{
+      box-shadow: none;
     }
   }
 }
@@ -204,7 +207,7 @@ ngb-datepicker {
     background-color: $danger-color !important;
   }
   &.toast-info {
-    background-color: var(--theme-deafult) !important;
+    background-color: $info-color !important;
   }
   &.toast-warning {
     background-color: $warning-color !important;
@@ -291,7 +294,7 @@ ngb-datepicker {
   background-color: $danger-color !important;
 }
 .toast-info {
-  background-color: var(--theme-deafult) !important;
+  background-color: $info-color !important;
 }
 .toast-warning {
   background-color: $warning-color !important;
@@ -395,6 +398,40 @@ ngb-datepicker {
     background-color: $primary-color !important;
   }
 }
+.modal-content{
+  border: 1px solid rgba(0,0,0,.2);
+  .modal-header{
+    padding: 1rem;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+    .btn-close{
+      &:focus{
+        box-shadow: none;
+      }
+    }
+  }
+  .modal-body{
+    padding: 1rem;
+  }
+  .modal-footer {
+    padding: 0.75rem;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: calc(0.3rem - 1px);
+    border-bottom-left-radius: calc(0.3rem - 1px);
+  }
+}
+.js-example-rtl{
+  direction: rtl;
+  .ng-select.ng-select-multiple{
+    .ng-select-container{
+      .ng-value-container{
+        padding-left: unset;
+        padding-right: 7px;
+      }
+    }
+  }
+} 
 
 /**=====================
     angular plugin css end

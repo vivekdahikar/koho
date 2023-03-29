@@ -313,7 +313,7 @@ export const TABLEDATA: Table[] = [
   },
   {
     id: 2,
-    img: 'assets/images/user/2.jpg',
+    img: 'assets/images/user/3.png',
     name: 'Garrett Winters',
     position: 'Maintenace service',
     office: 'Apple Inc.',

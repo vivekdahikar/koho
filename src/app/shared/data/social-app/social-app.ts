@@ -1,6 +1,6 @@
 export const mutualFriend = [
   {
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/3.jpg',
     status: 'online',
     name: 'Bucky Barnes',
     mail: 'winter@gmail.com',
@@ -30,13 +30,13 @@ export const mutualFriend = [
     mail: 'andrewj@gmail.com',
   },
   {
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/2.png',
     status: 'online',
     name: 'Johny William',
     mail: 'winter@gmail.com',
   },
   {
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/3.png',
     status: 'online',
     name: 'Bucky Barnes',
     mail: 'winter@gmail.com',
@@ -60,13 +60,13 @@ export const mutualFriend = [
     mail: 'andrewj@gmail.com',
   },
   {
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/3.png',
     status: 'online',
     name: 'Johny William',
     mail: 'winter@gmail.com',
   },
   {
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/2.png',
     status: 'online',
     name: 'Bucky Barnes',
     mail: 'winter@gmail.com',
@@ -217,7 +217,7 @@ export const HobbiesData = [
 export const addFriends = [
   {
     id: 1,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/2.png',
     name: 'Jason Borne',
   },
   {
@@ -227,22 +227,22 @@ export const addFriends = [
   },
   {
     id: 3,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/3.jpg',
     name: 'Karlene Lex',
   },
   {
     id: 4,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/4.jpg',
     name: 'Vella Chism',
   },
   {
     id: 5,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/8.jpg',
     name: 'Wai Schalk',
   },
   {
     id: 6,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/10.jpg',
     name: 'Jason Borne',
   },
 ];
@@ -250,7 +250,7 @@ export const addFriends = [
 export const viewedProfile = [
   {
     id: 1,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/2.png',
     name: 'Jason Borne',
   },
   {
@@ -260,22 +260,22 @@ export const viewedProfile = [
   },
   {
     id: 3,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/3.jpg',
     name: 'Karlene Lex',
   },
   {
     id: 4,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/4.jpg',
     name: 'Vella Chism',
   },
   {
     id: 5,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/8.jpg',
     name: 'Wai Schalk',
   },
   {
     id: 6,
-    profile: 'assets/images/user/2.jpg',
+    profile: 'assets/images/user/10.jpg',
     name: 'Jason Borne',
   },
 ];

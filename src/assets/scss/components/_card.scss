@@ -6,6 +6,13 @@
     margin-bottom: 15px;
   }
   .custom-card{
+    .profile-details{
+      a{
+        h4{
+          margin-top: 10px;
+        }
+      }
+    }
     .card-header{
       img{
         margin-top: -190px;
@@ -249,7 +256,6 @@
       color: $theme-body-font-color;    
     }
     h6{
-      margin-top: 10px;
       color:$light-text;
       font-size: 14px;
       font-weight: 500;

@@ -1,64 +1,67 @@
-<div class="col-sm-12">
+<div class="col-sm-12 basic-card-item">
   <div class="row">
     <div class="col-xl-4 col-md-6">
       <app-common-profile-card [data]="cardData1"></app-common-profile-card>
     </div>
     <div class="col-xl-4 col-lg-12 pre-order">
       <div class="card custom-profile">
-        <div class="pb-0 p-4">
+        <div class="card-body">
           <div class="card-profile">
             <img
-              class="user-img"
+              class="user-img pt-4"
               src="assets/images/general-widget/user-profile.png"
               alt=""
             />
           </div>
           <div class="text-center profile-details">
-            <h4>James Martin</h4>
+            <h4>Jenny Gester</h4>
             <h6>CEO</h6>
           </div>
-          <ul class="card-social">
-            <li>
-              <a class="social-link" href="https://accounts.google.com/"
-                ><img
-                  class="user-img"
-                  src="assets/images/svg-icon/1.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a class="social-link" href="https://www.facebook.com/"
-                ><img
-                  class="user-img"
-                  src="assets/images/svg-icon/2.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a class="social-link" href="https://twitter.com/"
-                ><img
-                  class="user-img"
-                  src="assets/images/svg-icon/3.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li>
-              <a class="social-link" href="https://www.instagram.com/"
-                ><img
-                  class="user-img"
-                  src="assets/images/svg-icon/4.svg"
-                  alt=""
-              /></a>
-            </li>
-            <li>
+          <ul class="card-social"> 
+            <li class="bg-fb">
               <a
-                class="social-link"
-                href="https://dashboard.rss.com/auth/sign-in/"
-                ><img
-                  class="user-img"
-                  src="assets/images/svg-icon/5.svg"
-                  alt=""
-              /></a>
+                href="https://www.facebook.com"
+                target="_blank"
+                data-bs-original-title=""
+                title=""
+                ><i class="fa fa-facebook"></i
+              ></a>
+            </li>
+            <li class="bg-gplus">
+              <a
+                href="https://www.google.com"
+                target="_blank"
+                data-bs-original-title=""
+                title=""
+                ><i class="fa fa-google-plus"></i
+              ></a>
+            </li>
+            <li class="bg-twitter">
+              <a
+                href="https://www.twitter.com"
+                target="_blank"
+                data-bs-original-title=""
+                title=""
+                ><i class="fa fa-twitter"></i
+              ></a>
+            </li>
+            <li class="bg-insta">
+              <a
+                href="https://www.instagram.com"
+                target="_blank"
+                data-bs-original-title=""
+                title=""
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li class="bg-linkedin">
+              <a
+                href="https://www.linkedin.com"
+                target="_blank"
+                data-bs-original-title=""
+                title=""
+                ><i class="fa fa-linkedin"></i
+              ></a>
             </li>
           </ul>
         </div>

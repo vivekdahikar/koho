@@ -67,6 +67,16 @@
       }
     }
   }
+  .card-body{
+    .alert{
+      app-feather-icon{
+        & ~ p {
+          padding-left: unset;
+          padding-right: 20px;
+        }
+      }
+    }
+  }  
   .alert-theme {
     button {
       left: 20px !important;
@@ -2179,6 +2189,12 @@
       margin-right: 0;
     }
   }
+  .vertical-tab{
+    .nav-tabs {
+      margin-right: unset;
+      margin-left: 2%;
+    }
+  }
   .card {
     text-align: right;
     .card-header {
@@ -2221,6 +2237,14 @@
       .square {
         margin-left: 5px;
         margin-right: unset;
+      }
+    }
+  }
+  .dropdown-basic{
+    .dropdown.separated-btn{
+      .dropdown-content{
+        left: 0;
+        right: unset;
       }
     }
   }
@@ -2700,6 +2724,34 @@
       right: unset;
     }
   }
+  .data-table{
+    table{
+      thead{
+        tr{
+          th{
+            &::before{
+              float: left;
+              direction: ltr;
+            }
+            &::after{
+              float: left;
+            }
+          }
+        }
+      }
+    }
+  }
+  .table-hover{
+    tbody{
+      tr{
+        td{
+          svg {
+            margin-left: 0;
+          }
+        } 
+      } 
+    } 
+  } 
   .todo-options {
     .badges-todo {
       h6 {
@@ -3562,6 +3614,10 @@
         right: 54px;
         left: unset;
         border-left: unset;
+      }
+      app-feather-icon{
+        left: unset;
+        right: 0;
       }
     }
   }
@@ -4545,8 +4601,6 @@
     &:nth-child(even) {
       .cd-timeline-content {
         float: left;
-        border-left: 7px solid #eeeeee;
-        border-right: unset;
         .cd-date {
           right: auto;
           left: 122%;
@@ -5618,6 +5672,18 @@
     }
   }
   @media only screen and (max-width: 1169px) {
+    .cd-container{
+      .cd-timeline-block{
+        .cd-timeline-content{
+          margin-left: unset;
+          margin-right: 6px;
+          &:before{
+            border-right: unset;
+            border-left: unset;
+          }
+        }
+      }
+    }
     .cd-timeline-content{
       &::before{
         left: 100%;
@@ -6072,6 +6138,9 @@
     }
   }
   @media only screen and (max-width: 575px) {
+    #cd-timeline{
+      margin-right: 30px;
+    }
     .comment-box{
       ul{
         ul{

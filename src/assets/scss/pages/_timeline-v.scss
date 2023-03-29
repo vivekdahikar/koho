@@ -512,6 +512,13 @@
 	}
 }
 @media only screen and (max-width: 1169px) {
+	.cd-container{
+		.cd-timeline-block{
+			.cd-timeline-content {
+				margin-left: 6px;
+			}
+		}
+	}
 	.cd-timeline-block {
 		.cd-timeline-img {
 			left: -2px;
