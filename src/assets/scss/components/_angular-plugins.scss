@@ -393,7 +393,7 @@ ngb-datepicker {
     }
   }
 }
-.range-slider{
+.range-slider, .product-sidebar{
   .ngx-slider-pointer, .ngx-slider-selection{
     background-color: $primary-color !important;
   }
@@ -431,6 +431,9 @@ ngb-datepicker {
       }
     }
   }
+}
+ngx-dropzone-label{
+  z-index: 7!important;
 } 
 
 /**=====================

@@ -1,15 +1,15 @@
 <app-breadcrumb
   [title]="'Compose Email'"
-  [items]="['Compose Email']"
+  [items]="['Email']"
   [active_item]="'Compose Email'"
 ></app-breadcrumb>
 <div class="container-fluid">
   <div class="email-wrap">
     <div class="row">
-      <div class="col-xl-3 box-col-3 col-md-6 xl-30">
+      <div class="col-xl-3 box-col-30 col-md-6 xl-30">
         <app-email-filter></app-email-filter>
       </div>
-      <div class="col-xl-9 box-col-9 col-md-12 xl-70">
+      <div class="col-xl-9 box-col-8 col-md-12 xl-70">
         <div class="email-right-aside">
           <div class="card email-body">
             <div class="email-profile">
@@ -17,7 +17,7 @@
                 <div class="email-compose">
                   <div class="email-top compose-border">
                     <div class="compose-header">
-                      <h4 class="mb-0">New Message</h4>
+                      <h3 class="mb-0">New Message</h3>
                       <button class="btn btn-primary" type="button">
                         <i class="fa fa-file me-2"></i> save
                       </button>
@@ -84,14 +84,10 @@
                     <div class="action-wrapper">
                       <ul class="actions">
                         <li>
-                          <a class="btn btn-secondary" href="javascript:void(0)"
-                            ><i class="fa fa-paper-plane me-2"></i>send
-                          </a>
+                          <a class="btn btn-secondary" href="javascript:void(0)"><i class="fa fa-paper-plane me-2"></i>send</a>
                         </li>
                         <li>
-                          <a class="btn btn-danger" href="javascript:void(0)">
-                            <i class="fa fa-times me-2"></i>cancel</a
-                          >
+                          <a class="btn btn-danger ms-2" href="javascript:void(0)"><i class="fa fa-times me-2"></i>cancel</a>
                         </li>
                       </ul>
                     </div>

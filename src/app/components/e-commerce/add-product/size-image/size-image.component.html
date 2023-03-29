@@ -2,29 +2,22 @@
   <div class="card-body">
     <div class="product-info">
       <h3>Product Image</h3>
-      <form class="dropzone" id="singleFileUpload" action="/upload.php">
+      <form class="form theme-form">
+        <!-- add multiple file dropzone -->
         <ngx-dropzone (change)="onSelect2($event)" [multiple]="true">
-          <ngx-dropzone-label>
-            <div>
-              <div class="dz-message needsclick">
-                <i class="icon-cloud-up"></i>
-                <h6>Drop files here or click to upload.</h6>
-                <span class="dz-message needsclick"
-                  >(This is just a demo dropzone. Selected files are
-                  <strong>not</strong> actually uploaded.)</span
-                >
-              </div>
-            </div>
-          </ngx-dropzone-label>
-          <ngx-dropzone-preview
-            *ngFor="let f of files2"
-            [removable]="true"
-            (removed)="onRemove2(f)"
-          >
-            <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
-          </ngx-dropzone-preview>
-        </ngx-dropzone>
-      </form>
+            <ngx-dropzone-label>
+               <div>
+                  <div class="dz-message needsclick ">
+                     <i class="icon-cloud-up"></i>
+                     <h6>Drop files here or click to upload.</h6><span class="dz-message needsclick">(This is just a demo dropzone. Selected files are <strong>not</strong> actually uploaded.)</span>
+                    </div>
+                 </div>
+              </ngx-dropzone-label>
+              <ngx-dropzone-preview *ngFor="let f of files2" [removable]="true" (removed)="onRemove2(f)">
+                 <ngx-dropzone-label>{{ f.name }} ({{ f.type }})</ngx-dropzone-label>
+              </ngx-dropzone-preview>
+           </ngx-dropzone>
+    </form>
       <h3 class="mt-4">Select Size</h3>
 
       <form>

@@ -1,8 +1,4 @@
-<app-breadcrumb
-  [title]="'Email App'"
-  [items]="['Email']"
-  [active_item]="'Email App'"
-></app-breadcrumb>
+<app-breadcrumb [title]="'Email App'" [items]="['Email']" [active_item]="'Email App'"></app-breadcrumb>
 
 <div class="container-fluid">
   <div class="email-wrap">
@@ -21,75 +17,37 @@
                     <div class="col-12">
                       <div class="d-flex">
                         <label class="email-chek d-block">
-                          <input
-                            class="checkbox_animated"
-                            type="checkbox"
-                            checked=""
-                          />
+                          <input class="checkbox_animated" type="checkbox" checked="" />
                         </label>
                         <div class="flex-grow-1">
                           <div class="dropdown">
-                            <button
-                              class="btn btn-primary dropdown-toggle"
-                              id="dropdownMenuButton"
-                              type="button"
-                              data-bs-toggle="dropdown"
-                              aria-haspopup="true"
-                              aria-expanded="false"
-                            >
-                              Action
-                            </button>
-                            <div
-                              class="dropdown-menu"
-                              aria-labelledby="dropdownMenuButton"
-                            >
-                              <a class="dropdown-item" href="javascript:void(0)"
-                                >Refresh</a
-                              ><a
-                                class="dropdown-item"
-                                href="javascript:void(0)"
-                                >Mark as important</a
-                              ><a
-                                class="dropdown-item"
-                                href="javascript:void(0)"
-                                >Move to span</a
-                              ><a
-                                class="dropdown-item"
-                                href="javascript:void(0)"
-                                >Move to trush
-                              </a>
-                            </div>
+                            <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton" type="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" (click)="openMenu()" >Action</button>
+                            <div class="dropdown-menu" [class.show]="show"aria-labelledby="dropdownMenuButton">
+                             <a class="dropdown-item" href="javascript:void(0)">Refresh</a>
+                             <a class="dropdown-item" href="javascript:void(0)">Mark as important</a>
+                             <a class="dropdown-item" href="javascript:void(0)">Move to span</a>
+                             <a class="dropdown-item" href="javascript:void(0)">Move to trush</a></div>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="inbox" *ngFor="let email of emailData">
-                  <div class="d-flex">
-                    <div class="d-flex-size-email">
-                      <label class="d-block mb-0">
-                        <input
-                          class="checkbox_animated"
-                          type="checkbox"
-                          checked=""
-                        /> </label
-                      ><i class="like" data-feather="star"></i
-                      ><img
-                        class="me-3 rounded-circle"
-                        src="{{ email.img }}"
-                        alt=""
-                      />
+                <div class="inbox">
+                  <ng-container *ngFor="let email of emailData">
+                    <div class="d-flex" >
+                      <div class="d-flex-size-email">                                       
+                        <label class="d-block mb-0">
+                          <input class="checkbox_animated" type="checkbox" checked="">
+                        </label><i  data-feather="star"></i><img class="me-3 rounded-circle" src="{{email.img}}" alt="">
+                      </div>
+                      <div class="flex-grow-1">
+                        <h6>{{email.name}}</h6>
+                        <p>{{email.mailDace}}</p><span>{{email.time}}</span>
+                      </div>
                     </div>
-                    <div class="flex-grow-1">
-                      <h6>{{ email.name }}</h6>
-                      <p>
-                        {{ email.mailDace }}
-                      </p>
-                      <span>{{ email.time }}</span>
-                    </div>
-                  </div>
-                </div>
+                  </ng-container>
+                 </div>
               </div>
             </div>
           </div>

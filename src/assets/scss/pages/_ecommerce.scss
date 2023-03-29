@@ -1,6 +1,11 @@
 /**=====================
     33.  Ecommerce  CSS Start
 ==========================**/
+.current-figure{
+  img{
+    max-height: 320px!important;
+  }
+}
 .add-product{
   .dropzone{
     padding: 40px;

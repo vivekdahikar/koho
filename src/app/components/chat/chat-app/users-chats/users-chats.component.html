@@ -34,7 +34,7 @@
           <div class="d-flex">
             <img
               class="rounded-circle user-image"
-              src="assets/images/user/1.jpg"
+              [src]="user.profile"
               alt=""
             />
             <div
@@ -43,7 +43,7 @@
             ></div>
             <div class="flex-grow-1">
               <div class="about">
-                <a class="name" href="user-profile.html">{{ user.name }}</a>
+                <div class="name">{{user.name}}</div>
                 <div class="status">{{ user.status }}</div>
               </div>
             </div>
