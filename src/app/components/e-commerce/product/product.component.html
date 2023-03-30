@@ -30,7 +30,11 @@
               <app-feather-icon [icon]="'list'"></app-feather-icon>
             </a>
           </div>
-          <div class="d-none-productlist filter-toggle" (click)="openFilter()">
+          <div
+            class="d-none-productlist filter-toggle"
+            (click)="sidebarToggle()"
+            (click)="openFilter()"
+          >
             <h4 class="mb-0">
               Filters<span class="ms-2"
                 ><i class="toggle-data"
