@@ -696,8 +696,16 @@
       top: 0;
       left: 0;
       width: inherit;
-      background-color: aqua;
-      box-shadow: -0.5em 0 0 #2d68d2;
+      border: 0.05em #ba895d solid;
+      background: linear-gradient(
+        -60deg,
+        transparent 0%,
+        transparent 50%,
+        #ba895d 50%,
+        #ba895d 75%,
+        transparent 75%,
+        transparent
+      );
       height: inherit;
       border-radius: 50%;
       animation: 1s spin linear infinite;
