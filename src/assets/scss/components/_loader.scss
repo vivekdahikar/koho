@@ -3,7 +3,6 @@
 ==========================**/
 
 .loader-wrapper {
-  
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -12,7 +11,6 @@
   width: 100%;
   z-index: 10;
   position: fixed;
-
 }
 .loderhide {
   display: none;
@@ -698,6 +696,8 @@
       top: 0;
       left: 0;
       width: inherit;
+      background-color: aqua;
+      box-shadow: -0.5em 0 0 #2d68d2;
       height: inherit;
       border-radius: 50%;
       animation: 1s spin linear infinite;
