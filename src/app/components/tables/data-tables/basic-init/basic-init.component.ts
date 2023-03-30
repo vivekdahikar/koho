@@ -35,4 +35,11 @@ export class BasicInitComponent {
     this.service.sortColumn = column;
     this.service.sortDirection = direction;
   }
+  deleteData(id: number) {
+    this.basicTable$.subscribe((data: any) => {
+      data.map((elem: any, i: any) => {
+        elem.id == id && data.splice(i, 1);
+      });
+    });
+  }
 }

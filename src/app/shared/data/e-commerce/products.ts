@@ -1,7 +1,6 @@
 import { product } from '../../data/interface/product';
 export const PRODUCTS: product[] = [
   {
-    id: 1,
     productImg: 'assets/images/ecommerce/product-table-1.png',
     details: "Men's Shirt|Vida Loca - Blue Denim Fit Men's Casual Shirt.",
 
@@ -10,7 +9,6 @@ export const PRODUCTS: product[] = [
     startData: '20/08/2023',
   },
   {
-    id: 2,
     productImg: 'assets/images/ecommerce/product-table-2.png',
     details:
       'Red Shirt|Wild West - Red Cotton Blend Regular Fit Mens Formal Shirt.',
@@ -20,7 +18,6 @@ export const PRODUCTS: product[] = [
     startData: '12/04/2023',
   },
   {
-    id: 3,
     productImg: 'assets/images/ecommerce/product-table-3.png',
     details:
       'Brown Dress|aask - Brown Polyester Blend Womens Fit & Flare Dress.',
@@ -30,7 +27,6 @@ export const PRODUCTS: product[] = [
     startData: '04/08/2023',
   },
   {
-    id: 4,
     productImg: 'assets/images/ecommerce/product-table-4.png',
     details: 'Red Skirt R L F - Red Cotton Blend Womens A-Line Skirt.',
 
@@ -39,7 +35,6 @@ export const PRODUCTS: product[] = [
     startData: '25/04/2023',
   },
   {
-    id: 5,
     productImg: 'assets/images/ecommerce/product-table-5.png',
     details:
       'Jeans Jacket The Dry State - Blue Denim Regular Fit Mens Denim Jacket.',
@@ -49,7 +44,6 @@ export const PRODUCTS: product[] = [
     startData: '29/06/2023',
   },
   {
-    id: 6,
     productImg: 'assets/images/ecommerce/product-table-6.png',
     details: 'Flower Dress Skyblue Flower Printed Sleevless Strappy Dress',
 
@@ -58,7 +52,6 @@ export const PRODUCTS: product[] = [
     startData: '15/05/2023',
   },
   {
-    id: 7,
     productImg: 'assets/images/ecommerce/product-table-1.png',
     details: "Men's Shirt|Skyblue Flower Printed Sleevless Strappy Dress",
 
@@ -67,7 +60,6 @@ export const PRODUCTS: product[] = [
     startData: '01/03/2023',
   },
   {
-    id: 8,
     productImg: 'assets/images/ecommerce/product-table-2.png',
     details:
       'Red Shirt|Wild West - Red Cotton Blend Regular Fit Mens Formal Shirt.',
@@ -77,7 +69,6 @@ export const PRODUCTS: product[] = [
     startData: '11/11/2023',
   },
   {
-    id: 9,
     productImg: 'assets/images/ecommerce/product-table-3.png',
     details:
       'Brown Dress|aask - Brown Polyester Blend Womens Fit & Flare Dress.',
@@ -87,7 +78,6 @@ export const PRODUCTS: product[] = [
     startData: '18/12/2023',
   },
   {
-    id: 10,
     productImg: 'assets/images/ecommerce/product-table-4.png',
     details: 'Red Skirt|R L F - Red Cotton Blend Womens A-Line Skirt.',
 

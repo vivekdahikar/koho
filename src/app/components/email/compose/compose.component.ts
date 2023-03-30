@@ -9,7 +9,7 @@ import * as ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 export class ComposeComponent {
   files: File[] = [];
 
-  // public ClassicEditor = ClassicEditor;
+  public ClassicEditor = ClassicEditor;
 
   constructor() {}
 

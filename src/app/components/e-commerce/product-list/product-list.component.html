@@ -65,13 +65,14 @@
                 </thead>
                 <tbody>
                   <tr *ngFor="let product of products$ | async">
-                    <th scope="row">{{ product.id }}</th>
-                    <td>
+                    <th scope="row">
                       <img
                         [src]="product.productImg"
                         class="me-2"
                         style="width: 20px"
                       />
+                    </th>
+                    <td>
                       <ngb-highlight
                         [result]="product.details"
                         [term]="service.searchTerm"
