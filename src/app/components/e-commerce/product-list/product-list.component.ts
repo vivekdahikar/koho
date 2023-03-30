@@ -2,7 +2,7 @@ import { Component, QueryList, ViewChildren } from '@angular/core';
 import { Observable } from 'rxjs';
 
 import { product } from '../../../shared/data/interface/product';
-import { productService } from '../../../shared/service/product/product.service';
+import { ProductListService } from '../../../shared/service/product/product.service';
 import {
   NgbdSortableHeader,
   SortEvent,
@@ -23,8 +23,8 @@ export class ProductListComponent {
     | QueryList<NgbdSortableHeader>
     | any;
 
-  constructor(public service: productService) {
-    this.products$ = service.products$;
+  constructor(public service: ProductListService) {
+    this.products$ = service.support$;
     this.total$ = service.total$;
   }
 

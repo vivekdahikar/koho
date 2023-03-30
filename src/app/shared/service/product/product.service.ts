@@ -10,7 +10,7 @@ import { debounceTime, delay, switchMap, tap } from 'rxjs/operators';
 import { SortColumn, SortDirection } from '../../directive/sortable.directive';
 
 interface SearchResult {
-  products: product[];
+  support: product[];
   total: number;
 }
 
@@ -26,43 +26,40 @@ const compare = (v1: string | number, v2: string | number) =>
   v1 < v2 ? -1 : v1 > v2 ? 1 : 0;
 
 function sort(
-  products: product[],
+  support: product[],
   column: SortColumn,
   direction: string
 ): product[] {
   if (direction === '' || column === '') {
-    return products;
+    return support;
   } else {
-    return [...products].sort((a, b) => {
+    return [...support].sort((a: any, b: any) => {
       const res = compare(a[column], b[column]);
       return direction === 'asc' ? res : -res;
     });
   }
 }
 
-function matches(product: product, term: string, pipe: PipeTransform) {
+function matches(ticket: product, term: string, pipe: PipeTransform) {
   return (
-    product.details.toLowerCase().includes(term.toLowerCase()) ||
-    pipe.transform(product.amount).includes(term) ||
-    pipe.transform(product.stock).includes(term) ||
-    pipe.transform(product.startData).includes(term)
+    ticket.productName.toLowerCase().includes(term.toLowerCase()) ||
+    pipe.transform(ticket.id).includes(term) ||
+    pipe.transform(ticket.amount).includes(term)
   );
 }
 
-@Injectable({ providedIn: 'root' })
-export class productService {
-
-
-
-  
+@Injectable({
+  providedIn: 'root',
+})
+export class ProductListService {
   private _loading$ = new BehaviorSubject<boolean>(true);
   private _search$ = new Subject<void>();
-  private _products$ = new BehaviorSubject<product[]>([]);
+  private _support$ = new BehaviorSubject<product[]>([]);
   private _total$ = new BehaviorSubject<number>(0);
 
   private _state: State = {
     page: 1,
-    pageSize: 4,
+    pageSize: 10,
     searchTerm: '',
     sortColumn: '',
     sortDirection: '',
@@ -78,15 +75,15 @@ export class productService {
         tap(() => this._loading$.next(false))
       )
       .subscribe((result) => {
-        this._products$.next(result.products);
+        this._support$.next(result.support);
         this._total$.next(result.total);
       });
 
     this._search$.next();
   }
 
-  get products$() {
-    return this._products$.asObservable();
+  get support$() {
+    return this._support$.asObservable();
   }
   get total$() {
     return this._total$.asObservable();
@@ -130,19 +127,19 @@ export class productService {
       this._state;
 
     // 1. sort
-    let products = sort(PRODUCTS, sortColumn, sortDirection);
+    let support = sort(PRODUCTS, sortColumn, sortDirection);
 
     // 2. filter
-    products = products.filter((product) =>
-      matches(product, searchTerm, this.pipe)
+    support = support.filter((ticket) =>
+      matches(ticket, searchTerm, this.pipe)
     );
-    const total = products.length;
+    const total = support.length;
 
     // 3. paginate
-    products = products.slice(
+    support = support.slice(
       (page - 1) * pageSize,
       (page - 1) * pageSize + pageSize
     );
-    return of({ products, total });
+    return of({ support, total });
   }
 }

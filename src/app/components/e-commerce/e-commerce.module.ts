@@ -48,7 +48,6 @@ import { BillingDetailsComponent } from './checkout/billing-details/billing-deta
 import { PlaceOrderComponent } from './checkout/place-order/place-order.component';
 import { PricingComponent } from './pricing/pricing.component';
 import { NgbdSortableHeader } from 'src/app/shared/directive/sortable.directive';
-import { productService } from 'src/app/shared/service/product/product.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { InvoiceDataTableComponent } from './invoice/invoice-data-table/invoice-data-table.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -83,7 +82,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ProductListComponent,
     InvoiceDataTableComponent,
   ],
-  providers: [NgbActiveModal, productService, OrderHistoryService],
+  providers: [NgbActiveModal, OrderHistoryService],
   imports: [
     CommonModule,
     ECommerceRoutingModule,

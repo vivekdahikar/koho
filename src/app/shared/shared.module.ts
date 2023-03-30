@@ -26,7 +26,6 @@ import { ColorComponent } from './components/customizer/color/color.component';
 import { LayoutSettingComponent } from './components/customizer/layout-setting/layout-setting.component';
 import { ProductboxService } from './service/product/productbox.service';
 import { ProductBoxFilterService } from './service/product/product-box-filter.service';
-import { productService } from './service/product/product.service';
 import { TablesService } from './service/tables/tables.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TranslateModule } from '@ngx-translate/core';
@@ -89,7 +88,6 @@ import { LayoutService } from './service/layout/layout.service';
     NavService,
     LayoutService,
     ProductboxService,
-    productService,
     ProductBoxFilterService,
   ],
 })
