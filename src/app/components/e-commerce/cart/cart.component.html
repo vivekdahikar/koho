@@ -1,6 +1,6 @@
 <app-breadcrumb
   [title]="'Cart'"
-  [items]="['E-Commerce']"
+  [items]="['E - Commerce']"
   [active_item]="'Cart'"
 ></app-breadcrumb>
 <div class="container-fluid">
@@ -86,17 +86,13 @@
                     <td class="text-end" colspan="5">
                       <a
                         class="btn btn-secondary cart-btn-transform"
-                        routerLink="e-commerce/product"
-                        >Continue shopping</a
-                      >
+                        routerLink="/e-commerce/product">Continue shopping</a>
                     </td>
                     <td>
                       <a
                         class="btn btn-success cart-btn-transform"
                         [routerLink]="['/e-commerce/checkout']"
-                        routerLink="e-commerce/checkout"
-                        >Check out</a
-                      >
+                        routerLink="/e-commerce/checkout">Check out</a>
                     </td>
                   </tr>
                 </tbody>

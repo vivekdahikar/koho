@@ -2724,6 +2724,18 @@
       right: unset;
     }
   }
+  .email-wrap{
+    .email-body{
+      .attachment{
+        ul{
+          li:nth-child(n+2){
+            margin-left: unset;
+            margin-right: 10px;
+          }
+        }
+      }
+    } 
+  } 
   .data-table{
     table{
       thead{
@@ -4388,6 +4400,22 @@
   }
 
   // product-page
+  .modal{
+    .modal-header{
+      .product-box{
+        .product-details{
+          .product-size{
+            ul{
+              li:nth-child(n+2){
+                margin-left: unset;
+                margin-right: 15px;
+              }
+            } 
+          } 
+        } 
+      } 
+    } 
+  } 
   .product-page-details {
     span {
       padding-right: 15px;

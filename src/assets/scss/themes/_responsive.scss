@@ -587,6 +587,13 @@
   }
 }
 @media screen and (max-width: 1366px) and (min-width: 1200px) {
+  .pricing-simple{
+    .card-body{
+      h1{
+        font-size: 78px;
+      }
+    }
+  }
   .basic-cards{
     .custom-card{
       .card-header{
@@ -620,9 +627,6 @@
     .profile-details {
       h2 {
         font-size: 18px;
-      }
-      h6 {
-        margin-bottom: 24px;
       }
     }
     .card-footer {
@@ -1413,13 +1417,6 @@
       }
     }
   }
-  .custom-card {
-    .profile-details {
-      h6 {
-        margin-bottom: 15px;
-      }
-    }
-  }
   .page-body-wrapper {
     .page-body,
     footer {
@@ -1605,9 +1602,6 @@
     .profile-details {
       h2 {
         font-size: 20px;
-      }
-      h6 {
-        margin-bottom: 20px;
       }
     }
     .card-footer {
@@ -2023,7 +2017,7 @@
         opacity: 0;
         visibility: hidden;
         z-index: 2;
-        width: 300px;
+        width: 280px;
         transition: all 0.5s ease;
         &.open {
           visibility: visible;
@@ -3508,7 +3502,7 @@
         padding: 0;
       }
       .card-profile {
-        margin-top: -40px;
+        margin-top: 50px;
       }
       .card-social {
         margin-top: unset;
@@ -3516,11 +3510,6 @@
     }
   }
   .custom-card {
-    .card-header {
-      img {
-        transform: scale(1.5);
-      }
-    }
     .card-profile {
       img {
         height: 75px;
@@ -3763,6 +3752,7 @@
           .text-box {
             .btn {
               font-size: 0;
+              padding: 20px;
               &:before {
                 position: absolute;
                 content: "\e661";
@@ -4292,7 +4282,6 @@
   .email-wrap {
     .email-right-aside {
       .email-profile {
-        overflow-x: auto;
         .inbox {
           width: 700px;
           p {
@@ -6890,6 +6879,7 @@
       }
       h6 {
         float: none;
+        margin-bottom: 6px!important;
       }
     }
   }

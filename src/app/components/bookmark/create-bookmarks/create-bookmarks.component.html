@@ -10,7 +10,7 @@
         >
           <div class="card mb-0">
             <div class="card-header d-flex">
-              <h6 class="mb-0">Created by me</h6>
+              <h3 class="mb-0">Created by me</h3>
               <ul>
                 <li>
                   <a
@@ -33,13 +33,10 @@
             <div class="card-body pb-0">
               <div
                 class="details-bookmark text-center"
-                [class.list-bookmark]="listBookmark"
-              >
+                [class.list-bookmark]="listBookmark">
                 <div class="row" id="bookmarkData">
                   <ng-container *ngFor="let bookmark of bookmarks">
-                    <div
-                      class="col-xl-3 col-lg-6 col-md-4 col-sm-6 xl-50 box-col-6"
-                    >
+                    <div class="col-xl-3 col-md-4 col-sm-6 box-col-4 xl-4">
                       <div class="card bookmark-card o-hidden">
                         <div class="details-website">
                           <img
@@ -54,7 +51,7 @@
                           </div>
                           <div class="desciption-data">
                             <div class="title-bookmark">
-                              <h6 class="title_0">{{ bookmark.title }}</h6>
+                              <h4 class="title_0">{{ bookmark.title }}</h4>
                               <p class="weburl_0">{{ bookmark.url }}</p>
                               <div class="hover-block">
                                 <ul>
@@ -86,10 +83,7 @@
                                 </ul>
                               </div>
                               <div class="content-general">
-                                <p class="desc_0">{{ bookmark.collection }}</p>
-                                <span class="collection_0">{{
-                                  bookmark.collection
-                                }}</span>
+                                <span class="collection_0">{{ bookmark.collection }}</span>
                               </div>
                             </div>
                           </div>

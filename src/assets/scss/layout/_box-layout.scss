@@ -123,6 +123,13 @@
         }
       }
     }
+    .user-card{
+      .custom-card{
+        .card-footer > div{
+          padding: 12px;
+        }
+      }
+    }
     .basic-datatable{
       overflow-x: auto !important;
     }
