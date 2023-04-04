@@ -3222,6 +3222,13 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .email-wrap{
+    .email-right-aside{
+      .email-profile{
+        overflow-x: auto;
+      }
+    }
+  }
   ngx-dropzone{
     padding: 14px;
   }
@@ -6465,7 +6472,7 @@
       }
     }
   }
-  .support-table-footer, .basic-datatble-footer{
+  .support-table-footer, .basic-datatble-footer, .product-list-footer{
     display: block !important;
     .pagination{
       margin-top: 7px;

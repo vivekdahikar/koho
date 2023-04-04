@@ -629,27 +629,27 @@ export class NavService {
           active: false,
           children: [
             {
-              path: 'http://admin.pixelstrap.com/koho/theme/basic-template.html',
+              path: 'https://admin.pixelstrap.com/koho/template/basic-template.html',
               title: 'Basic Email',
               type: 'extTabLink',
             },
             {
-              path: 'http://admin.pixelstrap.com/koho/theme/email-header.html',
+              path: 'https://admin.pixelstrap.com/koho/template/email-header.html',
               title: 'Basic With Header',
               type: 'extTabLink',
             },
             {
-              path: 'http://admin.pixelstrap.com/koho/theme/template-email-2.html',
+              path: 'https://admin.pixelstrap.com/koho/template/template-email-2.html',
               title: 'Email Template 2',
               type: 'extTabLink',
             },
             {
-              path: 'http://admin.pixelstrap.com/koho/theme/ecommerce-templates.html',
+              path: 'https://admin.pixelstrap.com/koho/template/ecommerce-templates.html',
               title: 'Ecommerce Email',
               type: 'extTabLink',
             },
             {
-              path: 'http://admin.pixelstrap.com/koho/theme/email-order-success.html',
+              path: 'https://admin.pixelstrap.com/koho/template/email-order-success.html',
               title: 'Order Success',
               type: 'extTabLink',
             },
