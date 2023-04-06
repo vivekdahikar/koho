@@ -22,11 +22,10 @@
     >
       <div class="settings"><i class="icon-settings"></i></div>
     </a>
-    <a
-      href="https://1.envato.market/vnoqBv"
-      class="nav-link" target="_blank"
-    >
-      <div class="settings bg-primary buy-now"><i class="icon-shopping-cart text-white"></i></div>
+    <a href="https://1.envato.market/vnoqBv" class="nav-link" target="_blank">
+      <div class="settings bg-primary buy-now">
+        <i class="icon-shopping-cart text-white"></i>
+      </div>
     </a>
   </div>
 </div>
@@ -67,7 +66,24 @@
                   Path : src > app > shared > services > layout.service.ts
                 </b>
               </p>
-              <div></div>
+              <div>
+                <pre>
+                  <code>
+                     public config = &#123;  
+                        settings&#58; &#123;
+                           sidebar&#58; '',
+                           layout_type&#58; '{{layout.config.settings.layout_type}}',
+                           layout_version&#58; '{{layout.config.settings.layout_version}}',
+                           sidebar_type&#58; '{{layout.config.settings.sidebar_type}}',
+                        &#125;,
+                        color&#58; &#123;
+                           primary_color&#58; '{{layout.config.color.primary_color}}',
+                           secondary_color&#58; '{{layout.config.color.secondary_color}}'
+                        &#125;
+                     &#125;
+                  </code>
+                                       </pre>
+              </div>
             </div>
           </div>
           <button
@@ -76,8 +92,8 @@
           >
             Copy Json
           </button>
-        </div> </ng-template
-      >
+        </div>
+      </ng-template>
     </div>
     <div class="customizer-body custom-scrollbar">
       <div

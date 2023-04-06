@@ -12,7 +12,7 @@ import { slideInAnimation } from '../../data/animation/animation';
   ],
 })
 export class CustomizerComponent {
-  public customizer: string = '';
+  public customizer: any = '';
 
   constructor(private modalService: NgbModal, public layout: LayoutService) {}
 
