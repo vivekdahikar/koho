@@ -22,6 +22,7 @@ export class SearchComponent {
   // menu open
   openMenu() {
     this.open = !this.open;
+    this.searchResult=!this.searchResult
   }
   searchToggle() {
     this.navServices.search = false;
@@ -73,7 +74,7 @@ export class SearchComponent {
 
   addFix() {
     this.searchResult = true;
-    document.body.classList.add('offcanvas');
+    // document.body.classList.add('offcanvas');
   }
 
   removeFix() {
